@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://startbusinessai.online/sitemap.xml
+Sitemap: https://www.startbusinessai.online/sitemap.xml
