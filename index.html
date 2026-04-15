@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -296,53 +296,40 @@
       }
 
       .about-strip {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: block;
         border-radius: var(--radius);
         overflow: hidden;
         border: 1px solid var(--faint);
       }
-      .about-img {
-        position: relative;
-        min-height: 320px;
-      }
-      .about-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      }
       .about-body {
         background: var(--white);
-        padding: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        padding: 3rem 3.25rem;
       }
       .about-body h2 {
         font-family: "Playfair Display", serif;
-        font-size: 1.7rem;
+        font-size: 2rem;
         margin-bottom: 1rem;
         line-height: 1.25;
       }
       .about-body p {
         color: var(--muted);
         line-height: 1.8;
-        font-size: 0.95rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
       }
       .checklist {
         list-style: none;
         display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.5rem;
       }
       .checklist li {
         display: flex;
         align-items: flex-start;
         gap: 10px;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         color: var(--muted);
+        width: calc(50% - 0.75rem);
       }
       .checklist li::before {
         content: "✓";
@@ -525,7 +512,9 @@
         border-radius: var(--radius);
         border: 1px solid var(--faint);
         overflow: hidden;
-        transition: transform 0.2s, box-shadow 0.2s;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
         display: block;
       }
       .article-card:hover {
@@ -745,9 +734,14 @@
         .about-strip {
           grid-template-columns: 1fr;
         }
-        .featured-img,
-        .about-img {
+        .featured-img {
           min-height: 220px;
+        }
+        .about-body {
+          padding: 2rem 1.5rem;
+        }
+        .checklist li {
+          width: 100%;
         }
         .stat {
           padding: 1rem 1.25rem;
@@ -781,7 +775,7 @@
         <div class="hero-tag">StartbusinessAI — Free Business Guides 2026</div>
         <h1>How to Start a Business with <em>AI</em> — Ideas Anyone Can Do</h1>
         <p>
-          Discover 12 proven AI business ideas you can start today. These ideas
+          Discover 22 proven AI business ideas you can start today. These ideas
           include AI content writing, AI-powered marketing, online business
           models, and side hustles that use tools like ChatGPT. Each idea is
           designed for beginners looking to start a business with AI and build
@@ -793,19 +787,6 @@
         </div>
       </div>
     </header>
-
-    <section class="container">
-      <p class="seo-copy">
-        Starting a business with AI is one of the fastest-growing opportunities
-        in 2025. This platform covers practical AI business ideas, including AI
-        content writing, AI graphic design, AI consulting, and AI-powered
-        e-commerce. Whether you're looking for a side hustle or a full-time
-        online business, these step-by-step guides show how to use tools like
-        ChatGPT, Canva AI, and automation platforms to build real income
-        streams. Learn how to start a business from home, validate ideas, find
-        clients, and scale using artificial intelligence.
-      </p>
-    </section>
 
     <div class="trust-bar">
       <strong>Trusted by 10,000+ readers</strong> · Updated April 2026 · Written
@@ -822,8 +803,8 @@
         <div class="stat-label">To Get Started</div>
       </div>
       <div class="stat">
-        <div class="stat-num">6</div>
-        <div class="stat-label">Step-by-Step Guides</div>
+        <div class="stat-num">23</div>
+        <div class="stat-label">Guides Available</div>
       </div>
       <div class="stat">
         <div class="stat-num">2026</div>
@@ -833,7 +814,30 @@
 
     <main>
       <div class="container">
-        <section>
+        <section style="padding-top: 0">
+          <div class="about-strip">
+            <div class="about-body">
+              <div class="section-label">About StartbusinessAI</div>
+              <h2>Your #1 Guide to Starting a Business with AI</h2>
+              <p>
+                We help everyday people launch profitable online businesses
+                using AI tools. Every guide is written by practitioners who have
+                actually built and grown businesses using these exact methods.
+              </p>
+              <ul class="checklist">
+                <li>Beginner-friendly, jargon-free guides</li>
+                <li>Real AI business ideas proven to make money</li>
+                <li>Step-by-step instructions you can follow today</li>
+                <li>Free tools and AI resources for every idea</li>
+                <li>Honest income expectations — no false promises</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <section style="padding-top: 0">
           <div class="section-label">Featured Guide</div>
           <a
             class="featured"
@@ -866,38 +870,6 @@
               <span class="read-more">Read full guide</span>
             </div>
           </a>
-        </section>
-      </div>
-
-      <div class="container">
-        <section style="padding-top: 0">
-          <div class="about-strip">
-            <div class="about-img">
-              <img
-                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80"
-                alt="Entrepreneur planning an AI business strategy"
-                width="540"
-                height="320"
-                loading="lazy"
-              />
-            </div>
-            <div class="about-body">
-              <div class="section-label">About StartbusinessAI</div>
-              <h2>Your #1 Guide to Starting a Business with AI</h2>
-              <p>
-                We help everyday people launch profitable online businesses
-                using AI tools. Every guide is written by practitioners who have
-                actually built and grown businesses using these exact methods.
-              </p>
-              <ul class="checklist">
-                <li>Beginner-friendly, jargon-free guides</li>
-                <li>Real AI business ideas proven to make money</li>
-                <li>Step-by-step instructions you can follow today</li>
-                <li>Free tools and AI resources for every idea</li>
-                <li>Honest income expectations — no false promises</li>
-              </ul>
-            </div>
-          </div>
         </section>
       </div>
 
@@ -981,13 +953,13 @@
             <div class="ideas-header">
               <h2>All AI Business Ideas</h2>
               <div class="filter-tabs">
-                <button class="tab active" onclick="filterIdeas('all',this)">
+                <button class="tab active" onclick="filterIdeas('all', this)">
                   All Ideas
                 </button>
-                <button class="tab" onclick="filterIdeas('easy',this)">
+                <button class="tab" onclick="filterIdeas('easy', this)">
                   Easy Start
                 </button>
-                <button class="tab" onclick="filterIdeas('high',this)">
+                <button class="tab" onclick="filterIdeas('high', this)">
                   High Income
                 </button>
               </div>
@@ -1047,7 +1019,10 @@
                 aria-label="Email address"
               />
               <button
-                onclick="this.textContent='Subscribed ✓';this.style.background='#0f3d22';"
+                onclick="
+                  this.textContent = 'Subscribed ✓';
+                  this.style.background = '#0f3d22';
+                "
               >
                 Subscribe Free
               </button>
@@ -1056,15 +1031,6 @@
         </div>
       </div>
 
-      <section class="container" aria-hidden="true">
-        <div class="seo-hidden">
-          <h1>AI Business Ideas</h1>
-          <h2>How to Start a Business with AI</h2>
-          <h2>Make Money with AI Tools</h2>
-          <h2>Online Business Ideas 2025</h2>
-        </div>
-      </section>
-
       <section class="container" style="padding-top: 0; padding-bottom: 4rem">
         <div class="seo-longform">
           <h2>AI Business Ideas Explained (Beginner Guide)</h2>
@@ -1072,26 +1038,26 @@
           <p class="seo-copy">
             AI business ideas are transforming how people start online
             businesses. Instead of needing technical skills, you can now use
-            artificial intelligence tools to automate writing, design,
-            research, and marketing. This makes it possible to start a business
-            with little to no upfront cost.
+            artificial intelligence tools to automate writing, design, research,
+            and marketing. This makes it possible to start a business with
+            little to no upfront cost.
           </p>
 
           <h3>Why Start a Business with AI?</h3>
           <p class="seo-copy">
             Artificial intelligence reduces time, cost, and complexity. Tasks
-            that used to take hours like writing blog posts, designing logos,
-            or building websites can now be completed in minutes. This allows
+            that used to take hours like writing blog posts, designing logos, or
+            building websites can now be completed in minutes. This allows
             beginners to compete with experienced professionals and launch
             services quickly.
           </p>
 
-          <h3>Best AI Business Ideas for 2025</h3>
+          <h3>Best AI Business Ideas for 2026</h3>
           <p class="seo-copy">
             Some of the most profitable AI business ideas include content
             writing services, social media management, AI-powered dropshipping,
-            online course creation, and AI consulting. Each model can be
-            started with free tools and scaled into a full-time income.
+            online course creation, and AI consulting. Each model can be started
+            with free tools and scaled into a full-time income.
           </p>
 
           <h3>How to Make Money with AI</h3>
@@ -1112,9 +1078,9 @@
           <h3>AI Tools for Business</h3>
           <p class="seo-copy">
             Popular AI tools include ChatGPT for writing and strategy, Canva AI
-            for design, Midjourney for images, and automation tools like
-            Zapier. These tools allow you to deliver high-quality results
-            quickly and efficiently.
+            for design, Midjourney for images, and automation tools like Zapier.
+            These tools allow you to deliver high-quality results quickly and
+            efficiently.
           </p>
           <p class="seo-copy">
             If you are searching for the best AI business ideas, how to start a
@@ -1558,7 +1524,7 @@
         const list = ideas.filter(
           (i) =>
             filter === "all" ||
-            (filter === "easy" ? i.tag === "easy" : i.tag === "high")
+            (filter === "easy" ? i.tag === "easy" : i.tag === "high"),
         );
         document.getElementById("ideas-list").innerHTML = list
           .map(
@@ -1575,7 +1541,7 @@
         <div class="idea-stat"><span class="difficulty diff-${i.diff}">${i.diff}</span></div>
       </div>
       <div class="idea-arrow">↗</div>
-    </a>`
+    </a>`,
           )
           .join("");
       }
@@ -1598,7 +1564,7 @@
           <span class="difficulty diff-${a.diff}">${a.diff}</span>
         </div>
       </div>
-    </a>`
+    </a>`,
           )
           .join("");
       }
@@ -1610,7 +1576,7 @@
     <div class="faq-item" id="faq-${i}">
       <button class="faq-q" onclick="toggleFAQ(${i})"><span>${f.q}</span><span class="faq-icon">+</span></button>
       <div class="faq-a">${f.a}</div>
-    </div>`
+    </div>`,
           )
           .join("");
       }
