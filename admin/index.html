@@ -14,8 +14,74 @@
         color: #111;
         font-family: "DM Sans", system-ui, sans-serif;
       }
+      .cms-loading {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+      }
+      .cms-loading-card {
+        max-width: 620px;
+        background: #fff;
+        border: 1px solid #e8e4dc;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+      }
+      .cms-loading h1 {
+        margin: 0 0 0.75rem;
+        font-size: 1.5rem;
+        line-height: 1.2;
+      }
+      .cms-loading p {
+        margin: 0 0 0.75rem;
+        color: #555;
+        line-height: 1.7;
+      }
+      .cms-loading code {
+        background: #f3efe7;
+        padding: 0.15rem 0.35rem;
+        border-radius: 6px;
+      }
+      .cms-loading a {
+        color: #1a3d2b;
+      }
     </style>
-    <script src="https://unpkg.com/decap-cms@3.5.0/dist/decap-cms.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://unpkg.com/decap-cms@3.11.0/dist/decap-cms.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main class="cms-loading">
+      <div class="cms-loading-card">
+        <h1>Loading StartbusinessAI CMS</h1>
+        <p>
+          If the editor does not appear, the most common reason is that
+          Netlify Identity and Git Gateway are not enabled for this site yet.
+        </p>
+        <p>
+          After enabling them in Netlify, come back to
+          <code>/admin/</code> and log in again.
+        </p>
+        <p>
+          Local editing is still available with
+          <code>npx decap-server</code>.
+        </p>
+        <p>
+          Setup notes:
+          <a href="../DECAP_CMS_SETUP.md">DECAP_CMS_SETUP.md</a>
+        </p>
+      </div>
+    </main>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", function (user) {
+          if (!user) {
+            window.netlifyIdentity.on("login", function () {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
 </html>

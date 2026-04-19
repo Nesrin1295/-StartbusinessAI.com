@@ -1,12 +1,11 @@
 backend:
-  name: github
-  repo: Nesrin1295/-StartbusinessAI.com
+  name: git-gateway
   branch: main
   squash_merges: true
 
 local_backend: true
-site_url: https://www.startbusinessai.online
-display_url: https://www.startbusinessai.online
+site_url: https://startbusinessai.online
+display_url: https://startbusinessai.online
 publish_mode: editorial_workflow
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
