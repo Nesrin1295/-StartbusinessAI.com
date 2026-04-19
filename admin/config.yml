@@ -1,0 +1,52 @@
+backend:
+  name: github
+  repo: Nesrin1295/-StartbusinessAI.com
+  branch: main
+  squash_merges: true
+
+local_backend: true
+site_url: https://www.startbusinessai.online
+display_url: https://www.startbusinessai.online
+publish_mode: editorial_workflow
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+editor:
+  preview: false
+
+collections:
+  - name: "site_pages"
+    label: "Site Pages"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "index.html"
+        fields:
+          - label: "HTML"
+            name: "body"
+            widget: "code"
+            default_language: "html"
+            output_code_only: true
+      - label: "Beginner Guide"
+        name: "beginner_guide"
+        file: "guides/how-to-start-a-business-with-ai.html"
+        fields:
+          - label: "HTML"
+            name: "body"
+            widget: "code"
+            default_language: "html"
+            output_code_only: true
+
+  - name: "guides"
+    label: "Guide Pages"
+    label_singular: "Guide"
+    folder: "guides"
+    create: false
+    extension: "html"
+    summary: "{{filename}}"
+    fields:
+      - label: "HTML"
+        name: "body"
+        widget: "code"
+        default_language: "html"
+        output_code_only: true
