@@ -10,9 +10,8 @@ Files added for the integration:
 
 ## Current backend
 
-The CMS is configured for the GitHub repository:
+The CMS is configured for Netlify's Git Gateway on:
 
-- Repo: `Nesrin1295/-StartbusinessAI.com`
 - Branch: `main`
 
 ## What works now
@@ -26,12 +25,16 @@ The CMS is configured for the GitHub repository:
 
 ## One required next step
 
-For production login, Decap CMS still needs GitHub authentication.
+For production login, you still need to enable these in the Netlify dashboard:
 
-Because this project appears to be hosted as a static site, you will need one of these:
+1. Netlify Identity
+2. Git Gateway
 
-1. A GitHub OAuth proxy for Decap CMS
-2. Netlify Identity plus `git-gateway` if you move hosting to Netlify
+After that, the published CMS should be available at:
+
+```text
+https://www.startbusinessai.online/admin/
+```
 
 ## Local editing option
 
@@ -46,8 +49,18 @@ npx decap-server
 Then open:
 
 ```text
-http://localhost:8080/admin/
+http://localhost:8000/admin/
 ```
+
+## Netlify dashboard checklist
+
+In Netlify for this site:
+
+1. Go to `Identity`
+2. Click `Enable Identity`
+3. Under registration preferences, choose the access model you want
+4. Enable `Git Gateway`
+5. Optionally invite your editing users
 
 ## Notes
 
