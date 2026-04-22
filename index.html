@@ -252,6 +252,27 @@
       .hero-copy {
         max-width: 680px;
       }
+      main {
+        position: relative;
+      }
+      .side-ad {
+        position: absolute;
+        right: max(24px, calc((100vw - 1440px) / 3));
+        bottom: 770px;
+        width: 160px;
+        z-index: 20;
+      }
+      .side-ad a {
+        display: block;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 18px 40px rgba(10, 25, 18, 0.2);
+      }
+      .side-ad img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
 
       .signal-strip {
         margin-top: -2.75rem;
@@ -510,6 +531,11 @@
           padding: 1.5rem;
         }
       }
+      @media (max-width: 1399px) {
+        .side-ad {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -543,11 +569,15 @@
             <div class="hero-tag">
               Beginner-friendly AI business guides for 2026
             </div>
-            <h1>Get your first online business using AI in 1 day (no experience, no budget)</h1>
+            <h1>
+              Get your first online business using AI in 1 day (no experience,
+              no budget)
+            </h1>
             <p>
               Pick one <a href="ideas.html">business idea</a>, follow a
-              <a href="guides/how-to-start-a-business-with-ai.html">practical guide</a>,
-              and turn AI tools into a clear offer you can launch online.
+              <a href="guides/how-to-start-a-business-with-ai.html"
+                >practical guide</a
+              >, and turn AI tools into a clear offer you can launch online.
             </p>
             <p>
               Follow a step-by-step system: idea → validation → first result
@@ -634,6 +664,21 @@
           </div>
         </section>
       </div>
+      <aside class="side-ad" aria-label="Advertisement">
+        <a
+          href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=145880&url_id=902"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+          aria-label="Open NordVPN offer"
+        >
+          <img
+            src="assets/nordvpn-banner.png"
+            alt="NordVPN special offer"
+            width="160"
+            height="600"
+          />
+        </a>
+      </aside>
     </main>
 
     <footer>
