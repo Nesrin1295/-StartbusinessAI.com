@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta name="google-adsense-account" content="ca-pub-8157298524106158" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8157298524106158" crossorigin="anonymous"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8157298524106158"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -447,7 +451,11 @@
 
       footer {
         background:
-          radial-gradient(circle at top right, rgba(200, 164, 90, 0.14), transparent 28%),
+          radial-gradient(
+            circle at top right,
+            rgba(200, 164, 90, 0.14),
+            transparent 28%
+          ),
           #0f2519;
         border-top: 1px solid rgba(255, 255, 255, 0.06);
       }
@@ -507,10 +515,11 @@
   <body>
     <nav>
       <a href="index.html" class="logo" aria-label="StartbusinessAI Home">
-        <div class="logo-icon">🚀</div>
-        <div class="logo-text">
-          StartbusinessAI<span class="logo-sub">AI Business Ideas</span>
-        </div>
+        <img
+          class="logo-icon"
+          src="assets/logo.svg"
+          alt="StartbusinessAI logo"
+        />
       </a>
       <div class="nav-group">
         <ul class="nav-links">
@@ -531,16 +540,24 @@
       <div class="hero-content">
         <div class="hero-grid">
           <div class="hero-copy">
-            <div class="hero-tag">Beginner-friendly AI business guides for 2026</div>
-            <h1>Start an <em>AI-Powered</em> Online Business Without Guessing</h1>
+            <div class="hero-tag">
+              Beginner-friendly AI business guides for 2026
+            </div>
+            <h1>
+              Start an <em>AI-Powered</em> Online Business Without Guessing
+            </h1>
             <p>
               Find one business idea that actually fits your skills, follow a
               practical guide, and turn AI tools into a clear offer you can
               launch online.
             </p>
             <div class="hero-btns">
-              <a href="ideas.html" class="btn-primary">Browse AI Business Ideas</a>
-              <a href="guides/how-to-start-a-business-with-ai.html" class="btn-ghost"
+              <a href="ideas.html" class="btn-primary"
+                >Browse AI Business Ideas</a
+              >
+              <a
+                href="guides/how-to-start-a-business-with-ai.html"
+                class="btn-ghost"
                 >Read the Beginner Guide</a
               >
             </div>
@@ -561,7 +578,8 @@
           <div class="signal-item">
             <span class="signal-title">Action-focused</span>
             <span class="signal-copy"
-              >Clear next steps instead of broad motivation and vague theory.</span
+              >Clear next steps instead of broad motivation and vague
+              theory.</span
             >
           </div>
           <div class="signal-item">
@@ -589,7 +607,9 @@
         </div>
         <div id="home-ideas-grid" class="home-preview-grid"></div>
         <div class="preview-actions">
-          <a href="ideas.html" class="btn-primary btn-green">Browse All Ideas</a>
+          <a href="ideas.html" class="btn-primary btn-green"
+            >Browse All Ideas</a
+          >
         </div>
       </section>
 
@@ -598,8 +618,7 @@
           <div class="section-label">Common Questions</div>
           <div class="section-title">FAQ</div>
           <div class="section-sub">
-            Quick answers for beginners who want to start with less
-            uncertainty.
+            Quick answers for beginners who want to start with less uncertainty.
           </div>
           <div class="faq-section">
             <div class="faq-header">
@@ -660,7 +679,9 @@
         </div>
         <div class="footer-col">
           <h4>Resources</h4>
-          <a href="guides/how-to-start-a-business-with-ai.html">Simple Start Guide</a>
+          <a href="guides/how-to-start-a-business-with-ai.html"
+            >Simple Start Guide</a
+          >
           <a href="#faq">Common Questions</a>
           <a href="ideas.html">All Business Ideas</a>
           <a href="about.html">About</a>
@@ -670,8 +691,8 @@
       <div class="footer-bottom">
         <p>© 2026 StartbusinessAI · All rights reserved</p>
         <p>
-          Start with one idea, follow one guide, and build your first
-          AI-powered online business step by step.
+          Start with one idea, follow one guide, and build your first AI-powered
+          online business step by step.
         </p>
       </div>
     </footer>
@@ -948,9 +969,7 @@
       ];
 
       function renderHomeIdeas() {
-        const featuredIdeas = ideas
-          .filter((i) => i.tag === "easy")
-          .slice(0, 6);
+        const featuredIdeas = ideas.filter((i) => i.tag === "easy").slice(0, 6);
         document.getElementById("home-ideas-grid").innerHTML = featuredIdeas
           .map(
             (i) => `
