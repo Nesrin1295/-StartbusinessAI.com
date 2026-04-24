@@ -258,7 +258,7 @@
       .side-ad {
         position: absolute;
         right: max(24px, calc((100vw - 1440px) / 3));
-        bottom: 770px;
+        top: 12rem;
         width: 160px;
         z-index: 20;
       }
@@ -505,6 +505,114 @@
         line-height: 1.7;
       }
 
+      .email-popup {
+        position: fixed;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        z-index: 200;
+        width: min(360px, calc(100vw - 2rem));
+        background: var(--white);
+        border: 1px solid var(--faint);
+        border-radius: 18px;
+        box-shadow: 0 24px 60px rgba(8, 21, 15, 0.18);
+        padding: 1.25rem;
+        display: none;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .email-popup.show {
+        display: block;
+      }
+      .email-popup-close {
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+        width: 32px;
+        height: 32px;
+        border: 1px solid var(--faint);
+        border-radius: 50%;
+        background: #f8fbf8;
+        color: var(--accent);
+        font-size: 1.1rem;
+        line-height: 1;
+        cursor: pointer;
+      }
+      .email-popup-label {
+        display: inline-block;
+        background: #e8f5ee;
+        color: var(--accent);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border-radius: 999px;
+        padding: 0.3rem 0.65rem;
+        margin-bottom: 0.85rem;
+      }
+      .email-popup h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.35rem;
+        line-height: 1.25;
+        padding-right: 2rem;
+        margin-bottom: 0.45rem;
+      }
+      .email-popup p {
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+      }
+      .email-popup-form {
+        display: grid;
+        gap: 0.65rem;
+      }
+      .email-popup-form input {
+        width: 100%;
+        border: 1px solid var(--faint);
+        border-radius: 8px;
+        padding: 0.85rem 0.95rem;
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.92rem;
+        color: var(--ink);
+        background: #fff;
+      }
+      .email-popup-form input:focus {
+        outline: 2px solid rgba(200, 164, 90, 0.35);
+        border-color: var(--gold);
+      }
+      .email-popup-form button {
+        width: 100%;
+      }
+      .email-popup-note {
+        display: block;
+        color: var(--muted);
+        font-size: 0.76rem;
+        line-height: 1.55;
+        margin-top: 0.75rem;
+      }
+      .email-popup-success {
+        display: none;
+        background: #e8f5ee;
+        color: var(--accent);
+        border-radius: 8px;
+        padding: 0.8rem;
+        font-size: 0.88rem;
+        line-height: 1.55;
+        margin-top: 0.85rem;
+      }
+      .email-popup.subscribed .email-popup-success {
+        display: block;
+      }
+
       @media (max-width: 700px) {
         .choice-rules,
         .home-preview-grid,
@@ -530,6 +638,10 @@
         .choice-band {
           padding: 1.5rem;
         }
+        .email-popup {
+          right: 1rem;
+          bottom: 1rem;
+        }
       }
       @media (max-width: 1399px) {
         .side-ad {
@@ -552,13 +664,54 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="ideas.html">Ideas</a></li>
           <li>
-            <a href="guides/how-to-start-a-business-with-ai.html">Guides</a>
+            <a href="guides/how-to-start-a-business-with-ai.html">Guide</a>
           </li>
           <li><a href="about.html">About</a></li>
           <li><a href="ar/index.html">Arabic</a></li>
         </ul>
       </div>
     </nav>
+
+    <aside
+      class="email-popup"
+      id="email-popup"
+      aria-labelledby="email-popup-title"
+      aria-live="polite"
+    >
+      <button
+        class="email-popup-close"
+        type="button"
+        id="email-popup-close"
+        aria-label="Close email popup"
+      >
+        ×
+      </button>
+      <span class="email-popup-label">New ideas</span>
+      <h2 id="email-popup-title">Subscribe to our email</h2>
+      <p>
+        Get new AI business ideas, practical guides, and simple next steps sent
+        to your inbox.
+      </p>
+      <form class="email-popup-form" id="email-popup-form">
+        <label class="sr-only" for="email-popup-input">Email address</label>
+        <input
+          id="email-popup-input"
+          name="email"
+          type="email"
+          placeholder="Enter your email"
+          autocomplete="email"
+          required
+        />
+        <button class="btn-primary" type="submit">Subscribe</button>
+      </form>
+      <small class="email-popup-note">
+        No spam. Just useful AI business ideas when there is something worth
+        sharing.
+      </small>
+      <div class="email-popup-success" id="email-popup-success">
+        Thank you. You are on the list for new ideas.
+      </div>
+    </aside>
 
     <header class="hero">
       <div class="hero-bg"></div>
@@ -570,8 +723,7 @@
               Beginner-friendly AI business guides for 2026
             </div>
             <h1>
-              Get your first online business using AI in 1 day (no experience,
-              no budget)
+              Choose your first AI business idea and turn it into a real offer
             </h1>
             <p>
               Pick one <a href="ideas.html">business idea</a>, follow a
@@ -580,7 +732,8 @@
               >, and turn AI tools into a clear offer you can launch online.
             </p>
             <p>
-              Follow a step-by-step system: idea → validation → first result
+              Follow a simple system: choose the idea, validate the buyer, build
+              the first sample, and ask for the first sale.
             </p>
             <div class="hero-btns">
               <a href="ideas.html" class="btn-primary"
@@ -592,7 +745,6 @@
                 >Read the Beginner Guide</a
               >
             </div>
-            <p>This website was built using the same AI process</p>
           </div>
         </div>
       </div>
@@ -626,6 +778,43 @@
               >The goal is one first client, one first sale, or one first real
               result.</span
             >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container"
+        style="padding-top: 2.5rem; padding-bottom: 2rem"
+      >
+        <div class="choice-band">
+          <h2>Use the Guide to choose faster</h2>
+          <p>
+            The best idea is not always the most exciting one. It is the one you
+            can explain clearly, test quickly, and deliver with the tools you
+            already know or can learn fast.
+          </p>
+          <div class="choice-rules">
+            <div class="choice-rule">
+              <strong>Pick one buyer</strong>
+              <span
+                >Choose a person or business with a specific problem, not a
+                broad audience.</span
+              >
+            </div>
+            <div class="choice-rule">
+              <strong>Build one proof</strong>
+              <span
+                >Create a sample, mini result, before-and-after, checklist, or
+                short demo.</span
+              >
+            </div>
+            <div class="choice-rule">
+              <strong>Sell one offer</strong>
+              <span
+                >Start with a simple fixed package so people understand what
+                they get.</span
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -709,7 +898,7 @@
           >
         </div>
         <div class="footer-col">
-          <h4>Start Here</h4>
+          <h4>Guide</h4>
           <a href="guides/how-to-start-a-business-with-ai.html" target="_blank"
             >Beginner Guide</a
           >
@@ -735,7 +924,11 @@
           <a href="index.html">Home</a>
         </div>
       </div>
-      <div class="footer-bottom"><p>Some guides mention tools we use or recommend. Some links may be affiliate links, but we only include tools that fit the step.</p>
+      <div class="footer-bottom">
+        <p>
+          Some guides mention tools we use or recommend. Some links may be
+          affiliate links, but we only include tools that fit the step.
+        </p>
         <p>© 2026 StartbusinessAI · All rights reserved</p>
         <p>
           Start with one idea, follow one guide, and build your first AI-powered
@@ -1061,8 +1254,38 @@
         if (!isOpen) item.classList.add("open");
       }
 
+      function initEmailPopup() {
+        const popup = document.getElementById("email-popup");
+        const closeBtn = document.getElementById("email-popup-close");
+        const form = document.getElementById("email-popup-form");
+
+        if (!popup || localStorage.getItem("emailPopupClosed") === "true") {
+          return;
+        }
+
+        window.setTimeout(() => {
+          popup.classList.add("show");
+        }, 1200);
+
+        closeBtn.addEventListener("click", () => {
+          popup.classList.remove("show");
+          localStorage.setItem("emailPopupClosed", "true");
+        });
+
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          popup.classList.add("subscribed");
+          form.reset();
+          localStorage.setItem("emailPopupClosed", "true");
+          window.setTimeout(() => {
+            popup.classList.remove("show");
+          }, 1800);
+        });
+      }
+
       renderHomeIdeas();
       renderFAQ();
+      initEmailPopup();
     </script>
   </body>
 </html>

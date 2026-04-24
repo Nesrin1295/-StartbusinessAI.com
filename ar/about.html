@@ -37,11 +37,8 @@
       body {
         font-family: "Cairo", sans-serif;
       }
-      .logo {
-        flex-direction: row-reverse;
-      }      
       .nav-links {
-        flex-direction: row-reverse;
+        flex-direction: row;
       }
       .hero {
         position: relative;
@@ -68,6 +65,7 @@
         );
       }
       .hero-content {
+        text-align: right;
         position: relative;
         z-index: 2;
         width: 100%;
@@ -106,6 +104,7 @@
         border: 1px solid var(--faint);
         border-radius: var(--radius);
         padding: 2.5rem;
+        box-shadow: 0 14px 32px rgba(7, 25, 17, 0.05);
       }
       .about-card h2 {
         font-size: 2rem;
@@ -116,19 +115,56 @@
         line-height: 1.9;
         font-size: 1rem;
       }
+      .founder-note {
+        background: var(--white);
+        border: 1px solid var(--faint);
+        border-radius: var(--radius);
+        padding: 2.5rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.4rem;
+        align-items: start;
+        box-shadow: 0 14px 32px rgba(7, 25, 17, 0.05);
+      }
+      .founder-photo {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 78% 28%;
+        border: 4px solid #f4efe4;
+      }
+      .founder-note h2 {
+        font-family: "Cairo", sans-serif;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+      .founder-note p {
+        color: var(--muted);
+        line-height: 1.9;
+        margin-bottom: 1rem;
+      }
       footer {
         text-align: right;
       }
       @media (max-width: 700px) {
-        .about-card {
+        .about-card,
+        .founder-note {
           padding: 2rem 1.5rem;
+        }
+        .founder-note {
+          grid-template-columns: 1fr;
+        }
+        .founder-photo {
+          width: 76px;
+          height: 76px;
         }
       }
     </style>
   </head>
   <body>
     <nav>
-      <a ideas.html" class="logo" aria-label="الصفحة الرئيسية">
+      <a href="index.html" class="logo" aria-label="الصفحة الرئيسية">
         <img class="logo-icon" src="../assets/logo.svg" alt="StartbusinessAI logo" />
       </a>
       <div class="nav-group">
@@ -156,6 +192,30 @@
     </header>
 
     <main>
+      <section class="container">
+        <div class="founder-note">
+          <img
+            class="founder-photo"
+            src="../assets/nesrin-profile.jpeg"
+            alt="نسرين، مؤسسة StartbusinessAI"
+            width="88"
+            height="88"
+          />
+          <div>
+            <h2>ملاحظة من المؤسسة</h2>
+            <p>
+              اسمي نسرين، وأنا أعمل في مجال أبحاث البيانات وتحليل نمو التسويق.
+              أردت منذ فترة طويلة إنشاء أدلة مجانية تساعد الناس على فهم
+              الذكاء الاصطناعي واستخدامه لتبسيط المهام المعقدة.
+            </p>
+            <p>
+              هذا المشروع استغرق وقتًا طويلًا في التخطيط والبناء، ومع كل دليل
+              جديد كان الهدف أن يكون المحتوى عمليًا وواضحًا ومفيدًا للمبتدئين.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section class="container">
         <div class="about-card">
           <div class="section-label">من نحن</div>
@@ -192,9 +252,8 @@
         </div>
         <div class="footer-col">
           <h4>التنقل</h4>
-          <a ideas.html">الرئيسية</a>
-          <a ideas.html#ideas">الأفكار</a>
-          <a href="../guides/how-to-start-a-business-with-ai.html">الدليل</a>
+          <a href="index.html">الرئيسية</a>
+          <a href="ideas.html#ideas">الأفكار</a>
           <a href="about.html">من نحن</a>
         </div>
       </div>

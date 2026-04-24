@@ -41,11 +41,8 @@
       body {
         font-family: "Cairo", sans-serif;
       }
-      .logo {
-        flex-direction: row-reverse;
-      }      
       .nav-links {
-        flex-direction: row-reverse;
+        flex-direction: row;
       }
       .hero {
         position: relative;
@@ -72,6 +69,7 @@
         );
       }
       .hero-content {
+        text-align: right;
         position: relative;
         z-index: 2;
         width: 100%;
@@ -109,6 +107,7 @@
         margin-bottom: 1.5rem;
       }
       .hero-actions {
+        justify-content: flex-start;
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
@@ -142,6 +141,7 @@
         gap: 1.25rem;
       }
       .idea-card {
+        box-shadow: 0 14px 32px rgba(7, 25, 17, 0.05);
         background: var(--white);
         border: 1px solid var(--faint);
         border-radius: var(--radius);
@@ -165,7 +165,47 @@
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 1.25rem;
       }
+      .guide-choice {
+        background: linear-gradient(135deg, #103121 0%, #1a3d2b 100%);
+        border-radius: 22px;
+        color: white;
+        padding: 2.25rem;
+        position: relative;
+        overflow: hidden;
+      }
+      .guide-choice h2 {
+        color: white;
+        margin-bottom: 0.75rem;
+      }
+      .guide-choice p {
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.95;
+        max-width: 760px;
+      }
+      .guide-choice-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .guide-choice-card {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius);
+        padding: 1rem;
+      }
+      .guide-choice-card strong {
+        display: block;
+        color: white;
+        margin-bottom: 0.4rem;
+      }
+      .guide-choice-card span {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.92rem;
+        line-height: 1.8;
+      }
       .step {
+        box-shadow: 0 14px 32px rgba(7, 25, 17, 0.05);
         background: var(--white);
         border: 1px solid var(--faint);
         border-radius: var(--radius);
@@ -199,12 +239,18 @@
         .seo-card {
           padding: 2rem 1.5rem;
         }
+        .guide-choice {
+          padding: 1.5rem;
+        }
+        .guide-choice-grid {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
   <body>
     <nav>
-      <a ideas.html" class="logo" aria-label="الصفحة الرئيسية">
+      <a href="index.html" class="logo" aria-label="الصفحة الرئيسية">
         <img class="logo-icon" src="../assets/logo.svg" alt="StartbusinessAI logo" />
       </a>
       <div class="nav-group">
@@ -230,7 +276,7 @@
         </p>
         <div class="hero-actions">
           <a href="#ideas" class="btn-primary">شاهد أفكار المشاريع</a>
-          <a href="about.html" class="btn-ghost">اعرف المزيد</a>
+          <a href="../guides/how-to-start-a-business-with-ai.html" class="btn-ghost">اقرأ الدليل</a>
         </div>
       </div>
     </header>
@@ -248,6 +294,31 @@
             المهم ليس أن تتعلم كل الأدوات، بل أن تختار خدمة واحدة وتحسنها من
             خلال التطبيق الفعلي.
           </p>
+        </div>
+      </section>
+
+      <section class="container" style="padding-top: 0">
+        <div class="guide-choice">
+          <div class="section-label">الدليل</div>
+          <h2 class="section-title">اختر الفكرة بطريقة أسهل</h2>
+          <p>
+            لا تحتاج إلى تجربة كل الأفكار في وقت واحد. ابدأ بفكرة واحدة، وحدد
+            من يحتاجها، ثم جهّز نموذجًا بسيطًا يوضح النتيجة قبل أن تحاول البيع.
+          </p>
+          <div class="guide-choice-grid">
+            <div class="guide-choice-card">
+              <strong>حدد العميل</strong>
+              <span>اختر نوع شخص أو شركة لديه مشكلة واضحة يمكن حلها بسرعة.</span>
+            </div>
+            <div class="guide-choice-card">
+              <strong>جهّز إثباتًا</strong>
+              <span>اصنع مثالًا، عينة، قائمة تحقق، أو نتيجة صغيرة يمكن عرضها.</span>
+            </div>
+            <div class="guide-choice-card">
+              <strong>بسّط العرض</strong>
+              <span>قدّم خدمة واحدة بسعر وناتج واضحين حتى يسهل فهمها.</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -329,7 +400,7 @@
         </div>
         <div class="footer-col">
           <h4>التنقل</h4>
-          <a ideas.html">الرئيسية</a>
+          <a href="index.html">الرئيسية</a>
           <a href="#ideas">الأفكار</a>
           <a href="../guides/how-to-start-a-business-with-ai.html">الدليل</a>
           <a href="about.html">من نحن</a>
