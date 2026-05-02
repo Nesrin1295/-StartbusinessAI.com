@@ -56,23 +56,10 @@ nav {
   display: flex;
   align-items: center;
   flex: 0 0 auto;
-}
-
-.logo-icon {
-  width: 200px;
-  height: 44px;
-  display: block;
-  object-fit: contain;
-  flex: 0 0 auto;
-  opacity: 0.82;
-  filter: saturate(0.88) brightness(0.94);
-}
-
-.logo-sub {
-  color: rgba(255, 255, 255, 0.62);
-  font-size: 0.72rem;
-  display: block;
-  margin-top: -4px;
+  color: var(--gold);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 .nav-links {
@@ -359,6 +346,30 @@ footer {
   max-width: 260px;
 }
 
+.footer-social {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.82);
+  transition: color 0.2s ease;
+}
+
+.footer-social a:hover {
+  color: var(--gold);
+}
+
+.footer-social svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 .footer-col h4 {
   color: rgba(255, 255, 255, 0.72);
   font-size: 0.78rem;
@@ -427,11 +438,6 @@ footer {
   nav {
     align-items: flex-start;
     padding: 0.75rem 1rem;
-  }
-
-  .logo-icon {
-    width: 172px;
-    height: 38px;
   }
 
   .nav-links {
