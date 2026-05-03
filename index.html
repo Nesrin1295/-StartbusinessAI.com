@@ -370,28 +370,32 @@
       .home-preview-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1.5rem;
+        gap: 1.15rem;
       }
       .preview-card {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
         background: var(--white);
         border: 1px solid var(--faint);
-        border-radius: 22px;
+        border-radius: 14px;
         overflow: hidden;
+        box-shadow: 0 12px 34px rgba(15, 37, 25, 0.06);
         transition:
-          transform 0.2s,
-          box-shadow 0.2s,
-          border-color 0.2s;
+          transform 0.2s ease,
+          box-shadow 0.2s ease,
+          border-color 0.2s ease;
       }
       .preview-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 16px 34px rgba(10, 26, 18, 0.08);
-        border-color: rgba(26, 61, 43, 0.18);
+        transform: translateY(-4px);
+        box-shadow: 0 18px 42px rgba(15, 37, 25, 0.11);
+        border-color: rgba(26, 61, 43, 0.2);
       }
       .preview-media {
         position: relative;
-        height: 180px;
+        height: 170px;
         overflow: hidden;
+        background: #dfe7df;
       }
       .preview-media img {
         width: 100%;
@@ -404,58 +408,91 @@
         transform: scale(1.04);
       }
       .preview-media::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-          to top,
-          rgba(8, 21, 15, 0.28),
-          rgba(8, 21, 15, 0.02)
-        );
+        content: none;
       }
       .preview-body {
-        padding: 1.25rem 1.35rem 1.35rem;
-      }
-      .preview-top {
         display: flex;
-        align-items: center;
-        gap: 0.8rem;
-        margin-bottom: 0.75rem;
+        flex: 1;
+        flex-direction: column;
+        padding: 1.15rem;
       }
       .preview-kicker {
-        display: inline-flex;
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        display: flex;
         align-items: center;
-        padding: 0.35rem 0.7rem;
+        padding: 0.4rem 0.7rem;
         border-radius: 999px;
-        background: #f4efe4;
+        background: rgba(255, 255, 255, 0.92);
         color: var(--accent);
         font-size: 0.72rem;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
+        font-weight: 800;
       }
       .preview-card h3 {
-        font-size: 1rem;
-        line-height: 1.4;
-        font-weight: 600;
+        color: var(--ink);
+        font-size: 1.08rem;
+        line-height: 1.35;
+        margin-bottom: 0.55rem;
       }
       .preview-card p {
         color: var(--muted);
-        font-size: 0.88rem;
-        line-height: 1.75;
+        font-size: 0.9rem;
+        line-height: 1.7;
         margin-bottom: 1rem;
+      }
+      .preview-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.15rem;
+      }
+      .preview-list li {
+        position: relative;
+        padding-left: 1rem;
+        color: var(--muted);
+        font-size: 0.84rem;
+        line-height: 1.55;
+        margin-bottom: 0.35rem;
+      }
+      .preview-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.6rem;
+        width: 5px;
+        height: 5px;
+        border-radius: 999px;
+        background: var(--gold);
+      }
+      .preview-top {
+        display: contents;
       }
       .preview-meta {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 0.75rem;
-        font-size: 0.8rem;
-        color: var(--muted);
+        gap: 0.8rem;
+        margin-top: auto;
+        padding-top: 1rem;
+        border-top: 1px solid var(--faint);
       }
-      .preview-income {
+      .preview-meta span:first-child {
         color: var(--accent);
-        font-weight: 700;
+        font-size: 0.92rem;
+        font-weight: 900;
+      }
+      .preview-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        padding: 0.65rem 0.9rem;
+        border-radius: 8px;
+        background: var(--accent);
+        color: #fff;
+        font-size: 0.84rem;
+        font-weight: 800;
+        white-space: nowrap;
       }
       .preview-actions {
         display: flex;
@@ -730,12 +767,8 @@
       <div class="nav-group">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="ideas.html">Ideas</a></li>
           <li><a href="guides/online-course-creation-with-ai.html">Courses</a></li>
-          <li><a href="guides/ai-prompt-pack-business.html">Prompt</a></li>
-          <li>
-            <a href="guides/how-to-start-a-business-with-ai.html">Guide</a>
-          </li>
+          <li><a href="ideas.html">Ideas</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="ar/index.html">Arabic</a></li>
         </ul>
@@ -810,9 +843,6 @@
           download
           >Download Prompt Pack</a
         >
-        <a class="prompt-popup-secondary" href="guides/ai-prompt-pack-business.html"
-          >View all prompt packs</a
-        >
       </div>
     </aside>
 
@@ -829,10 +859,9 @@
               Choose your first AI business idea and turn it into a real offer
             </h1>
             <p>
-              Pick one <a href="ideas.html">business idea</a>, follow a
-              <a href="guides/how-to-start-a-business-with-ai.html"
-                >practical guide</a
-              >, and turn AI tools into a clear offer you can launch online.
+              Pick one <a href="ideas.html">business idea</a>, follow simple
+              practical steps, and turn AI tools into a clear offer you can
+              launch online.
             </p>
             <p>
               Follow a simple system: choose the idea, validate the buyer, build
@@ -842,11 +871,7 @@
               <a href="ideas.html" class="btn-primary"
                 >Browse AI Business Ideas</a
               >
-              <a
-                href="guides/how-to-start-a-business-with-ai.html"
-                class="btn-ghost"
-                >Read the Beginner Guide</a
-              >
+              <a href="ideas.html#faq" class="btn-ghost">Read the FAQ</a>
             </div>
           </div>
         </div>
@@ -890,7 +915,7 @@
         style="padding-top: 2.5rem; padding-bottom: 2rem"
       >
         <div class="choice-band">
-          <h2>Use the Guide to choose faster</h2>
+          <h2>Choose your idea faster</h2>
           <p>
             The best idea is not always the most exciting one. It is the one you
             can explain clearly, test quickly, and deliver with the tools you
@@ -926,8 +951,8 @@
         <div class="section-label">Popular Picks</div>
         <div class="section-title">A few strong ideas to start with</div>
         <div class="section-sub">
-          These are practical beginner-friendly ideas you can understand fast
-          and turn into real offers.
+          Friendly, easy step-by-step courses that help you choose one idea and
+          turn it into a real offer.
         </div>
         <div id="home-ideas-grid" class="home-preview-grid"></div>
         <div class="preview-actions">
@@ -1001,11 +1026,10 @@
             </a>
           </div>
         </div>
-                <div class="footer-col"><h4>Business Ideas</h4><a href="guides/ai-content-writing-business.html">AI Content Writing</a><a href="guides/ai-art-business.html">AI Graphic Design</a><a href="guides/ai-dropshipping-store.html">Dropshipping with AI</a><a href="guides/ai-business-consulting.html">AI Consulting</a><a href="guides/online-course-creation-with-ai.html">Online Courses</a></div>
-        <div class="footer-col"><h4>Guide</h4><a href="guides/how-to-start-a-business-with-ai.html">Beginner Guide</a><a href="guides/ai-website-building-business.html">Website Building</a><a href="guides/ai-art-business.html">AI Graphic Design</a><a href="guides/ai-business-consulting.html">AI Consulting</a><a href="ideas.html#faq">FAQ</a></div>
-        <div class="footer-col"><h4>Resources</h4><a href="guides/how-to-start-a-business-with-ai.html">Simple Start Guide</a><a href="index.html#faq">Common Questions</a><a href="ideas.html#ideas">All Business Ideas</a><a href="about.html">About</a><a href="index.html">Home</a></div>
-      </div>
-      <div class="footer-bottom"><p>Some guides mention tools we use or recommend. Some links may be affiliate links, but we only include tools that fit the step.</p><p>© 2026 StartbusinessAI · All rights reserved</p></div></footer>
+                        <div class="footer-col"><h4>Business Ideas</h4><a href="guides/ai-content-writing-business.html">AI Content Writing</a><a href="guides/ai-art-business.html">AI Graphic Design</a><a href="guides/ai-dropshipping-store.html">Dropshipping with AI</a><a href="guides/ai-business-consulting.html">AI Consulting</a><a href="guides/online-course-creation-with-ai.html">Online Courses</a></div>
+        <div class="footer-col"><h4>Guide</h4><a href="guides/ai-website-building-business.html">Website Building</a><a href="guides/ai-art-business.html">AI Graphic Design</a><a href="guides/ai-business-consulting.html">AI Consulting</a><a href="ideas.html#faq">FAQ</a></div>
+        <div class="footer-col"><h4>Resources</h4><a href="index.html#faq">Common Questions</a><a href="ideas.html#ideas">All Business Ideas</a><a href="about.html">About</a><a href="index.html">Home</a></div>
+      </div><div class="footer-bottom"><p>Some guides mention tools we use or recommend. Some links may be affiliate links, but we only include tools that fit the step.</p><p>© 2026 StartbusinessAI · All rights reserved</p></div></footer>
 
     <script>
       const ideas = [
@@ -1242,16 +1266,6 @@
           url: "guides/ai-review-mining-service.html",
         },
         {
-          icon: "🧾",
-          name: "AI Prompt Pack Business",
-          desc: "Sell niche prompt bundles as digital products",
-          startup: "$0",
-          income: "$500–$10k/mo",
-          diff: "easy",
-          tag: "easy",
-          url: "guides/ai-prompt-pack-business.html",
-        },
-        {
           icon: "🧰",
           name: "Freelance AI Services",
           desc: "Use AI to deliver copy, design, and editing work faster",
@@ -1280,22 +1294,59 @@
 
       function renderHomeIdeas() {
         const featuredIdeas = ideas.filter((i) => i.tag === "easy").slice(0, 6);
+        const cardPoints = {
+          "AI Content Writing Service": [
+            "Choose one content niche",
+            "Create sample posts or emails",
+            "Sell a simple writing package",
+          ],
+          "AI Graphic Design Business": [
+            "Pick one design style",
+            "Build a sample collection",
+            "Package brand or product visuals",
+          ],
+          "Social Media Management with AI": [
+            "Plan content pillars",
+            "Batch captions and calendars",
+            "Offer monthly management",
+          ],
+          "AI Podcast Editing Service": [
+            "Clean and enhance episodes",
+            "Create transcripts and show notes",
+            "Sell recurring edit packages",
+          ],
+          "AI Digital Products and Ebooks": [
+            "Pick one buyer problem",
+            "Build a guide or template",
+            "Launch a simple product page",
+          ],
+          "AI Print-on-Demand Business": [
+            "Create a design collection",
+            "Write product listings",
+            "Test one niche store idea",
+          ],
+        };
         document.getElementById("home-ideas-grid").innerHTML = featuredIdeas
           .map(
             (i) => `
     <a class="preview-card" href="${i.url}" target="_blank" rel="noopener" aria-label="Open guide: ${i.name}">
       <div class="preview-media">
         <img src="${i.image}" alt="${i.name}" width="420" height="180" loading="lazy" />
+        <span class="preview-kicker">${i.diff}</span>
       </div>
       <div class="preview-body">
         <div class="preview-top">
-          <span class="preview-kicker">${i.diff}</span>
           <h3>${i.name}</h3>
         </div>
         <p>${i.desc}</p>
+        <ul class="preview-list">
+          ${(cardPoints[i.name] || ["Choose one niche", "Build one sample", "Sell one starter offer"])
+            .map((point) => `<li>${point}</li>`)
+            .join("")}
+        </ul>
         <div class="preview-meta">
           <span>${i.startup} to start</span>
-          <span class="preview-income">${i.income}</span>
+          <span class="preview-cta">Learn more</span>
         </div>
       </div>
     </a>`,

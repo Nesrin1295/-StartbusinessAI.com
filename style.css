@@ -178,6 +178,316 @@ section {
   letter-spacing: 0.06em;
 }
 
+.course-detail-page .guide-hero {
+  display: none;
+}
+
+.course-detail-stage {
+  background:
+    radial-gradient(circle at 85% 0%, rgba(200, 164, 90, 0.16), transparent 34%),
+    linear-gradient(135deg, #0c1f14 0%, #183a29 100%);
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.course-detail-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.course-detail-top {
+  max-width: 780px;
+  margin-bottom: 1.65rem;
+}
+
+.course-detail-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.42rem 0.78rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.11);
+  color: #f1d58e;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.95rem;
+}
+
+.course-detail-top h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.08;
+  margin-bottom: 0.85rem;
+}
+
+.course-detail-top p {
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.8;
+  max-width: 680px;
+}
+
+.course-watch-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.8fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.course-video-box {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  background: #08150f;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.24);
+}
+
+.course-video-placeholder {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(200, 164, 90, 0.28), transparent 42%),
+    linear-gradient(155deg, #10291b, #07120d);
+}
+
+.course-video-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 10%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+.course-play {
+  position: relative;
+  z-index: 1;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  padding-left: 0.18rem;
+}
+
+.course-video-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.88rem;
+}
+
+.course-video-caption strong {
+  color: #fff;
+}
+
+.course-download-pack {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.course-download-pack span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.course-download-pack a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0.62rem 0.85rem;
+  border-radius: 8px;
+  background: #f1d58e;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.course-panel {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.course-panel-head {
+  padding: 1.15rem 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.course-panel-head h2 {
+  font-size: 1rem;
+  line-height: 1.35;
+  margin-bottom: 0.35rem;
+}
+
+.course-panel-head p {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+.lesson-dropdown {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.lesson-dropdown:last-child {
+  border-bottom: none;
+}
+
+.lesson-dropdown summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 1.2rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.lesson-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.lesson-dropdown summary::after {
+  content: "+";
+  float: right;
+  color: #f1d58e;
+  font-weight: 900;
+}
+
+.lesson-dropdown[open] summary::after {
+  content: "-";
+}
+
+.lesson-dropdown > div {
+  padding: 0 1.2rem 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.lesson-dropdown ul,
+.lesson-dropdown ol {
+  margin: 0.55rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.lesson-dropdown h2,
+.lesson-dropdown h3,
+.lesson-dropdown h4 {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  margin: 1rem 0 0.45rem;
+}
+
+.lesson-dropdown p,
+.lesson-dropdown li,
+.lesson-dropdown td {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.lesson-dropdown p,
+.lesson-dropdown ul,
+.lesson-dropdown ol,
+.lesson-dropdown table {
+  margin-bottom: 0.8rem;
+}
+
+.lesson-dropdown .lead {
+  color: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 1rem;
+}
+
+.lesson-dropdown .start-box,
+.lesson-dropdown .path-box,
+.lesson-dropdown .tip-box,
+.lesson-dropdown .tool-card,
+.lesson-dropdown .quick-card {
+  background: rgba(255, 255, 255, 0.13);
+  border-color: rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.lesson-dropdown .tip-box {
+  border-left-color: #f1d58e;
+}
+
+.lesson-dropdown .tip-box strong,
+.lesson-dropdown .quick-card strong,
+.lesson-dropdown .tool-name,
+.lesson-dropdown .tool-price,
+.lesson-dropdown strong {
+  color: #f1d58e;
+}
+
+.lesson-dropdown .quick-card span,
+.lesson-dropdown .tool-desc,
+.lesson-dropdown .tip-box p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.lesson-dropdown .tool-grid,
+.lesson-dropdown .quick-grid {
+  grid-template-columns: 1fr;
+}
+
+.lesson-dropdown .income-table {
+  display: block;
+  overflow-x: auto;
+}
+
+.lesson-dropdown .income-table th {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.lesson-dropdown .income-table td {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.course-detail-page .guide-layout.is-modularized {
+  display: none;
+}
+
+.course-detail-page .container > .back-link {
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .course-watch-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .course-detail-stage {
+    padding: 3rem 0;
+  }
+}
+
 .difficulty {
   font-size: 0.72rem;
   padding: 3px 10px;
