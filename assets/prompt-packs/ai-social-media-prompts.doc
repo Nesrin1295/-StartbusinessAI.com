@@ -1,0 +1,13 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>ai-social-media-prompts</title>
+<style>
+body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: #111; }
+h1 { font-size: 18pt; }
+</style>
+</head>
+<body>
+<p>StartbusinessAI Prompt Pack: AI Social Media Management<br><br>1. Account Audit<br>Act as a social media strategist. Audit this business: [business details]. Identify audience, content gaps, quick wins, and 10 post ideas.<br><br>2. Content Pillars<br>Create 5 content pillars for [business] targeting [audience]. Explain the purpose of each pillar and give 8 post ideas per pillar.<br><br>3. Monthly Calendar<br>Build a 30-day social media calendar for [platform] for [business]. Include hook, post type, caption angle, CTA, and visual idea.<br><br>4. Caption Generator<br>Write 10 captions for [topic] in a tone that is [tone]. Include hooks, line breaks, and a soft CTA.<br><br>5. Reel Ideas<br>Create 15 short-form video ideas for [business] that can be filmed simply with a phone.<br><br>6. Carousel Outline<br>Create a 7-slide carousel about [topic]. Include slide titles, short copy, and a final CTA.<br><br>7. Brand Voice<br>Define a social media voice guide for [business]. Include words to use, words to avoid, tone examples, and caption rules.<br><br>8. Local Business Posts<br>Create 20 post ideas for a local [business type] that builds trust and brings in inquiries.<br><br>9. Reporting Summary<br>Turn these metrics into a simple client report with wins, concerns, next actions, and recommendations: [paste metrics].<br><br>10. Client Onboarding<br>Create an onboarding questionnaire for a social media management client.<br><br>11. Offer Package<br>Package a beginner social media management service for [niche]. Include deliverables, price range, and timeline.<br><br>12. Outreach<br>Write 5 outreach messages to offer a social media content audit to [buyer type].<br></p>
+</body>
+</html>

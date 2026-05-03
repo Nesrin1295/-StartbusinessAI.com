@@ -1,0 +1,37 @@
+StartbusinessAI Prompt Pack: Digital Products and Ebooks
+
+1. Product Ideas
+Generate 20 digital product ideas for [audience] who struggle with [problem].
+
+2. Buyer Pain
+Map the biggest pains, desired outcomes, and objections for [audience].
+
+3. Product Validation
+Create a validation plan for a digital product about [topic].
+
+4. Ebook Outline
+Create a practical ebook outline for [topic] with chapters and exercises.
+
+5. Template Idea
+Suggest 10 templates that would help [audience] save time.
+
+6. Product Name
+Create 20 product names for [digital product].
+
+7. Sales Page
+Write a sales page for [product] with headline, benefits, what's included, FAQ, and CTA.
+
+8. Gumroad Description
+Write a Gumroad product description for [product].
+
+9. Bonus Ideas
+Suggest 10 bonuses that increase the value of [product].
+
+10. Launch Plan
+Create a 7-day simple launch plan for [product].
+
+11. Customer Onboarding
+Write a usage guide for buyers of [product].
+
+12. Improvement Plan
+Create a plan to improve [product] after the first 10 buyers.

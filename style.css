@@ -349,6 +349,7 @@ footer {
 .footer-social {
   display: flex;
   align-items: center;
+  gap: 0.65rem;
   margin-top: 1rem;
 }
 
@@ -356,6 +357,8 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 18px;
+  height: 18px;
   color: rgba(255, 255, 255, 0.82);
   transition: color 0.2s ease;
 }
@@ -481,5 +484,148 @@ footer {
 
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Shared typography scale. These rules normalize page-level inline styles. */
+:root {
+  --type-micro: 0.72rem;
+  --type-xs: 0.78rem;
+  --type-sm: 0.85rem;
+  --type-body: 0.95rem;
+  --type-lead: 1.05rem;
+  --type-card-title: 1.05rem;
+  --type-small-heading: 1.2rem;
+  --type-section-heading: 1.5rem;
+  --type-page-heading: clamp(2rem, 5vw, 3.4rem);
+  --type-guide-heading: clamp(1.7rem, 4vw, 2.7rem);
+}
+
+body {
+  font-size: 16px;
+}
+
+.logo {
+  font-size: 1.25rem !important;
+}
+
+.nav-links a {
+  font-size: var(--type-sm) !important;
+}
+
+.section-label,
+.hero-tag,
+.guide-tag,
+.prompt-kicker,
+.article-tag {
+  font-size: var(--type-micro) !important;
+}
+
+.hero h1,
+.about-hero h1,
+[dir="rtl"] .hero h1,
+.prompt-hero h1 {
+  font-size: var(--type-page-heading) !important;
+}
+
+.guide-hero-content h1 {
+  font-size: var(--type-guide-heading) !important;
+}
+
+.section-title,
+.choice-band h2,
+.about-copy h2,
+.about-card h2,
+.ideas-header h2,
+.prompt-header h2,
+.bundle-inner h2 {
+  font-size: clamp(1.8rem, 3vw, 2.3rem) !important;
+}
+
+.guide-body h2,
+.faq-header h2,
+.start-box h2,
+.path-box h2 {
+  font-size: var(--type-section-heading) !important;
+}
+
+.guide-body h3,
+.about-copy h3,
+.about-aside h3,
+.preview-card h3,
+.idea-card h3,
+.prompt-card h3,
+.sidebar-card h4,
+.quick-card strong,
+.tool-name,
+.sidebar-stat .value {
+  font-size: var(--type-card-title) !important;
+}
+
+.hero p,
+.about-hero p,
+.guide-body .lead,
+.prompt-hero p,
+.section-sub,
+[dir="rtl"] .hero p {
+  font-size: var(--type-lead) !important;
+}
+
+.guide-body p,
+.guide-body li,
+.about-copy p,
+.about-copy li,
+.about-card p,
+.founder-copy p,
+.founder-note p,
+.prompt-header p,
+.prompt-card p,
+.strip-item span,
+.bundle-inner p,
+.choice-band p,
+.choice-rule span,
+.preview-card p,
+.idea-card p,
+.faq-a {
+  font-size: var(--type-body) !important;
+}
+
+.guide-read-time,
+.back-link,
+.sidebar-stat,
+.sidebar-links li,
+.tool-desc,
+.quick-card span,
+.prompt-list li,
+.download-btn,
+.guide-link,
+.path-box .path-links a,
+.cta-btn,
+.footer-brand p,
+.footer-col a {
+  font-size: var(--type-sm) !important;
+}
+
+.footer-col h4,
+.footer-bottom p,
+.prompt-count,
+.tool-price {
+  font-size: var(--type-xs) !important;
+}
+
+@media (max-width: 700px) {
+  .nav-links a {
+    font-size: var(--type-xs) !important;
+  }
+
+  .hero h1,
+  .about-hero h1,
+  [dir="rtl"] .hero h1,
+  .prompt-hero h1 {
+    font-size: clamp(2rem, 10vw, 2.8rem) !important;
+  }
+
+  .guide-hero-content h1 {
+    font-size: clamp(1.6rem, 8vw, 2.2rem) !important;
   }
 }

@@ -1,0 +1,37 @@
+StartbusinessAI Prompt Pack: AI Social Media Management
+
+1. Account Audit
+Act as a social media strategist. Audit this business: [business details]. Identify audience, content gaps, quick wins, and 10 post ideas.
+
+2. Content Pillars
+Create 5 content pillars for [business] targeting [audience]. Explain the purpose of each pillar and give 8 post ideas per pillar.
+
+3. Monthly Calendar
+Build a 30-day social media calendar for [platform] for [business]. Include hook, post type, caption angle, CTA, and visual idea.
+
+4. Caption Generator
+Write 10 captions for [topic] in a tone that is [tone]. Include hooks, line breaks, and a soft CTA.
+
+5. Reel Ideas
+Create 15 short-form video ideas for [business] that can be filmed simply with a phone.
+
+6. Carousel Outline
+Create a 7-slide carousel about [topic]. Include slide titles, short copy, and a final CTA.
+
+7. Brand Voice
+Define a social media voice guide for [business]. Include words to use, words to avoid, tone examples, and caption rules.
+
+8. Local Business Posts
+Create 20 post ideas for a local [business type] that builds trust and brings in inquiries.
+
+9. Reporting Summary
+Turn these metrics into a simple client report with wins, concerns, next actions, and recommendations: [paste metrics].
+
+10. Client Onboarding
+Create an onboarding questionnaire for a social media management client.
+
+11. Offer Package
+Package a beginner social media management service for [niche]. Include deliverables, price range, and timeline.
+
+12. Outreach
+Write 5 outreach messages to offer a social media content audit to [buyer type].

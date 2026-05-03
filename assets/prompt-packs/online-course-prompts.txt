@@ -1,0 +1,37 @@
+StartbusinessAI Prompt Pack: Online Course Creation
+
+1. Course Idea
+Generate 10 course ideas for [audience] who want [result]. Include promise, modules, and difficulty.
+
+2. Student Persona
+Create a student persona for a course about [topic].
+
+3. Curriculum
+Build a 6-module curriculum for [course topic]. Include lessons, outcomes, exercises, and assignments.
+
+4. Lesson Script
+Write a lesson script for [lesson topic] with examples and action steps.
+
+5. Worksheet
+Create a worksheet for students learning [topic].
+
+6. Course Promise
+Rewrite this course promise to be clear and specific: [promise].
+
+7. Sales Page
+Write a sales page for [course] targeting [audience].
+
+8. Launch Emails
+Create a 5-email launch sequence for [course].
+
+9. Webinar Outline
+Create a webinar outline that sells [course] without feeling pushy.
+
+10. Pricing
+Suggest pricing tiers for [course] and what to include in each tier.
+
+11. Feedback Survey
+Create a student feedback survey for improving the course.
+
+12. Content Repurpose
+Turn this course module into 10 social posts and 3 email ideas: [module].

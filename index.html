@@ -613,6 +613,76 @@
         display: block;
       }
 
+      .prompt-popup {
+        position: fixed;
+        left: 1.25rem;
+        bottom: 1.25rem;
+        z-index: 190;
+        width: min(360px, calc(100vw - 2rem));
+        background: var(--white);
+        border: 1px solid var(--faint);
+        border-radius: 18px;
+        box-shadow: 0 24px 60px rgba(8, 21, 15, 0.18);
+        padding: 1.25rem;
+        display: none;
+      }
+      .prompt-popup.show {
+        display: block;
+      }
+      .prompt-popup-close {
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+        width: 32px;
+        height: 32px;
+        border: 1px solid var(--faint);
+        border-radius: 50%;
+        background: #f8fbf8;
+        color: var(--accent);
+        font-size: 1.1rem;
+        line-height: 1;
+        cursor: pointer;
+      }
+      .prompt-popup-label {
+        display: inline-block;
+        background: #e8f5ee;
+        color: var(--accent);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border-radius: 999px;
+        padding: 0.3rem 0.65rem;
+        margin-bottom: 0.85rem;
+      }
+      .prompt-popup h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.35rem;
+        line-height: 1.25;
+        padding-right: 2rem;
+        margin-bottom: 0.45rem;
+      }
+      .prompt-popup p {
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+      }
+      .prompt-popup-actions {
+        display: grid;
+        gap: 0.65rem;
+      }
+      .prompt-popup .btn-primary {
+        width: 100%;
+        text-align: center;
+      }
+      .prompt-popup-secondary {
+        color: var(--accent);
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 700;
+      }
+
       @media (max-width: 700px) {
         .choice-rules,
         .home-preview-grid,
@@ -641,6 +711,10 @@
         .email-popup {
           right: 1rem;
           bottom: 1rem;
+        }
+        .prompt-popup {
+          left: 1rem;
+          bottom: 12.5rem;
         }
       }
       @media (max-width: 1399px) {
@@ -706,6 +780,39 @@
       </small>
       <div class="email-popup-success" id="email-popup-success">
         Thank you. You are on the list for new ideas.
+      </div>
+    </aside>
+
+    <aside
+      class="prompt-popup"
+      id="prompt-popup"
+      aria-labelledby="prompt-popup-title"
+      aria-live="polite"
+    >
+      <button
+        class="prompt-popup-close"
+        type="button"
+        id="prompt-popup-close"
+        aria-label="Close prompt download popup"
+      >
+        ×
+      </button>
+      <span class="prompt-popup-label">Free download</span>
+      <h2 id="prompt-popup-title">Get a free AI prompt pack</h2>
+      <p>
+        Download the AI Content Writing prompt pack as a Word file and use it
+        to create your first sample, offer, or client workflow.
+      </p>
+      <div class="prompt-popup-actions">
+        <a
+          class="btn-primary"
+          href="assets/prompt-packs/ai-content-writing-prompts.doc"
+          download
+          >Download Prompt Pack</a
+        >
+        <a class="prompt-popup-secondary" href="guides/ai-prompt-pack-business.html"
+          >View all prompt packs</a
+        >
       </div>
     </aside>
 
@@ -870,10 +977,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">StartbusinessAI</div>
-          <p>
-            Beginner-friendly guides for choosing one AI business idea and
-            getting your first result online.
-          </p>
+          <p>Start with one idea, follow one guide, and build your first AI-powered online business step by step.</p>
           <div class="footer-social" aria-label="Social links">
             <a
               href="https://www.linkedin.com/company/startbusinessai/?viewAsMember=true"
@@ -885,65 +989,23 @@
                 <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.02H3.54V9H7.1v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z" />
               </svg>
             </a>
+            <a
+              href="https://x.com/StartBusinessAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="StartbusinessAI on X"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M18.9 2h3.3l-7.2 8.25L23.5 22h-6.65l-5.2-6.8L5.7 22H2.4l7.7-8.8L2 2h6.82l4.7 6.22L18.9 2Zm-1.15 17.93h1.83L7.82 3.96H5.86l11.89 15.97Z" />
+              </svg>
+            </a>
           </div>
         </div>
-        <div class="footer-col">
-          <h4>Business Ideas</h4>
-          <a href="guides/ai-content-writing-business.html" target="_blank"
-            >AI Content Writing</a
-          >
-          <a href="guides/ai-art-business.html" target="_blank"
-            >AI Graphic Design</a
-          >
-          <a href="guides/ai-dropshipping-store.html" target="_blank"
-            >Dropshipping with AI</a
-          >
-          <a href="guides/ai-business-consulting.html" target="_blank"
-            >AI Consulting</a
-          >
-          <a href="guides/online-course-creation-with-ai.html" target="_blank"
-            >Online Courses</a
-          >
-        </div>
-        <div class="footer-col">
-          <h4>Guide</h4>
-          <a href="guides/how-to-start-a-business-with-ai.html" target="_blank"
-            >Beginner Guide</a
-          >
-          <a href="guides/ai-website-building-business.html" target="_blank"
-            >Website Building</a
-          >
-          <a href="guides/ai-art-business.html" target="_blank"
-            >AI Graphic Design</a
-          >
-          <a href="guides/ai-business-consulting.html" target="_blank"
-            >AI Consulting</a
-          >
-          <a href="#faq">FAQ</a>
-        </div>
-        <div class="footer-col">
-          <h4>Resources</h4>
-          <a href="guides/how-to-start-a-business-with-ai.html"
-            >Simple Start Guide</a
-          >
-          <a href="#faq">Common Questions</a>
-          <a href="ideas.html">All Business Ideas</a>
-          <a href="about.html">About</a>
-          <a href="index.html">Home</a>
-        </div>
+                <div class="footer-col"><h4>Business Ideas</h4><a href="guides/ai-content-writing-business.html">AI Content Writing</a><a href="guides/ai-art-business.html">AI Graphic Design</a><a href="guides/ai-dropshipping-store.html">Dropshipping with AI</a><a href="guides/ai-business-consulting.html">AI Consulting</a><a href="guides/online-course-creation-with-ai.html">Online Courses</a></div>
+        <div class="footer-col"><h4>Guide</h4><a href="guides/how-to-start-a-business-with-ai.html">Beginner Guide</a><a href="guides/ai-website-building-business.html">Website Building</a><a href="guides/ai-art-business.html">AI Graphic Design</a><a href="guides/ai-business-consulting.html">AI Consulting</a><a href="ideas.html#faq">FAQ</a></div>
+        <div class="footer-col"><h4>Resources</h4><a href="guides/how-to-start-a-business-with-ai.html">Simple Start Guide</a><a href="index.html#faq">Common Questions</a><a href="ideas.html#ideas">All Business Ideas</a><a href="about.html">About</a><a href="index.html">Home</a></div>
       </div>
-      <div class="footer-bottom">
-        <p>
-          Some guides mention tools we use or recommend. Some links may be
-          affiliate links, but we only include tools that fit the step.
-        </p>
-        <p>© 2026 StartbusinessAI · All rights reserved</p>
-        <p>
-          Start with one idea, follow one guide, and build your first AI-powered
-          online business step by step.
-        </p>
-      </div>
-    </footer>
+      <div class="footer-bottom"><p>Some guides mention tools we use or recommend. Some links may be affiliate links, but we only include tools that fit the step.</p><p>© 2026 StartbusinessAI · All rights reserved</p></div></footer>
 
     <script>
       const ideas = [
@@ -1291,8 +1353,35 @@
         });
       }
 
+      function initPromptPopup() {
+        const popup = document.getElementById("prompt-popup");
+        const closeBtn = document.getElementById("prompt-popup-close");
+        const downloadBtn = popup?.querySelector(".btn-primary");
+
+        if (!popup || localStorage.getItem("promptPopupClosed") === "true") {
+          return;
+        }
+
+        window.setTimeout(() => {
+          popup.classList.add("show");
+        }, 1000);
+
+        closeBtn.addEventListener("click", () => {
+          popup.classList.remove("show");
+          localStorage.setItem("promptPopupClosed", "true");
+        });
+
+        downloadBtn?.addEventListener("click", () => {
+          localStorage.setItem("promptPopupClosed", "true");
+          window.setTimeout(() => {
+            popup.classList.remove("show");
+          }, 350);
+        });
+      }
+
       renderHomeIdeas();
       renderFAQ();
+      initPromptPopup();
       initEmailPopup();
     </script>
   </body>

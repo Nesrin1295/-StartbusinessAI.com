@@ -1,0 +1,39 @@
+StartbusinessAI Prompt Pack: AI Content Writing
+
+Use these prompts with ChatGPT, Claude, or another AI writing tool. Replace bracketed text with your niche, buyer, and offer.
+
+1. Niche Positioning
+Act as a content strategist. I want to offer AI-assisted content writing for [buyer type] in [niche]. Suggest 5 narrow service packages, the pain each solves, and a simple deliverable for each.
+
+2. Client Research
+Research the likely content problems for [buyer type]. List their goals, objections, audience, common offers, and topics they need to explain repeatedly.
+
+3. Content Pillars
+Create 5 content pillars for [buyer type] that help them attract [target customer]. For each pillar, give 10 post ideas and 3 blog ideas.
+
+4. Blog Outline
+Create an SEO-friendly outline for an article titled "[topic]" for [audience]. Include search intent, H2 sections, examples, and a clear call to action.
+
+5. First Draft
+Write a clear, useful first draft for this outline: [paste outline]. Use a helpful expert tone, avoid hype, and include practical examples.
+
+6. Editing Pass
+Edit this draft for clarity, structure, accuracy, and conversion. Keep the voice simple and professional: [paste draft].
+
+7. Social Repurpose
+Turn this article into 10 LinkedIn posts, 5 short captions, and 3 email newsletter ideas: [paste article].
+
+8. Sample Pack
+Create a sample content pack for [niche] that includes 3 posts, 1 blog intro, 1 email, and a short explanation of the strategy.
+
+9. Monthly Retainer
+Design a monthly content writing package for [buyer type]. Include deliverables, workflow, pricing tiers, revision rules, and client onboarding questions.
+
+10. Outreach Message
+Write 5 short outreach messages offering a content sample to [buyer type]. Make them specific, polite, and low pressure.
+
+11. Content Calendar
+Create a 30-day content calendar for [business] selling [offer]. Include post topic, format, hook, and CTA.
+
+12. Quality Checklist
+Create a checklist I can use before delivering AI-assisted content to a client.

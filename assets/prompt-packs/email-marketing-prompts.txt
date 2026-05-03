@@ -1,0 +1,37 @@
+StartbusinessAI Prompt Pack: AI Email Marketing
+
+1. Audience Map
+Map the email audience for [business]. Include segments, pains, goals, and buying triggers.
+
+2. Lead Magnet
+Suggest 10 lead magnet ideas for [business].
+
+3. Welcome Sequence
+Write a 5-email welcome sequence for [offer].
+
+4. Promo Campaign
+Create a 4-email promotion campaign for [product/service].
+
+5. Newsletter Ideas
+Create 20 newsletter topics for [business].
+
+6. Subject Lines
+Write 20 subject lines for an email about [topic].
+
+7. Segmentation
+Suggest useful email segments for [business] and what to send each one.
+
+8. Abandoned Cart
+Write an abandoned cart sequence for [product].
+
+9. Re-Engagement
+Write a re-engagement email for inactive subscribers.
+
+10. Client Audit
+Audit this email for clarity and conversion: [paste email].
+
+11. Monthly Package
+Create an email marketing service package for [niche].
+
+12. Outreach
+Write 5 outreach messages offering an email sequence audit.

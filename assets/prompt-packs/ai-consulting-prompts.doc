@@ -1,0 +1,13 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>ai-consulting-prompts</title>
+<style>
+body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: #111; }
+h1 { font-size: 18pt; }
+</style>
+</head>
+<body>
+<p>StartbusinessAI Prompt Pack: AI Consulting<br><br>1. Business Audit<br>Act as an AI consultant. Audit [business type] for repetitive tasks, bottlenecks, and AI automation opportunities.<br><br>2. Opportunity Map<br>Create a table of AI opportunities for [business]. Include task, tool, time saved, risk, and difficulty.<br><br>3. Discovery Questions<br>Create discovery call questions for a small business AI consulting client.<br><br>4. Quick Win<br>Suggest 5 AI quick wins for [business type] that can be implemented in under one week.<br><br>5. Workflow Redesign<br>Redesign this workflow using AI tools: [describe workflow].<br><br>6. Tool Recommendation<br>Recommend simple AI tools for [business need]. Include free options and when to upgrade.<br><br>7. Proposal<br>Write a consulting proposal for [client] to solve [problem] using AI.<br><br>8. Training Plan<br>Create a 90-minute AI training session for [team type].<br><br>9. SOP Builder<br>Turn this process into a simple SOP with AI support: [paste process].<br><br>10. ROI Explanation<br>Explain the business case for this AI improvement in simple terms: [improvement].<br><br>11. Monthly Retainer<br>Design a monthly AI support retainer for [business type].<br><br>12. Outreach<br>Write 5 outreach messages offering an AI workflow audit.<br></p>
+</body>
+</html>

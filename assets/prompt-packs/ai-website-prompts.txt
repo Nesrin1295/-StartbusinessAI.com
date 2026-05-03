@@ -1,0 +1,37 @@
+StartbusinessAI Prompt Pack: AI Website Building
+
+1. Website Brief
+Create a website brief for [business]. Include audience, goals, pages, sections, proof points, and CTA.
+
+2. Page Structure
+Plan a simple 5-page website for [business type]. Include each page's goal and section order.
+
+3. Homepage Copy
+Write homepage copy for [business] targeting [audience]. Include hero, value props, services, proof, FAQ, and CTA.
+
+4. Landing Page
+Create a landing page for [offer]. Include headline, pain points, benefits, process, testimonials, FAQ, and CTA.
+
+5. Service Page
+Write a service page for [service] aimed at [customer]. Keep it clear, practical, and conversion-focused.
+
+6. SEO Starter
+Suggest SEO title tags, meta descriptions, H1s, and URL slugs for each page of this website: [pages].
+
+7. Intake Form
+Create a client intake form for a small business website project.
+
+8. Visual Direction
+Suggest visual direction for [business], including colors, typography feel, image style, and layout tone.
+
+9. Website Audit
+Audit this website copy or page structure: [paste details]. Identify clarity issues and conversion improvements.
+
+10. Delivery Checklist
+Create a website project delivery checklist from kickoff to handoff.
+
+11. Maintenance Offer
+Create a monthly website maintenance offer for [business type].
+
+12. Outreach
+Write 5 outreach messages offering a simple website improvement audit.

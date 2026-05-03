@@ -1,0 +1,37 @@
+StartbusinessAI Prompt Pack: Freelance AI Services
+
+1. Skill Match
+Based on my skills [skills], suggest 10 AI-assisted freelance services I can sell.
+
+2. Offer Builder
+Create a simple freelance offer for [service] aimed at [buyer].
+
+3. Portfolio Sample
+Create 5 portfolio sample ideas for [service].
+
+4. Service Page
+Write service page copy for [freelance offer].
+
+5. Pricing
+Suggest starter, standard, and premium pricing for [service].
+
+6. Client Intake
+Create an intake form for [service].
+
+7. Delivery Checklist
+Create a delivery checklist for [service].
+
+8. Proposal
+Write a proposal for a client who needs [result].
+
+9. Upwork Profile
+Write an Upwork profile summary for [service].
+
+10. Fiverr Gig
+Write a Fiverr gig title, description, FAQs, and package structure for [service].
+
+11. Outreach
+Write 10 short outreach messages to [buyer type].
+
+12. Follow Up
+Write 5 polite follow-up messages after no response.

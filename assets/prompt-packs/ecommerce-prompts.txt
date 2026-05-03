@@ -1,0 +1,37 @@
+StartbusinessAI Prompt Pack: Dropshipping and Ecommerce
+
+1. Product Research
+Suggest product angles for [niche] and rank by urgency, margin, and ad potential.
+
+2. Customer Persona
+Create a buyer persona for [product].
+
+3. Product Page
+Write product page copy for [product] targeting [buyer].
+
+4. Benefit Rewrite
+Turn these features into customer benefits: [features].
+
+5. Ad Angles
+Create 20 ad angles for [product].
+
+6. Video Script
+Write a short video ad script for [product].
+
+7. Email Sequence
+Create a 5-email welcome or abandoned cart sequence for [product].
+
+8. FAQ
+Write product FAQs that reduce buyer hesitation.
+
+9. Review Mining
+Analyze these reviews and extract buyer language, pains, and benefits: [reviews].
+
+10. Bundle Ideas
+Suggest bundle offers for [product].
+
+11. Store Audit
+Audit this store page for conversion issues: [paste page].
+
+12. Offer Test
+Create 5 offer tests for [product], including hook, discount, and CTA.

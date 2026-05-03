@@ -1,0 +1,13 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>email-marketing-prompts</title>
+<style>
+body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: #111; }
+h1 { font-size: 18pt; }
+</style>
+</head>
+<body>
+<p>StartbusinessAI Prompt Pack: AI Email Marketing<br><br>1. Audience Map<br>Map the email audience for [business]. Include segments, pains, goals, and buying triggers.<br><br>2. Lead Magnet<br>Suggest 10 lead magnet ideas for [business].<br><br>3. Welcome Sequence<br>Write a 5-email welcome sequence for [offer].<br><br>4. Promo Campaign<br>Create a 4-email promotion campaign for [product/service].<br><br>5. Newsletter Ideas<br>Create 20 newsletter topics for [business].<br><br>6. Subject Lines<br>Write 20 subject lines for an email about [topic].<br><br>7. Segmentation<br>Suggest useful email segments for [business] and what to send each one.<br><br>8. Abandoned Cart<br>Write an abandoned cart sequence for [product].<br><br>9. Re-Engagement<br>Write a re-engagement email for inactive subscribers.<br><br>10. Client Audit<br>Audit this email for clarity and conversion: [paste email].<br><br>11. Monthly Package<br>Create an email marketing service package for [niche].<br><br>12. Outreach<br>Write 5 outreach messages offering an email sequence audit.<br></p>
+</body>
+</html>

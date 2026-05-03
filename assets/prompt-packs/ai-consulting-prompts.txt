@@ -1,0 +1,37 @@
+StartbusinessAI Prompt Pack: AI Consulting
+
+1. Business Audit
+Act as an AI consultant. Audit [business type] for repetitive tasks, bottlenecks, and AI automation opportunities.
+
+2. Opportunity Map
+Create a table of AI opportunities for [business]. Include task, tool, time saved, risk, and difficulty.
+
+3. Discovery Questions
+Create discovery call questions for a small business AI consulting client.
+
+4. Quick Win
+Suggest 5 AI quick wins for [business type] that can be implemented in under one week.
+
+5. Workflow Redesign
+Redesign this workflow using AI tools: [describe workflow].
+
+6. Tool Recommendation
+Recommend simple AI tools for [business need]. Include free options and when to upgrade.
+
+7. Proposal
+Write a consulting proposal for [client] to solve [problem] using AI.
+
+8. Training Plan
+Create a 90-minute AI training session for [team type].
+
+9. SOP Builder
+Turn this process into a simple SOP with AI support: [paste process].
+
+10. ROI Explanation
+Explain the business case for this AI improvement in simple terms: [improvement].
+
+11. Monthly Retainer
+Design a monthly AI support retainer for [business type].
+
+12. Outreach
+Write 5 outreach messages offering an AI workflow audit.

@@ -1,0 +1,13 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>freelance-ai-prompts</title>
+<style>
+body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: #111; }
+h1 { font-size: 18pt; }
+</style>
+</head>
+<body>
+<p>StartbusinessAI Prompt Pack: Freelance AI Services<br><br>1. Skill Match<br>Based on my skills [skills], suggest 10 AI-assisted freelance services I can sell.<br><br>2. Offer Builder<br>Create a simple freelance offer for [service] aimed at [buyer].<br><br>3. Portfolio Sample<br>Create 5 portfolio sample ideas for [service].<br><br>4. Service Page<br>Write service page copy for [freelance offer].<br><br>5. Pricing<br>Suggest starter, standard, and premium pricing for [service].<br><br>6. Client Intake<br>Create an intake form for [service].<br><br>7. Delivery Checklist<br>Create a delivery checklist for [service].<br><br>8. Proposal<br>Write a proposal for a client who needs [result].<br><br>9. Upwork Profile<br>Write an Upwork profile summary for [service].<br><br>10. Fiverr Gig<br>Write a Fiverr gig title, description, FAQs, and package structure for [service].<br><br>11. Outreach<br>Write 10 short outreach messages to [buyer type].<br><br>12. Follow Up<br>Write 5 polite follow-up messages after no response.<br></p>
+</body>
+</html>

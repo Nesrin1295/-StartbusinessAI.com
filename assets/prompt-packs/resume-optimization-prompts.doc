@@ -1,0 +1,13 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>resume-optimization-prompts</title>
+<style>
+body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: #111; }
+h1 { font-size: 18pt; }
+</style>
+</head>
+<body>
+<p>StartbusinessAI Prompt Pack: Resume Optimization<br><br>1. Resume Audit<br>Audit this resume for clarity, relevance, measurable impact, and ATS fit: [paste resume].<br><br>2. Job Match<br>Compare this resume to this job description and identify gaps: [resume and job].<br><br>3. Bullet Rewrite<br>Rewrite these resume bullets with stronger action verbs and measurable impact: [bullets].<br><br>4. LinkedIn Headline<br>Write 10 LinkedIn headline options for [role/person].<br><br>5. LinkedIn About<br>Write a clear LinkedIn About section for [person] targeting [role].<br><br>6. Cover Letter<br>Write a tailored cover letter for [job] using this background: [details].<br><br>7. ATS Keywords<br>Extract important ATS keywords from this job description: [job description].<br><br>8. Interview Prep<br>Create interview prep questions and answer angles for [role].<br><br>9. Career Positioning<br>Help position this candidate for [target role]: [background].<br><br>10. Client Intake<br>Create an intake form for a resume optimization client.<br><br>11. Service Package<br>Package resume, LinkedIn, and cover letter services into 3 tiers.<br><br>12. Outreach<br>Write 5 outreach messages offering a resume audit to job seekers.<br></p>
+</body>
+</html>

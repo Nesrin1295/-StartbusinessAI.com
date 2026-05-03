@@ -1,0 +1,37 @@
+StartbusinessAI Prompt Pack: AI Art and Graphic Design
+
+1. Creative Brief
+Create a design brief for [client/business] needing [asset type].
+
+2. Image Prompt
+Write 10 image generation prompts for [visual goal] in [style].
+
+3. Brand Kit
+Suggest brand colors, typography direction, image style, and layout rules for [business].
+
+4. Social Graphic
+Create copy and visual direction for a social media graphic about [topic].
+
+5. Etsy Product
+Suggest 10 printable product ideas for [audience].
+
+6. Mockup Copy
+Write product listing copy for [design product].
+
+7. Client Package
+Package an AI-assisted design service for [niche].
+
+8. Revision Prompt
+Improve this design direction based on client feedback: [feedback].
+
+9. Prompt Variations
+Create 10 variations of this image prompt: [prompt].
+
+10. Portfolio Sample
+Create 5 portfolio sample ideas for an AI design service.
+
+11. Usage Guide
+Write a usage guide for a buyer downloading [design product].
+
+12. Outreach
+Write 5 outreach messages offering a design sample to [business type].

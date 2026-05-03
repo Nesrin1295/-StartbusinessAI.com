@@ -1,0 +1,13 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>online-course-prompts</title>
+<style>
+body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: #111; }
+h1 { font-size: 18pt; }
+</style>
+</head>
+<body>
+<p>StartbusinessAI Prompt Pack: Online Course Creation<br><br>1. Course Idea<br>Generate 10 course ideas for [audience] who want [result]. Include promise, modules, and difficulty.<br><br>2. Student Persona<br>Create a student persona for a course about [topic].<br><br>3. Curriculum<br>Build a 6-module curriculum for [course topic]. Include lessons, outcomes, exercises, and assignments.<br><br>4. Lesson Script<br>Write a lesson script for [lesson topic] with examples and action steps.<br><br>5. Worksheet<br>Create a worksheet for students learning [topic].<br><br>6. Course Promise<br>Rewrite this course promise to be clear and specific: [promise].<br><br>7. Sales Page<br>Write a sales page for [course] targeting [audience].<br><br>8. Launch Emails<br>Create a 5-email launch sequence for [course].<br><br>9. Webinar Outline<br>Create a webinar outline that sells [course] without feeling pushy.<br><br>10. Pricing<br>Suggest pricing tiers for [course] and what to include in each tier.<br><br>11. Feedback Survey<br>Create a student feedback survey for improving the course.<br><br>12. Content Repurpose<br>Turn this course module into 10 social posts and 3 email ideas: [module].<br></p>
+</body>
+</html>

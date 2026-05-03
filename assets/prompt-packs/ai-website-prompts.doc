@@ -1,0 +1,13 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>ai-website-prompts</title>
+<style>
+body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: #111; }
+h1 { font-size: 18pt; }
+</style>
+</head>
+<body>
+<p>StartbusinessAI Prompt Pack: AI Website Building<br><br>1. Website Brief<br>Create a website brief for [business]. Include audience, goals, pages, sections, proof points, and CTA.<br><br>2. Page Structure<br>Plan a simple 5-page website for [business type]. Include each page&#39;s goal and section order.<br><br>3. Homepage Copy<br>Write homepage copy for [business] targeting [audience]. Include hero, value props, services, proof, FAQ, and CTA.<br><br>4. Landing Page<br>Create a landing page for [offer]. Include headline, pain points, benefits, process, testimonials, FAQ, and CTA.<br><br>5. Service Page<br>Write a service page for [service] aimed at [customer]. Keep it clear, practical, and conversion-focused.<br><br>6. SEO Starter<br>Suggest SEO title tags, meta descriptions, H1s, and URL slugs for each page of this website: [pages].<br><br>7. Intake Form<br>Create a client intake form for a small business website project.<br><br>8. Visual Direction<br>Suggest visual direction for [business], including colors, typography feel, image style, and layout tone.<br><br>9. Website Audit<br>Audit this website copy or page structure: [paste details]. Identify clarity issues and conversion improvements.<br><br>10. Delivery Checklist<br>Create a website project delivery checklist from kickoff to handoff.<br><br>11. Maintenance Offer<br>Create a monthly website maintenance offer for [business type].<br><br>12. Outreach<br>Write 5 outreach messages offering a simple website improvement audit.<br></p>
+</body>
+</html>

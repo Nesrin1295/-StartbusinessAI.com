@@ -1,0 +1,37 @@
+StartbusinessAI Prompt Pack: AI Chatbot Service
+
+1. Bot Use Case
+Identify 5 chatbot use cases for [business type]. Rank them by value, simplicity, and buyer urgency.
+
+2. FAQ Builder
+Create a chatbot FAQ knowledge base for [business] using these services/products: [details].
+
+3. Lead Qualification
+Write a chatbot flow that qualifies leads for [offer]. Include questions, answer branches, and handoff rules.
+
+4. Instagram DM Flow
+Create an Instagram DM automation flow for [business] to answer common questions and collect leads.
+
+5. WhatsApp Flow
+Create a WhatsApp inquiry flow for [business]. Include greeting, menu, FAQ, booking, and human handoff.
+
+6. Bot Tone
+Write response style rules for a chatbot representing [brand].
+
+7. Demo Script
+Create a demo chatbot script I can show to a potential client in [niche].
+
+8. Client Intake
+Create an intake questionnaire for a chatbot setup client.
+
+9. Error Handling
+Write fallback responses for a chatbot when it does not understand the customer.
+
+10. Optimization Plan
+Create a 30-day chatbot optimization plan after launch.
+
+11. Pricing Package
+Package chatbot setup into starter, growth, and monthly support offers.
+
+12. Outreach
+Write 5 messages offering a missed-lead chatbot audit to [business type].

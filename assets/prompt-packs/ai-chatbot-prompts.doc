@@ -1,0 +1,13 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>ai-chatbot-prompts</title>
+<style>
+body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: #111; }
+h1 { font-size: 18pt; }
+</style>
+</head>
+<body>
+<p>StartbusinessAI Prompt Pack: AI Chatbot Service<br><br>1. Bot Use Case<br>Identify 5 chatbot use cases for [business type]. Rank them by value, simplicity, and buyer urgency.<br><br>2. FAQ Builder<br>Create a chatbot FAQ knowledge base for [business] using these services/products: [details].<br><br>3. Lead Qualification<br>Write a chatbot flow that qualifies leads for [offer]. Include questions, answer branches, and handoff rules.<br><br>4. Instagram DM Flow<br>Create an Instagram DM automation flow for [business] to answer common questions and collect leads.<br><br>5. WhatsApp Flow<br>Create a WhatsApp inquiry flow for [business]. Include greeting, menu, FAQ, booking, and human handoff.<br><br>6. Bot Tone<br>Write response style rules for a chatbot representing [brand].<br><br>7. Demo Script<br>Create a demo chatbot script I can show to a potential client in [niche].<br><br>8. Client Intake<br>Create an intake questionnaire for a chatbot setup client.<br><br>9. Error Handling<br>Write fallback responses for a chatbot when it does not understand the customer.<br><br>10. Optimization Plan<br>Create a 30-day chatbot optimization plan after launch.<br><br>11. Pricing Package<br>Package chatbot setup into starter, growth, and monthly support offers.<br><br>12. Outreach<br>Write 5 messages offering a missed-lead chatbot audit to [business type].<br></p>
+</body>
+</html>
