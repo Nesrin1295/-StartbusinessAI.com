@@ -7,10 +7,13 @@
 :root {
   --ink: #111;
   --muted: #555;
-  --faint: #e8e4dc;
+  --faint: #eadfde;
   --accent: #1a3d2b;
-  --gold: #c8a45a;
-  --bg: #f9f6f0;
+  --gold: #f1d58e;
+  --rose: #c9788f;
+  --rose-soft: #fff1f4;
+  --rose-wash: #fff8f9;
+  --bg: #fffdfb;
   --white: #fff;
   --radius: 10px;
   --shadow: 0 14px 34px rgba(17, 24, 20, 0.08);
@@ -56,10 +59,14 @@ nav {
   display: flex;
   align-items: center;
   flex: 0 0 auto;
-  color: var(--gold);
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0;
+  width: min(260px, 48vw);
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: 52px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -111,7 +118,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--gold);
+  color: var(--accent);
   margin-bottom: 0.5rem;
 }
 
@@ -167,7 +174,7 @@ section {
 
 .article-tag {
   display: inline-block;
-  background: #e8f5ee;
+  background: var(--rose-soft);
   color: var(--accent);
   font-size: 0.7rem;
   font-weight: 700;
@@ -184,7 +191,7 @@ section {
 
 .course-detail-stage {
   background:
-    radial-gradient(circle at 85% 0%, rgba(200, 164, 90, 0.16), transparent 34%),
+    radial-gradient(circle at 85% 0%, rgba(201, 120, 143, 0.2), transparent 34%),
     linear-gradient(135deg, #0c1f14 0%, #183a29 100%);
   color: #fff;
   padding: 4rem 0;
@@ -251,7 +258,7 @@ section {
   justify-content: center;
   overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(200, 164, 90, 0.28), transparent 42%),
+    linear-gradient(135deg, rgba(201, 120, 143, 0.28), transparent 42%),
     linear-gradient(155deg, #10291b, #07120d);
 }
 
@@ -496,7 +503,7 @@ section {
 }
 
 .diff-easy {
-  background: #e8f5ee;
+  background: var(--rose-soft);
   color: #1a6b3a;
 }
 
@@ -546,7 +553,7 @@ section {
 }
 
 .path-box {
-  background: #f8fbf8;
+  background: linear-gradient(135deg, var(--rose-wash) 0%, #f8fbf8 100%);
   border: 1px solid var(--faint);
   border-radius: var(--radius);
   padding: 1.35rem 1.45rem;
@@ -615,7 +622,7 @@ section {
 .quick-card:hover,
 .tool-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(200, 164, 90, 0.5);
+  border-color: rgba(201, 120, 143, 0.5);
   box-shadow: var(--shadow);
 }
 
@@ -643,10 +650,14 @@ footer {
 }
 
 .footer-brand .footer-logo {
-  font-family: "Playfair Display", serif;
-  font-size: 1.3rem;
-  color: var(--gold);
+  width: min(220px, 64vw);
   margin-bottom: 0.75rem;
+}
+
+.footer-brand .footer-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .footer-brand p {
