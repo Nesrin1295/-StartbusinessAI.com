@@ -9,7 +9,7 @@
   --muted: #555;
   --faint: #eadfde;
   --accent: #1a3d2b;
-  --gold: #f1d58e;
+  --gold: #a8f0c8;
   --rose: #c9788f;
   --rose-soft: #fff1f4;
   --rose-wash: #fff8f9;
@@ -137,6 +137,10 @@ section {
   margin-bottom: 2.5rem;
 }
 
+.hero-accent {
+  color: var(--gold);
+}
+
 .btn-primary,
 .btn-ghost {
   border-radius: 8px;
@@ -214,7 +218,7 @@ section {
   padding: 0.42rem 0.78rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.11);
-  color: #f1d58e;
+  color: var(--gold);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -323,7 +327,7 @@ section {
   min-height: 38px;
   padding: 0.62rem 0.85rem;
   border-radius: 8px;
-  background: #f1d58e;
+  background: var(--gold);
   color: var(--accent);
   font-size: 0.82rem;
   font-weight: 900;
@@ -381,7 +385,7 @@ section {
 .lesson-dropdown summary::after {
   content: "+";
   float: right;
-  color: #f1d58e;
+  color: var(--gold);
   font-weight: 900;
 }
 
@@ -442,7 +446,7 @@ section {
 }
 
 .lesson-dropdown .tip-box {
-  border-left-color: #f1d58e;
+  border-left-color: var(--gold);
 }
 
 .lesson-dropdown .tip-box strong,
@@ -450,7 +454,7 @@ section {
 .lesson-dropdown .tool-name,
 .lesson-dropdown .tool-price,
 .lesson-dropdown strong {
-  color: #f1d58e;
+  color: var(--gold);
 }
 
 .lesson-dropdown .quick-card span,
@@ -637,11 +641,43 @@ section {
 }
 
 footer {
-  background: #0d1f14;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(201, 120, 143, 0.28), transparent 34%),
+    radial-gradient(circle at 84% 8%, rgba(168, 240, 200, 0.16), transparent 28%),
+    linear-gradient(135deg, #0d1f14 0%, #173724 58%, #08170f 100%);
   padding: 3rem 2rem 2rem;
 }
 
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 42px 42px;
+  opacity: 0.35;
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  top: -70px;
+  right: 8%;
+  width: min(520px, 70vw);
+  height: 180px;
+  pointer-events: none;
+  background: rgba(201, 120, 143, 0.24);
+  border-radius: 999px;
+  filter: blur(70px);
+}
+
 .footer-grid {
+  position: relative;
+  z-index: 1;
   max-width: 1100px;
   margin: 0 auto 2rem;
   display: grid;
@@ -716,6 +752,8 @@ footer {
 }
 
 .footer-bottom {
+  position: relative;
+  z-index: 1;
   max-width: 1100px;
   margin: 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.08);

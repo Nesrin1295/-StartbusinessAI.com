@@ -27,7 +27,7 @@
     />
     <meta
       property="og:image"
-      content="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80"
+      content="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,6 +44,10 @@
       .nav-links {
         flex-direction: row;
       }
+      .section-label {
+        letter-spacing: 0;
+        text-transform: none;
+      }
       .hero {
         position: relative;
         min-height: 520px;
@@ -54,7 +58,7 @@
       .hero-bg {
         position: absolute;
         inset: 0;
-        background-image: url("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1400&q=80");
+        background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=80");
         background-size: cover;
         background-position: center;
         filter: brightness(0.28);
@@ -138,15 +142,47 @@
       }
       .ideas-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1.25rem;
       }
       .idea-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        overflow: hidden;
         box-shadow: 0 14px 32px rgba(7, 25, 17, 0.05);
         background: linear-gradient(180deg, var(--white) 0%, var(--rose-wash) 100%);
         border: 1px solid var(--faint);
         border-radius: var(--radius);
-        padding: 1.5rem;
+        padding: 0;
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+      }
+      .idea-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(26, 61, 43, 0.2);
+        box-shadow: 0 18px 42px rgba(15, 37, 25, 0.11);
+      }
+      .idea-media {
+        position: relative;
+        height: 170px;
+        overflow: hidden;
+        background: #dfe7df;
+      }
+      .idea-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.35s ease;
+      }
+      .idea-card:hover .idea-media img {
+        transform: scale(1.04);
+      }
+      .idea-body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 1.2rem;
       }
       .idea-card h3 {
         font-size: 1.1rem;
@@ -157,9 +193,32 @@
         color: var(--muted);
         line-height: 1.8;
         font-size: 0.95rem;
+        margin-bottom: 1rem;
       }
       .idea-tag {
+        align-self: flex-start;
         margin-bottom: 0.85rem;
+      }
+      .idea-list {
+        list-style: none;
+        margin: auto 0 0;
+      }
+      .idea-list li {
+        position: relative;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.7;
+        padding-right: 1rem;
+      }
+      .idea-list li::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0.72rem;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--accent);
       }
       .steps {
         display: grid;
@@ -231,11 +290,28 @@
         color: var(--muted);
         line-height: 1.8;
       }
+      @media (max-width: 900px) {
+        .ideas-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
       @media (max-width: 700px) {
+        .hero {
+          min-height: 430px;
+        }
+        .hero-content {
+          padding: 3.25rem 1.1rem;
+        }
         .intro-card,
         .proof-card,
         .seo-card {
           padding: 2rem 1.5rem;
+        }
+        .ideas-grid {
+          grid-template-columns: 1fr;
+        }
+        .idea-media {
+          height: 200px;
         }
         .guide-choice {
           padding: 1.5rem;
@@ -253,7 +329,7 @@
         <ul class="nav-links">
           <li><a href="index.html">الرئيسية</a></li>
           <li><a href="ideas.html">الأفكار</a></li>
-          <li><a href="../guides/online-course-creation-with-ai.html">الدورات</a></li>
+          <li><a href="guides/online-course-creation-with-ai.html">الدورات</a></li>
           <li><a href="about.html">من نحن</a></li>
           <li><a href="../index.html">الإنجليزية</a></li>
         </ul>
@@ -265,10 +341,10 @@
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div class="hero-tag">صفحة عربية للنساء في 2026</div>
-        <h1>ابدئي مشروعًا بالذكاء الاصطناعي بخطوات بسيطة وواضحة</h1>
+        <h1>ابدئي مشروعًا <span class="hero-accent">بالذكاء الاصطناعي</span> بخطوات بسيطة وواضحة</h1>
         <p>
           إذا كنتِ في البداية ولا تعرفين من أين تبدئين، فهذه الصفحة تساعدك على
-          اختيار فكرة مناسبة، فهم الطريقة، والبدء في التنفيذ بثقة ودون تعقيد.
+          اختيار فكرة مناسبة، فهم الطريقة، والبدء في التنفيذ بثقة ومن دون تعقيد.
         </p>
         <div class="hero-actions">
           <a href="#ideas" class="btn-primary">شاهدي أفكار المشاريع</a>
@@ -282,11 +358,11 @@
           <div class="section-label">الفكرة</div>
           <h2 class="section-title">ما نوع مشروع الذكاء الاصطناعي الذي يمكن للمرأة أن تبدأه؟</h2>
           <p>
-            أفضل المشاريع للنساء في البداية تكون بسيطة، واضحة، وقابلة للتنفيذ
+            أفضل المشاريع للمبتدئات تكون بسيطة، واضحة، وقابلة للتنفيذ
             من المنزل بدون فريق كبير أو ميزانية عالية. من الأمثلة المناسبة:
             كتابة المحتوى بالذكاء الاصطناعي، تحسين السيرة الذاتية، الطباعة عند
             الطلب، التسويق بالبريد، أو بيع منتجات رقمية مثل القوالب والأدلة.
-            المهم ليس أن تتعلمي كل الأدوات، بل أن تختاري خدمة واحدة وتحسنيها من
+            المهم ليس أن تتعلمي كل الأدوات دفعة واحدة، بل أن تختاري خدمة واحدة وتحسنيها من
             خلال التطبيق الفعلي.
           </p>
         </div>
@@ -325,26 +401,96 @@
           بخطوة.
         </p>
         <div class="ideas-grid">
-          <article class="idea-card">
-            <div class="idea-tag">خدمة بسيطة</div>
-            <h3>كتابة محتوى بالذكاء الاصطناعي</h3>
-            <p>اكتب مقالات ومنشورات ورسائل تسويقية للشركات باستخدام أدوات مثل ChatGPT.</p>
-          </article>
-          <article class="idea-card">
-            <div class="idea-tag">طلب واضح</div>
-            <h3>إدارة السوشيال ميديا</h3>
-            <p>أنشئ أفكار المحتوى وخطط النشر والتعليقات بسرعة أكبر مع الذكاء الاصطناعي.</p>
-          </article>
-          <article class="idea-card">
-            <div class="idea-tag">مقابل جيد</div>
-            <h3>بناء مواقع بسيطة</h3>
-            <p>قدّمي مواقع تعريفية للشركات الصغيرة باستخدام أدوات إنشاء المواقع المعززة بالذكاء الاصطناعي.</p>
-          </article>
-          <article class="idea-card">
-            <div class="idea-tag">منتج رقمي</div>
-            <h3>بيع قوالب وأدلة رقمية</h3>
-            <p>حوّل خبرة بسيطة أو طريقة عملية إلى ملف PDF أو قالب جاهز للبيع.</p>
-          </article>
+          <a class="idea-card" href="guides/guide.html?idea=ai-beginner-guide-no-experience">
+            <div class="idea-media">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&q=80" alt="دليل الذكاء الاصطناعي للمبتدئين" width="420" height="180" loading="lazy" />
+            </div>
+            <div class="idea-body">
+              <div class="idea-tag">ابدئي من الصفر</div>
+              <h3>دليل الذكاء الاصطناعي للمبتدئين</h3>
+              <p>افهمي الأساسيات، الأدوات، وطريقة كتابة الطلبات قبل اختيار فكرة مشروع.</p>
+              <ul class="idea-list">
+                <li>تعلمي الأدوات الأولى</li>
+                <li>اكتبي طلبات أوضح</li>
+                <li>اختاري مسارًا مناسبًا</li>
+              </ul>
+            </div>
+          </a>
+          <a class="idea-card" href="guides/guide.html?idea=ai-content-writing-business">
+            <div class="idea-media">
+              <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&q=80" alt="كتابة المحتوى بالذكاء الاصطناعي" width="420" height="180" loading="lazy" />
+            </div>
+            <div class="idea-body">
+              <div class="idea-tag">خدمة بسيطة</div>
+              <h3>كتابة محتوى بالذكاء الاصطناعي</h3>
+              <p>اكتبي مقالات ومنشورات ورسائل تسويقية للشركات باستخدام أدوات مثل ChatGPT.</p>
+              <ul class="idea-list">
+                <li>اختاري مجالًا واحدًا</li>
+                <li>جهزي نماذج كتابة</li>
+                <li>قدمي عرضًا واضحًا</li>
+              </ul>
+            </div>
+          </a>
+          <a class="idea-card" href="guides/guide.html?idea=ai-art-business">
+            <div class="idea-media">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=900&q=80" alt="التصميم بالذكاء الاصطناعي" width="420" height="180" loading="lazy" />
+            </div>
+            <div class="idea-body">
+              <div class="idea-tag">تصميم</div>
+              <h3>التصميم بالذكاء الاصطناعي</h3>
+              <p>أنشئي شعارات، صور منتجات، أو مجموعات هوية بسيطة باستخدام أدوات التصميم والذكاء الاصطناعي.</p>
+              <ul class="idea-list">
+                <li>اختاري أسلوبًا بصريًا</li>
+                <li>ابني مجموعة عينات</li>
+                <li>قدمي حزمة جاهزة</li>
+              </ul>
+            </div>
+          </a>
+          <a class="idea-card" href="guides/guide.html?idea=ai-social-media-management">
+            <div class="idea-media">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80" alt="إدارة السوشيال ميديا بالذكاء الاصطناعي" width="420" height="180" loading="lazy" />
+            </div>
+            <div class="idea-body">
+              <div class="idea-tag">طلب واضح</div>
+              <h3>إدارة السوشيال ميديا</h3>
+              <p>أنشئي أفكار المحتوى وخطط النشر والتعليقات بسرعة أكبر مع الذكاء الاصطناعي.</p>
+              <ul class="idea-list">
+                <li>حددي نوع الحسابات</li>
+                <li>حضري تقويم محتوى</li>
+                <li>اعرضي باقة شهرية</li>
+              </ul>
+            </div>
+          </a>
+          <a class="idea-card" href="guides/guide.html?idea=ai-podcast-editing-service">
+            <div class="idea-media">
+              <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=900&q=80" alt="تحرير البودكاست بالذكاء الاصطناعي" width="420" height="180" loading="lazy" />
+            </div>
+            <div class="idea-body">
+              <div class="idea-tag">خدمة محتوى</div>
+              <h3>تحرير البودكاست بالذكاء الاصطناعي</h3>
+              <p>ساعدي صناع المحتوى في التفريغ، التلخيص، القص، وتجهيز مواد النشر.</p>
+              <ul class="idea-list">
+                <li>جهزي عينة قبل وبعد</li>
+                <li>استخدمي أدوات تفريغ</li>
+                <li>بيعي حزمة حلقة واحدة</li>
+              </ul>
+            </div>
+          </a>
+          <a class="idea-card" href="guides/guide.html?idea=ai-digital-products-guides-ebooks">
+            <div class="idea-media">
+              <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=900&q=80" alt="المنتجات الرقمية بالذكاء الاصطناعي" width="420" height="180" loading="lazy" />
+            </div>
+            <div class="idea-body">
+              <div class="idea-tag">منتج رقمي</div>
+              <h3>بيع قوالب وأدلة رقمية</h3>
+              <p>حوّلي خبرة بسيطة أو طريقة عملية إلى ملف PDF أو قالب جاهز للبيع.</p>
+              <ul class="idea-list">
+                <li>اختاري مشكلة صغيرة</li>
+                <li>اصنعي قالبًا مفيدًا</li>
+                <li>اكتبي صفحة بيع بسيطة</li>
+              </ul>
+            </div>
+          </a>
         </div>
       </section>
 
@@ -359,13 +505,13 @@
           </div>
           <div class="step">
             <strong>2</strong>
-            <h3>استخدم الذكاء الاصطناعي في التنفيذ</h3>
-            <p>استخدم الأدوات لتسريع الكتابة، البحث، التنظيم، أو التسليم وليس لاستبدال التفكير بالكامل.</p>
+            <h3>استخدمي الذكاء الاصطناعي في التنفيذ</h3>
+            <p>استخدمي الأدوات لتسريع الكتابة، البحث، التنظيم، أو التسليم وليس لاستبدال التفكير بالكامل.</p>
           </div>
           <div class="step">
             <strong>3</strong>
-            <h3>احصل على أول نتيجة</h3>
-            <p>ركّز على أول عميل أو أول بيع أو أول نموذج عمل حقيقي، ثم حسّن العرض من هناك.</p>
+            <h3>احصلي على أول نتيجة</h3>
+            <p>ركّزي على أول عميل أو أول بيع أو أول نموذج عمل حقيقي، ثم حسّني العرض من هناك.</p>
           </div>
         </div>
       </section>
@@ -417,18 +563,18 @@
         </div>
         <div class="footer-col">
           <h4>أفكار الأعمال</h4>
-          <a href="../guides/ai-content-writing-business.html">كتابة المحتوى بالذكاء الاصطناعي</a>
-          <a href="../guides/ai-art-business.html">التصميم بالذكاء الاصطناعي</a>
-          <a href="../guides/ai-dropshipping-store.html">دروبشيبينغ بالذكاء الاصطناعي</a>
-          <a href="../guides/ai-business-consulting.html">استشارات الذكاء الاصطناعي</a>
-          <a href="../guides/online-course-creation-with-ai.html">الدورات الإلكترونية</a>
+          <a href="guides/guide.html?idea=ai-content-writing-business">كتابة المحتوى بالذكاء الاصطناعي</a>
+          <a href="guides/guide.html?idea=ai-art-business">التصميم بالذكاء الاصطناعي</a>
+          <a href="guides/guide.html?idea=ai-dropshipping-store">دروبشيبينغ بالذكاء الاصطناعي</a>
+          <a href="guides/guide.html?idea=ai-business-consulting">استشارات الذكاء الاصطناعي</a>
+          <a href="guides/online-course-creation-with-ai.html">الدورات الإلكترونية</a>
         </div>
         <div class="footer-col">
           <h4>الدليل</h4>
-          <a href="../guides/ai-website-building-business.html">بناء المواقع</a>
-          <a href="../guides/ai-art-business.html">التصميم بالذكاء الاصطناعي</a>
-          <a href="../guides/ai-business-consulting.html">استشارات الذكاء الاصطناعي</a>
-          <a href="../guides/online-course-creation-with-ai.html">الدورات الإلكترونية</a>
+          <a href="guides/guide.html?idea=ai-website-building-business">بناء المواقع</a>
+          <a href="guides/guide.html?idea=ai-art-business">التصميم بالذكاء الاصطناعي</a>
+          <a href="guides/guide.html?idea=ai-business-consulting">استشارات الذكاء الاصطناعي</a>
+          <a href="guides/online-course-creation-with-ai.html">الدورات الإلكترونية</a>
         </div>
         <div class="footer-col">
           <h4>الموارد</h4>

@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta name="google-adsense-account" content="ca-pub-8157298524106158" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8157298524106158"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دليل مشروع بالذكاء الاصطناعي | StartbusinessAI</title>
+    <meta
+      name="description"
+      content="دليل عربي مبسط لاختيار وبناء مشروع إلكتروني مدعوم بالذكاء الاصطناعي خطوة بخطوة."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.startbusinessai.online/ar/guides/guide.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="دليل مشروع بالذكاء الاصطناعي | StartbusinessAI" />
+    <meta
+      property="og:description"
+      content="شرح عربي عملي لفكرة مشروع AI، الأدوات، الخطوات، وأول عرض يمكن اختباره."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <style>
+      body {
+        font-family: "Cairo", sans-serif;
+      }
+      .nav-links {
+        flex-direction: row;
+      }
+      .section-label,
+      .guide-tag,
+      .article-tag {
+        letter-spacing: 0;
+        text-transform: none;
+      }
+      .arabic-guide-hero {
+        position: relative;
+        min-height: 410px;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        background: #0d1f14;
+      }
+      .arabic-guide-hero img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.34);
+      }
+      .arabic-guide-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(135deg, rgba(13, 31, 20, 0.92), rgba(13, 31, 20, 0.64)),
+          radial-gradient(circle at 15% 12%, rgba(168, 240, 200, 0.25), transparent 30%);
+      }
+      .arabic-guide-hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 4.5rem 1.5rem 3.5rem;
+      }
+      .guide-meta {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+      }
+      .guide-tag,
+      .guide-read-time {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.42rem 0.8rem;
+        border-radius: 999px;
+        font-size: 0.76rem;
+        font-weight: 800;
+      }
+      .guide-tag {
+        background: var(--gold);
+        color: var(--accent);
+      }
+      .guide-read-time {
+        color: rgba(255, 255, 255, 0.82);
+        background: rgba(255, 255, 255, 0.12);
+      }
+      .arabic-guide-hero h1 {
+        max-width: 820px;
+        color: #fff;
+        font-size: clamp(2rem, 5vw, 3.35rem);
+        line-height: 1.22;
+        margin-bottom: 1rem;
+      }
+      .arabic-guide-hero p {
+        max-width: 720px;
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.9;
+      }
+      .guide-layout {
+        padding: 3rem 0 5rem;
+      }
+      .guide-body {
+        background: var(--white);
+        border: 1px solid var(--faint);
+        border-radius: var(--radius);
+        padding: 2.2rem;
+        box-shadow: 0 12px 32px rgba(17, 24, 20, 0.05);
+      }
+      .lead {
+        color: var(--muted);
+        line-height: 1.9;
+        font-size: 1.05rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--faint);
+        margin-bottom: 1.5rem;
+      }
+      .guide-body h2,
+      .guide-body h3 {
+        color: var(--ink);
+        margin: 1.6rem 0 0.75rem;
+      }
+      .guide-body p,
+      .guide-body li {
+        color: var(--muted);
+        line-height: 1.9;
+      }
+      .quick-grid,
+      .tool-grid,
+      .package-grid,
+      .prompt-grid,
+      .mistake-grid,
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.85rem;
+        margin: 1rem 0 1.4rem;
+      }
+      .quick-card,
+      .tool-card,
+      .package-card,
+      .prompt-card,
+      .mistake-card,
+      .faq-card,
+      .tip-box,
+      .path-box {
+        background: linear-gradient(135deg, var(--rose-wash) 0%, #f8fbf8 100%);
+        border: 1px solid var(--faint);
+        border-radius: var(--radius);
+        padding: 1rem;
+      }
+      .quick-card strong,
+      .tool-card strong,
+      .package-card strong,
+      .prompt-card strong,
+      .mistake-card strong,
+      .faq-card strong,
+      .tip-box strong {
+        display: block;
+        color: var(--accent);
+        margin-bottom: 0.35rem;
+      }
+      .package-card span {
+        display: block;
+        color: var(--ink);
+        font-weight: 800;
+        margin-top: 0.55rem;
+      }
+      .week-plan {
+        display: grid;
+        gap: 0.65rem;
+        padding: 0;
+        margin: 1rem 0 1.4rem;
+        list-style: none;
+      }
+      .week-plan li {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 0.85rem;
+        align-items: start;
+        padding: 0.9rem 1rem;
+        border: 1px solid var(--faint);
+        border-radius: 10px;
+        background: #fff;
+      }
+      .week-plan strong {
+        color: var(--accent);
+      }
+      .prompt-card code {
+        display: block;
+        white-space: pre-wrap;
+        direction: rtl;
+        color: var(--ink);
+        font-family: "Cairo", sans-serif;
+        line-height: 1.8;
+      }
+      .steps-list {
+        list-style: none;
+        counter-reset: guide-step;
+        padding: 0;
+        margin: 1rem 0 1.4rem;
+      }
+      .steps-list li {
+        position: relative;
+        padding: 1rem 3rem 1rem 0;
+        border-bottom: 1px solid var(--faint);
+      }
+      .steps-list li::before {
+        counter-increment: guide-step;
+        content: counter(guide-step);
+        position: absolute;
+        right: 0;
+        top: 1rem;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--accent);
+        color: white;
+        font-weight: 800;
+      }
+      .path-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-top: 1rem;
+      }
+      .path-links a,
+      .cta-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--accent);
+        color: #fff;
+        border-radius: 8px;
+        padding: 0.7rem 0.95rem;
+        font-weight: 800;
+      }
+      @media (max-width: 760px) {
+        .guide-body {
+          padding: 1.45rem;
+        }
+        .quick-grid,
+        .tool-grid,
+        .package-grid,
+        .prompt-grid,
+        .mistake-grid,
+        .faq-grid {
+          grid-template-columns: 1fr;
+        }
+        .week-plan li {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html" class="logo" aria-label="الصفحة الرئيسية"><img src="../../assets/header-logo.svg" alt="StartBusinessAI" width="260" height="65" /></a>
+      <div class="nav-group">
+        <ul class="nav-links">
+          <li><a href="../index.html">الرئيسية</a></li>
+          <li><a href="../ideas.html">الأفكار</a></li>
+          <li><a href="online-course-creation-with-ai.html">الدورات</a></li>
+          <li><a href="../about.html">من نحن</a></li>
+          <li><a href="../../ideas.html">الإنجليزية</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="arabic-guide-hero">
+      <img id="hero-image" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80" alt="" width="1200" height="420" loading="eager" />
+      <div class="arabic-guide-hero-content">
+        <div class="guide-meta">
+          <span class="guide-tag" id="guide-tag">دليل عملي</span>
+          <span class="guide-read-time">قراءة 6 دقائق</span>
+        </div>
+        <h1 id="guide-title">دليل مشروع بالذكاء الاصطناعي</h1>
+        <p id="guide-summary">اختاري فكرة واحدة، افهمي طريقة العمل، وابدئي بخطوة صغيرة قابلة للتنفيذ.</p>
+      </div>
+    </header>
+
+    <main class="container guide-layout">
+      <article class="guide-body">
+        <p class="lead" id="guide-lead"></p>
+
+        <section>
+          <h2>هل هذه الفكرة مناسبة لك؟</h2>
+          <div class="quick-grid" id="quick-grid"></div>
+        </section>
+
+        <section>
+          <h2>كيف يعمل هذا المشروع؟</h2>
+          <p id="how-it-works"></p>
+          <div class="tip-box">
+            <strong>الفكرة البسيطة</strong>
+            <p id="positioning"></p>
+          </div>
+        </section>
+
+        <section>
+          <h2>خطوات البداية</h2>
+          <ol class="steps-list" id="steps-list"></ol>
+        </section>
+
+        <section>
+          <h2>أدوات يمكنك البدء بها</h2>
+          <div class="tool-grid" id="tool-grid"></div>
+        </section>
+
+        <section>
+          <h2>باقات وأسعار كبداية</h2>
+          <p>ابدئي بسعر بسيط وواضح حتى تختبري الطلب، ثم ارفعي السعر عندما تصبح النتيجة أقوى والعملية أسرع.</p>
+          <div class="package-grid" id="package-grid"></div>
+        </section>
+
+        <section>
+          <h2>خطة أول 7 أيام</h2>
+          <ol class="week-plan" id="week-plan"></ol>
+        </section>
+
+        <section>
+          <h2>طلبات جاهزة للذكاء الاصطناعي</h2>
+          <p>استخدمي هذه الطلبات كنقطة بداية، ثم عدّليها حسب العميل أو السوق أو اللغة.</p>
+          <div class="prompt-grid" id="prompt-grid"></div>
+        </section>
+
+        <section>
+          <h2>أخطاء شائعة تجنبيها</h2>
+          <div class="mistake-grid" id="mistake-grid"></div>
+        </section>
+
+        <section>
+          <h2>أسئلة سريعة</h2>
+          <div class="faq-grid" id="faq-grid"></div>
+        </section>
+
+        <section class="path-box">
+          <h2>الخطوة التالية</h2>
+          <p id="next-step"></p>
+          <div class="path-links">
+            <a href="../ideas.html#ideas">عودي إلى كل الأفكار</a>
+            <a href="online-course-creation-with-ai.html">شاهدي صفحة الدورات</a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="../../assets/header-logo.svg" alt="StartBusinessAI" width="220" height="55" /></div>
+          <p>ابدئي بفكرة واحدة، واتبعي دليلًا واحدًا، وابني مشروعك الإلكتروني الأول بالذكاء الاصطناعي بثقة.</p>
+        </div>
+        <div class="footer-col"><h4>أفكار الأعمال</h4><a href="../ideas.html#ideas">كل الأفكار</a><a href="guide.html?idea=ai-content-writing-business">كتابة المحتوى</a><a href="guide.html?idea=ai-art-business">التصميم بالذكاء الاصطناعي</a><a href="guide.html?idea=ai-business-consulting">الاستشارات</a></div>
+        <div class="footer-col"><h4>الدليل</h4><a href="online-course-creation-with-ai.html">الدورات</a><a href="guide.html?idea=ai-beginner-guide-no-experience">دليل المبتدئين</a><a href="../about.html">من نحن</a></div>
+        <div class="footer-col"><h4>الموارد</h4><a href="../index.html">الرئيسية</a><a href="../ideas.html">الأفكار</a><a href="../../ideas.html">English</a></div>
+      </div>
+      <div class="footer-bottom"><p>قد تحتوي بعض الأدلة على أدوات نوصي بها. اختاري دائمًا ما يناسب خطوتك الحالية.</p><p>© 2026 StartbusinessAI · جميع الحقوق محفوظة</p></div>
+    </footer>
+
+    <script>
+      const shared = {
+        tools: ["ChatGPT", "Canva", "Google Docs", "Notion"],
+        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80",
+      };
+
+      const guides = {
+        "ai-beginner-guide-no-experience": {
+          title: "دليل الذكاء الاصطناعي للمبتدئين بدون خبرة",
+          tag: "ابدئي من الصفر",
+          summary: "تعلمي الأساسيات والأدوات وطريقة كتابة الطلبات قبل اختيار فكرة مشروع.",
+          lead: "هذا الدليل مناسب إذا كنتِ جديدة تمامًا في الذكاء الاصطناعي وتريدين فهم ما يمكن أن يساعدك فيه قبل اختيار مشروع أو خدمة.",
+          image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&q=80",
+          quick: ["الأفضل لمن لا تملك خبرة تقنية", "الهدف: فهم الأدوات الأولى", "النتيجة: اختيار مسار مناسب"],
+          how: "ابدئي بتجربة أدوات بسيطة للكتابة، البحث، التلخيص، وتنظيم الأفكار. الهدف ليس تعلم كل شيء، بل معرفة كيف تطلبين من الأداة ما تحتاجينه بوضوح.",
+          positioning: "مهارة البداية هي الوضوح: كلما شرحتِ هدفك وسياقك بشكل أفضل، كانت نتيجة الذكاء الاصطناعي أقرب لما تريدين.",
+          steps: ["اسألي ChatGPT أسئلة أساسية عن المجال الذي يهمك.", "جرّبي إنشاء نص قصير، خطة محتوى، أو قائمة أفكار.", "اختاري فكرة مشروع واحدة من صفحة الأفكار.", "اصنعي عينة صغيرة تثبت أنك فهمتِ طريقة العمل.", "انتقلي إلى دليل الفكرة التي اخترتها."],
+          next: "بعد فهم الأساسيات، اختاري فكرة واحدة من صفحة الأفكار وابدئي ببناء عينة بسيطة.",
+        },
+        "ai-content-writing-business": {
+          title: "كيف تبدئين خدمة كتابة محتوى بالذكاء الاصطناعي",
+          tag: "خدمة كتابة",
+          summary: "حوّلي الكتابة بمساعدة AI إلى عرض واضح للشركات وصناع المحتوى.",
+          lead: "هذه الفكرة مناسبة إذا كنتِ تحبين الكتابة أو التنظيم وتريدين خدمة يمكن تقديمها بسرعة وبتكلفة منخفضة.",
+          image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80",
+          quick: ["أفضل عميل: شركات صغيرة أو مدونات", "أول دليل: 3 عينات كتابة", "الهدف: أول عميل محتوى"],
+          how: "تستخدمين AI لتسريع البحث والمسودات والعناوين، ثم تضيفين الحكم البشري والتحرير والصوت المناسب للعميل.",
+          positioning: "لا تبيعي كلمات فقط. بيعي محتوى واضحًا يوفر وقت العميل ويساعده على النشر بانتظام.",
+          steps: ["اختاري مجالًا مثل الصحة، العقارات، التعليم، أو التجارة.", "جهزي 3 عينات: مقال، منشور، ورسالة بريد.", "اكتبي عرضًا بسيطًا: 4 منشورات أسبوعية أو مقالان شهريًا.", "راسلي 20 عميلًا محتملًا بعينة قصيرة.", "اجمعي الملاحظات وحسّني السعر والعرض."],
+          tools: ["ChatGPT", "Google Docs", "Grammarly", "Canva"],
+          next: "ابدئي بعرض صغير يمكن تنفيذه خلال أسبوع، ثم طوريه إلى باقة شهرية.",
+        },
+        "ai-dropshipping-store": {
+          title: "كيف تبدئين متجر دروبشيبينغ مدعوم بالذكاء الاصطناعي",
+          tag: "تجارة إلكترونية",
+          summary: "استخدمي AI للبحث عن المنتجات، كتابة الوصف، وتجربة زوايا بيع مختلفة.",
+          lead: "الدروبشيبينغ يحتاج اختبارًا وصبرًا، لكنه يصبح أوضح عندما تستخدمين AI للبحث والكتابة وتحسين صفحات المنتجات.",
+          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+          quick: ["أفضل عميل: سوق متخصص", "أول دليل: صفحة منتج واحدة", "الهدف: اختبار منتج"],
+          how: "تختارين منتجًا محددًا، تستخدمين AI لفهم الجمهور وكتابة الوصف والإعلانات، ثم تختبرين الطلب قبل التوسع.",
+          positioning: "النجاح ليس في كثرة المنتجات، بل في اختيار منتج واضح ومشكلة واضحة ورسالة بيع بسيطة.",
+          steps: ["اختاري فئة واحدة مثل المنزل، الجمال، أو الهدايا.", "اطلبي من AI تحليل الجمهور وزوايا البيع.", "اكتبي صفحة منتج واحدة وصورًا ووصفًا واضحًا.", "اختبري إعلانًا أو محتوى عضويًا بسيطًا.", "احتفظي بما يحقق اهتمامًا وطوريه."],
+          tools: ["ChatGPT", "Shopify", "Canva", "Google Trends"],
+          next: "اختبري منتجًا واحدًا قبل بناء متجر كبير.",
+        },
+        "ai-email-marketing-agency": {
+          title: "كيف تبدئين وكالة تسويق بالبريد بالذكاء الاصطناعي",
+          tag: "تسويق",
+          summary: "اكتبي حملات بريد إلكتروني للمتاجر والشركات باستخدام AI مع تحرير بشري واضح.",
+          lead: "هذه الفكرة مناسبة إذا كنتِ تحبين الكتابة التسويقية وتريدين خدمة يمكن تحويلها إلى دخل شهري متكرر.",
+          image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1200&q=80",
+          quick: ["أفضل عميل: متاجر إلكترونية", "أول دليل: حملة ترحيب", "الهدف: عميل شهري"],
+          how: "تستخدمين AI لكتابة المسودات والأفكار، ثم تبنين تسلسل رسائل واضح يحفز العميل على الشراء أو العودة.",
+          positioning: "العميل لا يريد رسائل أكثر فقط، بل يريد مبيعات وتفاعلًا أفضل من القائمة البريدية.",
+          steps: ["اختاري نوع عملاء مثل متاجر الملابس أو المنتجات الرقمية.", "جهزي نموذج حملة من 3 رسائل.", "اكتبي عرضًا لحملة ترحيب أو استرجاع سلة.", "قدمي مراجعة مجانية قصيرة لبريد عميل محتمل.", "حوّلي المشروع إلى باقة شهرية."],
+          tools: ["ChatGPT", "Mailchimp", "Klaviyo", "Google Docs"],
+          next: "ابدئي بحملة واحدة قصيرة بدل محاولة إدارة كل البريد من البداية.",
+        },
+        "online-course-creation-with-ai": {
+          title: "كيف تنشئين دورة إلكترونية بمساعدة الذكاء الاصطناعي",
+          tag: "دورات",
+          summary: "حوّلي مهارة أو خبرة إلى دورة واضحة بمساعدة AI في التخطيط والكتابة.",
+          lead: "هذه الفكرة مناسبة إذا كان لديكِ معرفة يمكن شرحها للآخرين وتريدين تحويلها إلى منتج تعليمي.",
+          image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&q=80",
+          quick: ["أفضل أصل: خبرة واضحة", "أول دليل: درس مجاني", "الهدف: أول بيع للدورة"],
+          how: "تستخدمين AI لبناء المنهج، كتابة العناوين، إعداد الدروس، وتحويل الخبرة إلى خطوات سهلة التعلم.",
+          positioning: "لا تبيعي معلومات عامة. بيعي نتيجة محددة: من نقطة بداية إلى نتيجة ملموسة.",
+          steps: ["اختاري نتيجة واحدة يتعلمها الطالب.", "قسمي الدورة إلى 4 أو 6 وحدات.", "اكتبي درسًا تجريبيًا وسجليه أو حوّليه إلى PDF.", "اعرضي النسخة الأولى على جمهور صغير.", "حسّني المحتوى بناءً على الأسئلة."],
+          tools: ["ChatGPT", "Canva", "Google Slides", "Teachable"],
+          next: "ابدئي بدرس واحد مجاني يثبت قيمة الدورة.",
+        },
+        "ai-print-on-demand-business": {
+          title: "كيف تبدئين مشروع الطباعة عند الطلب بالذكاء الاصطناعي",
+          tag: "منتجات",
+          summary: "استخدمي AI لتوليد أفكار تصاميم وبيعها على منتجات مطبوعة.",
+          lead: "الطباعة عند الطلب مناسبة لمن تحب الأفكار البصرية وتريد اختبار منتجات بدون تخزين.",
+          image: "https://images.unsplash.com/photo-1773525912457-6a7278efb9e4?w=1200&q=80",
+          quick: ["أفضل سوق: نيش واضح", "أول دليل: 10 تصاميم", "الهدف: أول طلب"],
+          how: "تختارين جمهورًا محددًا، تولدين أفكار تصاميم، تنشئين نماذج عرض، ثم ترفعين المنتجات على منصة بيع.",
+          positioning: "التصميم الجيد يبدأ من جمهور واضح وليس من صورة جميلة فقط.",
+          steps: ["اختاري نيش مثل المعلمات، الأمهات، أو محبي القهوة.", "اكتبي 20 فكرة عبارات أو رسومات.", "صممي 10 نماذج أولية.", "ارفعيها على منصة مثل Etsy أو Printful.", "اختبري الكلمات والصور."],
+          tools: ["ChatGPT", "Canva", "Printful", "Etsy"],
+          next: "ابدئي بمجموعة صغيرة بدل متجر كبير.",
+        },
+        "ai-etsy-store-business": {
+          title: "كيف تبدئين متجر Etsy بالذكاء الاصطناعي",
+          tag: "متجر إلكتروني",
+          summary: "بيعي منتجات رقمية أو مطبوعات أو قوالب مع أوصاف محسنة بالذكاء الاصطناعي.",
+          lead: "متجر Etsy مناسب للمنتجات الصغيرة والواضحة، خاصة القوالب والمطبوعات والهدايا الرقمية.",
+          image: "https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=1200&q=80",
+          quick: ["أفضل منتج: قالب أو Printable", "أول دليل: 5 منتجات", "الهدف: أول مبيعة"],
+          how: "تستخدمين AI للبحث عن الكلمات المفتاحية، كتابة وصف المنتجات، وتجهيز أفكار صور وعناوين.",
+          positioning: "المشتري يريد حلًا جاهزًا: قالب ينظم حياته أو هدية سهلة أو ملفًا يوفر الوقت.",
+          steps: ["اختاري فئة مثل planners أو قوالب الأعمال.", "ابحثي عن منتجات مشابهة ناجحة.", "اصنعي 5 منتجات بسيطة.", "اكتبي عناوين وأوصاف واضحة.", "حسّني الصور والكلمات بعد أول زيارات."],
+          tools: ["ChatGPT", "Canva", "Etsy", "EverBee"],
+          next: "ابدئي بخمسة منتجات متشابهة بدل منتجات عشوائية.",
+        },
+        "ai-kindle-book-business": {
+          title: "كيف تبدئين مشروع كتب Kindle بالذكاء الاصطناعي",
+          tag: "نشر ذاتي",
+          summary: "استخدمي AI للبحث والتنظيم والتحرير مع الحفاظ على جودة بشرية.",
+          lead: "هذه الفكرة مناسبة إذا تحبين البحث والكتابة وتريدين بناء أصل رقمي طويل الأمد.",
+          image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&q=80",
+          quick: ["أفضل كتاب: مشكلة محددة", "أول دليل: مخطط وفصل", "الهدف: نشر نسخة أولى"],
+          how: "تستخدمين AI لتوليد مخطط وأسئلة وأفكار، لكنك تراجعين وتحررين وتضيفين قيمة حقيقية.",
+          positioning: "كتاب Kindle الناجح يحل مشكلة صغيرة بوضوح، وليس مجرد نص طويل تم توليده بسرعة.",
+          steps: ["اختاري موضوعًا متخصصًا عليه طلب.", "حللي كتبًا مشابهة ومراجعاتها.", "اكتبي مخططًا واضحًا.", "أنشئي فصلًا تجريبيًا وحرريه.", "جهزي الغلاف والوصف وانشري نسخة أولى."],
+          tools: ["ChatGPT", "Google Docs", "Canva", "Amazon KDP"],
+          next: "ابدئي بكتاب قصير ومفيد بدل موسوعة كبيرة.",
+        },
+        "ai-virtual-assistant-business": {
+          title: "كيف تبدئين خدمة مساعدة افتراضية بالذكاء الاصطناعي",
+          tag: "خدمة من المنزل",
+          summary: "قدمي دعمًا في البريد، البحث، التنظيم، والمحتوى باستخدام AI لتسريع العمل.",
+          lead: "هذه فكرة جيدة إذا كنتِ منظمة وتحبين مساعدة أصحاب الأعمال في المهام اليومية.",
+          image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80",
+          quick: ["أفضل عميل: مؤسس مشغول", "أول دليل: قائمة مهام", "الهدف: عميل أسبوعي"],
+          how: "تستخدمين AI لتلخيص البريد، إعداد الردود، البحث، تنظيم الجداول، وتجهيز مسودات المحتوى.",
+          positioning: "أنتِ لا تبيعين وقتك فقط، بل تبيعين هدوءًا وتنظيمًا وتقليل ضغط على العميل.",
+          steps: ["حددي 3 خدمات أساسية فقط.", "جهزي نظام متابعة بسيط.", "اصنعي نموذج تقرير أسبوعي.", "تواصلي مع أصحاب أعمال صغيرة.", "ابدئي بباقة تجريبية أسبوعية."],
+          tools: ["ChatGPT", "Google Workspace", "Notion", "Canva"],
+          next: "ابدئي بثلاث مهام واضحة حتى لا يصبح العرض واسعًا جدًا.",
+        },
+        "ai-copywriting-ads": {
+          title: "كيف تبدئين كتابة إعلانات بالذكاء الاصطناعي",
+          tag: "إعلانات",
+          summary: "اكتبي إعلانات Facebook وGoogle ورسائل بيع بمساعدة AI والتحرير البشري.",
+          lead: "هذه الفكرة مناسبة إذا تحبين الإقناع والاختبار وتحسين الرسائل القصيرة.",
+          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+          quick: ["أفضل عميل: متجر أو مدرب", "أول دليل: 10 إعلانات", "الهدف: اختبار حملة"],
+          how: "تستخدمين AI لإنتاج زوايا مختلفة للإعلان، ثم تختارين وتحررين وتطابقين الرسالة مع الجمهور.",
+          positioning: "الإعلان الجيد لا يبدو ذكيًا فقط، بل يشرح العرض ويجعل القرار أسهل.",
+          steps: ["اختاري منصة واحدة مثل Facebook.", "حللي عرض العميل والجمهور.", "اكتبي 10 نسخ إعلانية متنوعة.", "اقترحي اختبار 3 نسخ.", "استخدمي النتائج لتحسين العرض."],
+          tools: ["ChatGPT", "Meta Ads Library", "Google Docs", "Canva"],
+          next: "ابدئي بعينات إعلانات قبل طلب إدارة حملات كاملة.",
+        },
+        "ai-voice-cloning-local-businesses": {
+          title: "كيف تبدئين خدمة استنساخ الصوت للشركات المحلية",
+          tag: "صوت",
+          summary: "أنشئي رسائل صوتية وإعلانات قصيرة ومواد صوتية للشركات المحلية.",
+          lead: "هذه الفكرة مناسبة إذا تهتمين بالصوت والتسويق وتريدين خدمة مميزة للشركات الصغيرة.",
+          image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=1200&q=80",
+          quick: ["أفضل عميل: عيادات ومطاعم", "أول دليل: 3 عينات صوت", "الهدف: حزمة صوتية"],
+          how: "تساعدين العميل في كتابة نص قصير، اختيار صوت مناسب، وإنتاج رسالة هاتفية أو إعلان صوتي.",
+          positioning: "الشركات لا تشتري تقنية الصوت، بل تشتري حضورًا احترافيًا ورسالة أوضح.",
+          steps: ["اختاري نوع شركة محلية.", "اكتبي 3 نصوص صوتية قصيرة.", "أنشئي عينات آمنة ومرخصة.", "اعرضي حزمة رسالة هاتفية أو إعلان.", "احصلي على موافقة واضحة لاستخدام الصوت."],
+          tools: ["ChatGPT", "ElevenLabs", "Canva", "Google Drive"],
+          next: "ركزي على استخدامات بسيطة مثل رسائل الهاتف والإعلانات القصيرة.",
+        },
+        "ai-resume-optimization-ats": {
+          title: "كيف تبدئين خدمة تحسين السير الذاتية بالذكاء الاصطناعي",
+          tag: "خدمة مهنية",
+          summary: "ساعدي الباحثين عن عمل في تحسين السيرة الذاتية وLinkedIn للمرور عبر ATS.",
+          lead: "هذه الفكرة مناسبة إذا تحبين الكتابة المهنية وتريدين خدمة ذات احتياج واضح وعاجل.",
+          image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80",
+          quick: ["أفضل عميل: باحث عن عمل", "أول دليل: قبل وبعد", "الهدف: مراجعة مدفوعة"],
+          how: "تستخدمين AI لتحليل الوصف الوظيفي، تحسين الكلمات، إعادة صياغة الخبرات، وتوضيح الإنجازات.",
+          positioning: "العميل يريد مقابلات أكثر وثقة أكبر، وليس مجرد ملف أجمل.",
+          steps: ["اختاري مجال وظائف مثل التسويق أو المبيعات.", "جهزي مثال قبل وبعد.", "اصنعي قائمة تدقيق للسيرة.", "اعرضي مراجعة منخفضة السعر.", "طوريها إلى باقة CV وLinkedIn."],
+          tools: ["ChatGPT", "Google Docs", "Canva", "LinkedIn"],
+          next: "ابدئي بمراجعة واحدة واضحة بدل باقة كبيرة.",
+        },
+        "ai-cold-email-personalization-agency": {
+          title: "كيف تبدئين وكالة تخصيص الرسائل الباردة بالذكاء الاصطناعي",
+          tag: "B2B",
+          summary: "خصصي رسائل تواصل خارجية للشركات وفرق المبيعات باستخدام AI.",
+          lead: "هذه الفكرة مناسبة إذا تحبين البحث والكتابة القصيرة وتريدين خدمة مرتبطة بالمبيعات.",
+          image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1200&q=80",
+          quick: ["أفضل عميل: فرق مبيعات", "أول دليل: 20 رسالة", "الهدف: ردود أكثر"],
+          how: "تبحثين عن معلومات عن العملاء المحتملين وتستخدمين AI لصياغة افتتاحيات ورسائل أكثر تخصيصًا.",
+          positioning: "الفائدة ليست الرسالة نفسها، بل زيادة الردود والمواعيد.",
+          steps: ["اختاري نيش مثل شركات SaaS أو التوظيف.", "جهزي عينة من 20 رسالة مخصصة.", "اعرضي دفعة تجربة صغيرة.", "قارني الردود مع الرسائل العامة.", "حوّليها إلى خدمة شهرية."],
+          tools: ["ChatGPT", "LinkedIn", "Google Sheets", "Apollo"],
+          next: "ابدئي بعينة صغيرة يمكن قياس نتائجها.",
+        },
+        "ai-script-to-shorts-repurposing": {
+          title: "كيف تبدئين تحويل المحتوى الطويل إلى Shorts بالذكاء الاصطناعي",
+          tag: "فيديو قصير",
+          summary: "حوّلي البودكاست، الويبينار، أو الفيديو الطويل إلى مقاطع قصيرة للنشر.",
+          lead: "هذه فكرة قوية لأن الطلب على الفيديو القصير مستمر وصناع المحتوى يحتاجون إعادة استخدام موادهم.",
+          image: "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=1200&q=80",
+          quick: ["أفضل عميل: صناع محتوى", "أول دليل: 3 مقاطع", "الهدف: باقة أسبوعية"],
+          how: "تستخدمين AI لاستخراج النقاط المهمة، كتابة العناوين، واقتراح المقاطع، ثم تجهزينها للنشر.",
+          positioning: "بيعي مضاعفة المحتوى: فيديو واحد يمكن أن يصبح أسبوعين من المنشورات.",
+          steps: ["اختاري نوع محتوى مثل بودكاست أو مقابلات.", "خذي فيديو عام واصنعي 3 عينات.", "اكتبي عناوين وتعليقات قصيرة.", "اعرضي خدمة تجربة لفيديو واحد.", "طوريها إلى باقة شهرية."],
+          tools: ["ChatGPT", "Descript", "CapCut", "Canva"],
+          next: "ابدئي بثلاث عينات قبل البحث عن عميل.",
+        },
+        "ai-data-cleaning-service": {
+          title: "كيف تبدئين خدمة تنظيف البيانات بالذكاء الاصطناعي",
+          tag: "عمليات",
+          summary: "نظفي الجداول وقوائم العملاء والبيانات غير المنظمة للشركات.",
+          lead: "هذه الفكرة عملية جدًا لأنها تحل مشكلة مزعجة ومكلفة لأصحاب الأعمال.",
+          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
+          quick: ["أفضل عميل: فرق مبيعات", "أول دليل: ملف قبل وبعد", "الهدف: مشروع ثابت"],
+          how: "تستخدمين أدوات الجداول وAI لاكتشاف التكرارات، توحيد الصيغ، ترتيب الأعمدة، وتجهيز البيانات للاستيراد.",
+          positioning: "العميل لا يشتري تنظيف بيانات، بل يشتري نظامًا أكثر دقة وأخطاء أقل.",
+          steps: ["ابحثي عن بيانات عامة غير مرتبة للتدريب.", "جهزي مثال قبل وبعد.", "حددي باقة تنظيف ملف واحد.", "اعرضي تدقيقًا صغيرًا مجانيًا.", "وسعي الخدمة إلى تقارير أو أتمتة."],
+          tools: ["ChatGPT", "Google Sheets", "Excel", "OpenRefine"],
+          next: "اصنعي عينة قبل وبعد لتسهيل البيع.",
+        },
+        "ai-chatbot-whatsapp-instagram": {
+          title: "كيف تبدئين بوتات WhatsApp وInstagram بالذكاء الاصطناعي",
+          tag: "أتمتة",
+          summary: "ابني بوتات بسيطة لجمع العملاء المحتملين والردود المتكررة.",
+          lead: "هذه الفكرة مناسبة للشركات التي تتلقى أسئلة متكررة عبر الرسائل وتحتاج ردودًا أسرع.",
+          image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&q=80",
+          quick: ["أفضل عميل: عيادات ومتاجر", "أول دليل: تدفق أسئلة", "الهدف: بوت بسيط"],
+          how: "تصممين تدفق محادثة للأسئلة الشائعة، الحجز، أو جمع بيانات العميل، ثم تربطينه بأداة مناسبة.",
+          positioning: "الهدف ليس بوتًا معقدًا، بل رد أسرع وفرص بيع أقل ضياعًا.",
+          steps: ["اختاري نوع شركة لديه رسائل كثيرة.", "اكتبي 10 أسئلة شائعة وإجاباتها.", "ارسمي تدفق محادثة بسيط.", "ابني نموذجًا بأداة no-code.", "اعرضي خدمة إعداد وصيانة."],
+          tools: ["ChatGPT", "Manychat", "WhatsApp Business", "Google Sheets"],
+          next: "ابدئي ببوت أسئلة شائعة قبل الأتمتة المعقدة.",
+        },
+        "ai-product-description-localization": {
+          title: "كيف تبدئين خدمة توطين أوصاف المنتجات بالذكاء الاصطناعي",
+          tag: "تجارة ولغات",
+          summary: "ساعدي المتاجر على تعديل أوصاف المنتجات لتناسب أسواقًا ولغات جديدة.",
+          lead: "هذه الفكرة تناسب من تجيد لغة أخرى أو تفهم اختلافات الأسواق والثقافات.",
+          image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80",
+          quick: ["أفضل عميل: متاجر إلكترونية", "أول دليل: 5 أوصاف", "الهدف: حزمة منتجات"],
+          how: "تستخدمين AI للترجمة الأولية، ثم تراجعين المعنى والأسلوب والكلمات المناسبة للسوق.",
+          positioning: "التوطين ليس ترجمة حرفية، بل جعل المنتج مفهومًا ومقنعًا لجمهور جديد.",
+          steps: ["اختاري زوج لغات أو سوقًا محددًا.", "خذي 5 منتجات وأنشئي نسخة محسنة.", "قارني قبل وبعد.", "اعرضي حزمة 20 وصف منتج.", "أضيفي تحسين العناوين والكلمات."],
+          tools: ["ChatGPT", "DeepL", "Google Sheets", "Shopify"],
+          next: "ابدئي بسوق واحد ولغة واحدة فقط.",
+        },
+        "ai-personal-knowledge-base-setup": {
+          title: "كيف تبدئين إعداد قاعدة معرفة شخصية بالذكاء الاصطناعي",
+          tag: "تنظيم معرفة",
+          summary: "ساعدي العملاء على تنظيم الملاحظات والملفات والأفكار في نظام قابل للبحث.",
+          lead: "هذه الفكرة مناسبة إذا كنتِ منظمة وتحبين بناء أنظمة تساعد الآخرين على الوصول للمعلومات بسرعة.",
+          image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200&q=80",
+          quick: ["أفضل عميل: مؤسس أو باحث", "أول دليل: مساحة منظمة", "الهدف: نظام جاهز"],
+          how: "تبنين نظامًا في Notion أو Drive أو أداة مشابهة، وتستخدمين AI للتلخيص والتصنيف والبحث.",
+          positioning: "العميل يريد أن يجد ما يحتاجه بسرعة بدل الضياع في الملفات والملاحظات.",
+          steps: ["اختاري أداة واحدة مثل Notion.", "صممي قالبًا بسيطًا للملاحظات والملفات.", "أضيفي طريقة تصنيف واضحة.", "جهزي عرض إعداد مرة واحدة.", "اعرضي تدريبًا قصيرًا للعميل."],
+          tools: ["ChatGPT", "Notion", "Google Drive", "Zapier"],
+          next: "ابدئي بقالب واحد يمكن نسخه وتعديله لكل عميل.",
+        },
+        "ai-review-mining-service": {
+          title: "كيف تبدئين خدمة تحليل مراجعات العملاء بالذكاء الاصطناعي",
+          tag: "بحث تسويقي",
+          summary: "حوّلي مراجعات العملاء إلى رسائل تسويقية ورؤى للمنتجات.",
+          lead: "هذه الفكرة قوية لأن مراجعات العملاء تحتوي على لغة حقيقية يمكن استخدامها في التسويق وتحسين المنتج.",
+          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
+          quick: ["أفضل عميل: متجر أو SaaS", "أول دليل: تقرير رؤى", "الهدف: مشروع بحث"],
+          how: "تجمعين مراجعات عامة، تستخدمين AI لاستخراج الاعتراضات والرغبات والعبارات المتكررة، ثم تقدمين تقريرًا مفيدًا.",
+          positioning: "لغة العملاء الحقيقية غالبًا أقوى من النصوص التسويقية المخترعة.",
+          steps: ["اختاري منتجًا أو متجرًا لديه مراجعات كثيرة.", "اجمعي 50 مراجعة عامة.", "استخرجي الأنماط والعبارات المتكررة.", "حوّليها إلى توصيات للصفحة أو الإعلان.", "اعرضي تقريرًا مختصرًا كعينة."],
+          tools: ["ChatGPT", "Google Sheets", "Amazon Reviews", "Notion"],
+          next: "ابدئي بتقرير صغير من صفحة واحدة.",
+        },
+        "ai-freelance-services": {
+          title: "كيف تبدئين خدمات مستقلة بالذكاء الاصطناعي",
+          tag: "عمل حر",
+          summary: "استخدمي AI لتقديم الكتابة، التصميم، البحث، والتحرير بسرعة وجودة أفضل.",
+          lead: "هذه الفكرة مناسبة إذا كنتِ تريدين دخلًا جانبيًا مرنًا ولا تريدين الالتزام بنموذج واحد من البداية.",
+          image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200&q=80",
+          quick: ["أفضل عميل: شركة صغيرة", "أول دليل: 3 خدمات", "الهدف: أول مشروع مستقل"],
+          how: "تختارين خدمة واحدة أو اثنتين وتستخدمين AI لتسريع المسودات والتنظيم، ثم تقدمين النتيجة بعد مراجعة بشرية.",
+          positioning: "العميل يريد نتيجة جاهزة، وليس معرفة الأداة التي استخدمتها.",
+          steps: ["اختاري خدمة واحدة مثل كتابة وصف منتجات أو تصميم منشورات.", "اصنعي 3 عينات واضحة.", "اكتبي صفحة عرض أو ملف PDF بسيط.", "استخدمي Fiverr أو LinkedIn للتواصل.", "طوري الخدمة حسب الطلب المتكرر."],
+          tools: ["ChatGPT", "Canva", "Google Docs", "Fiverr"],
+          next: "ابدئي بخدمة واحدة قابلة للتسليم خلال 48 ساعة.",
+        },
+        "ai-art-business": {
+          title: "كيف تبدئين مشروع تصميم بالذكاء الاصطناعي",
+          tag: "تصميم",
+          summary: "أنشئي شعارات، صور منتجات، ومجموعات هوية بسيطة باستخدام أدوات التصميم والذكاء الاصطناعي.",
+          lead: "هذه الفكرة مناسبة إذا كنتِ تحبين الشكل البصري وتريدين خدمة إبداعية يمكن عرضها بعينات واضحة.",
+          image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&q=80",
+          quick: ["أفضل عميل: متجر أو مشروع صغير", "أول دليل: معرض عينات", "الهدف: حزمة تصميم"],
+          how: "تستخدمين AI لتوليد اتجاهات بصرية وأفكار، ثم تنقحينها في Canva أو أدوات التصميم لتصبح قابلة للاستخدام التجاري.",
+          positioning: "بيعي نتيجة عملية: صور منتج، هوية بسيطة، أو حزمة منشورات، وليس مجرد صور جميلة.",
+          steps: ["اختاري نوع تصميم واحد.", "اصنعي 6 عينات في أسلوب متناسق.", "اكتبي باقة واضحة بسعر محدد.", "اعرضي قبل وبعد أو Mockups.", "راسلي مشاريع صغيرة تحتاج حضورًا بصريًا."],
+          tools: ["ChatGPT", "Canva", "Midjourney", "Figma"],
+          next: "ابدئي بمعرض عينات صغير يوضح أسلوبك.",
+        },
+        "ai-business-consulting": {
+          title: "كيف تبدئين استشارات الذكاء الاصطناعي للأعمال",
+          tag: "استشارات",
+          summary: "ساعدي الشركات الصغيرة على فهم أين يمكن أن يوفر AI الوقت أو المال.",
+          lead: "هذه الفكرة مناسبة إذا تفهمين الأدوات وتستطيعين شرحها ببساطة لأصحاب الأعمال.",
+          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80",
+          quick: ["أفضل عميل: شركة صغيرة", "أول دليل: تدقيق AI", "الهدف: خطة تنفيذ"],
+          how: "تراجعين سير العمل الحالي، تحددين نقاط الهدر، وتقترحين استخدامات بسيطة للذكاء الاصطناعي.",
+          positioning: "أصحاب الأعمال لا يريدون مصطلحات معقدة، بل يريدون وقتًا أقل ونتائج أوضح.",
+          steps: ["اختاري قطاعًا مثل عيادات أو وكالات.", "اكتبي قائمة تدقيق من 10 أسئلة.", "قدمي جلسة تدقيق مجانية أو منخفضة السعر.", "اكتبي خطة من 3 تحسينات.", "اعرضي تنفيذ تحسين واحد كخطوة مدفوعة."],
+          tools: ["ChatGPT", "Notion", "Zapier", "Google Workspace"],
+          next: "ابدئي بتدقيق بسيط قبل بيع مشروع تنفيذ كامل.",
+        },
+      };
+
+      guides["how-to-start-a-business-with-ai"] = {
+        title: "كيف تبدئين مشروعًا باستخدام الذكاء الاصطناعي",
+        tag: "دليل البداية",
+        summary: "اختاري فكرة واحدة، اختبري الطلب، وابني أول عرض بسيط بمساعدة AI.",
+        lead: "هذا الدليل مناسب إذا كنتِ تريدين الصورة الكاملة قبل اختيار فكرة محددة. ستتعلمين كيف تنتقلين من الاهتمام بالذكاء الاصطناعي إلى عرض يمكن اختباره.",
+        image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80",
+        quick: ["أفضل بداية: فكرة واحدة", "أول دليل: عينة بسيطة", "الهدف: أول محادثة بيع"],
+        how: "تبدئين باختيار مشكلة واضحة، ثم تستخدمين AI لبناء عينة أو عرض صغير، وبعدها تختبرين اهتمام الناس قبل بناء موقع أو علامة كاملة.",
+        positioning: "المشروع الناجح يبدأ بعرض واضح لشخص واضح، وليس بمجموعة أدوات كثيرة.",
+        steps: ["اختاري فكرة من صفحة الأفكار.", "حددي من يشتري هذه الخدمة ولماذا.", "اصنعي عينة واحدة توضح النتيجة.", "اكتبي عرضًا من جملة واحدة.", "راسلي 10 أشخاص أو شركات مناسبة."],
+        tools: ["ChatGPT", "Canva", "Google Docs", "Notion"],
+        next: "اختاري فكرة واحدة من صفحة الأفكار وابدئي بعينة صغيرة هذا الأسبوع.",
+      };
+
+      guides["ai-digital-products-guides-ebooks"] = {
+        title: "كيف تبيعين منتجات رقمية وأدلة إلكترونية بالذكاء الاصطناعي",
+        tag: "منتجات رقمية",
+        summary: "حوّلي معرفة أو طريقة عملية إلى قالب أو PDF أو دليل قابل للبيع.",
+        lead: "هذه الفكرة مناسبة إذا لديكِ خبرة بسيطة أو طريقة منظمة يمكن أن تساعد شخصًا آخر على حل مشكلة صغيرة.",
+        image: "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=1200&q=80",
+        quick: ["أفضل منتج: قالب أو دليل", "أول دليل: نسخة PDF", "الهدف: أول بيع رقمي"],
+        how: "تستخدمين AI لتنظيم الأفكار، كتابة المسودة، إنشاء العناوين، وتحويل خبرتك إلى منتج واضح وسهل الاستخدام.",
+        positioning: "المنتج الرقمي الجيد لا يكون طويلًا بالضرورة، بل يحل مشكلة محددة بسرعة.",
+        steps: ["اختاري مشكلة واحدة صغيرة.", "اكتبي مخطط المنتج بمساعدة AI.", "حوّلي المخطط إلى PDF أو قالب.", "صممي غلافًا وصفحة بيع بسيطة.", "اعرضي المنتج على جمهور صغير أو منصة بيع."],
+        tools: ["ChatGPT", "Canva", "Google Docs", "Gumroad"],
+        next: "ابدئي بقالب أو دليل صغير يمكن إنجازه خلال أسبوع.",
+      };
+
+      guides["ai-website-building-business"] = {
+        title: "كيف تبدئين مشروع بناء مواقع بسيطة بالذكاء الاصطناعي",
+        tag: "مواقع",
+        summary: "قدمي مواقع تعريفية واضحة للشركات الصغيرة بمساعدة أدوات AI وno-code.",
+        lead: "هذه الفكرة مناسبة إذا تحبين التنظيم والتصميم البسيط وتريدين خدمة ذات قيمة واضحة للشركات المحلية.",
+        image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200&q=80",
+        quick: ["أفضل عميل: نشاط محلي", "أول دليل: صفحة نموذجية", "الهدف: مشروع موقع واحد"],
+        how: "تستخدمين AI لكتابة النصوص، تنظيم الأقسام، توليد أفكار الصور، وتجهيز محتوى الموقع، ثم تبنينه بأداة سهلة أو قالب جاهز.",
+        positioning: "العميل لا يريد موقعًا معقدًا، بل حضورًا واضحًا يجلب الثقة والاستفسارات.",
+        steps: ["اختاري نوع نشاط مثل عيادة أو مطعم أو مدرب.", "ابني صفحة نموذجية من 5 أقسام.", "اكتبي النصوص بمساعدة AI وراجعيها.", "اعرضي حزمة موقع تعريفي بسعر واضح.", "أضيفي صيانة أو تحديثات شهرية."],
+        tools: ["ChatGPT", "Canva", "Framer", "Wix"],
+        next: "ابدئي بموقع صفحة واحدة لنشاط محدد بدل محاولة بناء مواقع كبيرة.",
+      };
+
+      guides["ai-social-media-management"] = {
+        title: "كيف تبدئين إدارة السوشيال ميديا بالذكاء الاصطناعي",
+        tag: "سوشيال ميديا",
+        summary: "استخدمي AI لتخطيط المحتوى وكتابة المنشورات وتجهيز تقويم نشر للعملاء.",
+        lead: "هذه الفكرة مناسبة إذا تفهمين منصات التواصل وتحبين تحويل الأفكار إلى محتوى منظم.",
+        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80",
+        quick: ["أفضل عميل: مشروع صغير", "أول دليل: تقويم أسبوعي", "الهدف: باقة شهرية"],
+        how: "تستخدمين AI لإنتاج أفكار منشورات، كتابة تعليقات، إعادة صياغة المحتوى، وتجهيز جدول نشر واضح.",
+        positioning: "بيعي انتظام المحتوى ووضوح الرسالة، وليس مجرد منشورات كثيرة.",
+        steps: ["اختاري منصة واحدة مثل Instagram.", "حددي نوع عملاء واحد.", "اصنعي تقويم محتوى أسبوعيًا كعينة.", "جهزي 9 منشورات تجريبية.", "اعرضي باقة إدارة شهرية بسيطة."],
+        tools: ["ChatGPT", "Canva", "Metricool", "Google Sheets"],
+        next: "ابدئي بتقويم أسبوعي واحد كعينة يمكن للعميل فهمها بسرعة.",
+      };
+
+      guides["ai-podcast-editing-service"] = {
+        title: "كيف تبدئين خدمة تحرير البودكاست بالذكاء الاصطناعي",
+        tag: "بودكاست",
+        summary: "ساعدي صناع البودكاست في التفريغ، التلخيص، القص، وتجهيز مواد النشر.",
+        lead: "هذه الفكرة مناسبة إذا تحبين المحتوى الصوتي وتريدين خدمة عملية لصناع المحتوى والمدربين.",
+        image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=1200&q=80",
+        quick: ["أفضل عميل: صانع محتوى", "أول دليل: عينة قبل وبعد", "الهدف: حلقة تجريبية"],
+        how: "تستخدمين أدوات AI لتفريغ الحلقة، استخراج المقاطع المهمة، كتابة الوصف والعناوين، وتجهيز محتوى قصير للنشر.",
+        positioning: "العميل يريد أن تتحول الحلقة إلى محتوى أكثر بدون أن يقضي ساعات في التحرير.",
+        steps: ["اختاري حلقة عامة للتدريب.", "اعملي تفريغًا وتلخيصًا واضحًا.", "استخرجي 3 مقاطع قصيرة أو أفكار منشورات.", "جهزي نموذج قبل وبعد.", "اعرضي حزمة حلقة واحدة."],
+        tools: ["ChatGPT", "Descript", "CapCut", "Canva"],
+        next: "ابدئي بحزمة حلقة واحدة تشمل التفريغ والوصف و3 أفكار محتوى.",
+      };
+
+      guides["ai-chatbot-building-service"] = {
+        title: "كيف تبدئين خدمة بناء بوتات محادثة بالذكاء الاصطناعي",
+        tag: "بوتات محادثة",
+        summary: "ابني بوتات بسيطة للأسئلة المتكررة وجمع العملاء المحتملين للشركات الصغيرة.",
+        lead: "هذه الفكرة مناسبة إذا تحبين تنظيم الأسئلة والإجابات وتحويلها إلى تجربة محادثة سهلة للعميل النهائي.",
+        image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&q=80",
+        quick: ["أفضل عميل: شركة لديها أسئلة متكررة", "أول دليل: تدفق محادثة", "الهدف: بوت بسيط قابل للتجربة"],
+        how: "تبدئين بفهم أكثر الأسئلة التي تصل إلى الشركة، ثم تكتبين إجابات واضحة وتبنين تدفقًا بسيطًا يساعد الزائر على الوصول للمعلومة أو ترك بياناته.",
+        positioning: "العميل لا يحتاج بوتًا معقدًا من اليوم الأول، بل يحتاج ردًا أسرع وتجربة أكثر ترتيبًا للعملاء.",
+        steps: ["اختاري نوع نشاط واحد مثل عيادات أو متاجر.", "اجمعي 10 أسئلة متكررة وإجاباتها.", "ارسمي مسار المحادثة: سؤال، رد، خطوة تالية.", "ابني نموذجًا بسيطًا بأداة no-code.", "اعرضي إعدادًا أوليًا مع صيانة شهرية."],
+        tools: ["ChatGPT", "Manychat", "Tidio", "Google Sheets"],
+        next: "ابدئي ببوت أسئلة متكررة لشركة واحدة قبل إضافة الحجوزات أو الدفع أو التكاملات.",
+      };
+
+      guides["ai-prompt-pack-business"] = {
+        title: "كيف تبيعين حزم برومبت بالذكاء الاصطناعي",
+        tag: "منتج رقمي",
+        summary: "حوّلي خبرتك في كتابة الطلبات إلى حزم جاهزة تساعد جمهورًا محددًا على إنجاز عمل أسرع.",
+        lead: "هذه الفكرة مناسبة إذا تحبين التنظيم والكتابة وتستطيعين تحويل طريقة عمل متكررة إلى قوالب جاهزة وسهلة الاستخدام.",
+        image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80",
+        quick: ["أفضل عميل: صانع محتوى أو صاحب مشروع", "أول دليل: 20 طلبًا مجربًا", "الهدف: منتج رقمي صغير"],
+        how: "تختارين جمهورًا محددًا، تكتبين طلبات تساعده في مهمة متكررة، تختبرين النتائج، ثم تبيعين الحزمة كملف PDF أو قالب Notion.",
+        positioning: "الحزمة الجيدة لا تكون قائمة عشوائية من الطلبات، بل طريقة مختصرة للحصول على نتيجة محددة.",
+        steps: ["اختاري جمهورًا واحدًا مثل أصحاب المتاجر أو المدربين.", "حددي 5 مهام متكررة لديهم.", "اكتبي 20 إلى 30 طلبًا واضحًا مع أمثلة استخدام.", "اختبري الطلبات وعدّليها حتى تعطي نتائج متوقعة.", "صممي ملفًا بسيطًا وصفحة بيع قصيرة."],
+        tools: ["ChatGPT", "Canva", "Notion", "Gumroad"],
+        next: "ابدئي بحزمة صغيرة حول نتيجة واحدة مثل كتابة منشورات شهر كامل أو تحسين وصف منتجات.",
+      };
+
+      const buildPackages = (guide) => guide.packages || [
+        {
+          name: "باقة تجربة",
+          detail: "مهمة صغيرة واحدة تثبت النتيجة وتقلل تردد العميل.",
+          price: "$49-$150",
+        },
+        {
+          name: "باقة أساسية",
+          detail: "تسليم واضح من 3 إلى 5 عناصر مع مراجعة واحدة.",
+          price: "$150-$500",
+        },
+        {
+          name: "باقة شهرية",
+          detail: "عمل متكرر للعميل نفسه بعد نجاح التجربة الأولى.",
+          price: "$400-$1,500+",
+        },
+      ];
+
+      const buildWeekPlan = (guide) => guide.weekPlan || [
+        "اليوم 1: اختاري نوع عميل واحد واكتبي المشكلة التي ستساعدينه على حلها.",
+        "اليوم 2: ادرسي 5 منافسين أو أمثلة مشابهة واكتبي ما يجعل عرضك أبسط.",
+        "اليوم 3: أنشئي عينة واحدة باستخدام الأدوات المقترحة في هذا الدليل.",
+        "اليوم 4: حسّني العينة يدويًا حتى تبدو جاهزة لشخص حقيقي، وليس مجرد نتيجة AI.",
+        "اليوم 5: اكتبي صفحة عرض قصيرة تشمل النتيجة، ما يستلمه العميل، والسعر.",
+        "اليوم 6: أرسلي العرض إلى 10 عملاء مناسبين أو انشريه في مكان واحد واضح.",
+        "اليوم 7: راجعي الردود وعدّلي العرض بناءً على أكثر سؤال تكرر.",
+      ];
+
+      const buildPrompts = (guide) => guide.prompts || [
+        {
+          title: "فهم العميل",
+          text: `تصرف كخبير في ${guide.tag}. ساعدني على فهم عميل مناسب لهذا المشروع. اذكر مشكلاته اليومية، ما الذي يدفعه للدفع، وما النتيجة التي يريدها بسرعة.`,
+        },
+        {
+          title: "بناء العرض",
+          text: `اكتب لي عرضًا بسيطًا لخدمة "${guide.title}". يجب أن يكون مناسبًا للمبتدئين، واضح النتيجة، ويتضمن 3 مستويات سعرية بدون مبالغة.`,
+        },
+        {
+          title: "إنشاء عينة",
+          text: `ساعدني على إنشاء عينة أولى لهذا المشروع. اسألني 5 أسئلة فقط، ثم اقترح شكل العينة والخطوات التي تجعلها تبدو احترافية.`,
+        },
+      ];
+
+      const buildMistakes = (guide) => guide.mistakes || [
+        {
+          title: "البدء بأدوات كثيرة",
+          text: "اختاري أداتين أو ثلاث فقط. كثرة الأدوات تجعل البداية أبطأ وتخفي المشكلة الحقيقية: وضوح العرض.",
+        },
+        {
+          title: "بيع التقنية بدل النتيجة",
+          text: "العميل لا يهتم غالبًا باسم الأداة. اشرحي له ما سيتحسن: وقت أقل، محتوى أوضح، مبيعات أفضل، أو تنظيم أسهل.",
+        },
+        {
+          title: "تأجيل التواصل",
+          text: "لا تنتظري موقعًا كاملًا أو علامة مثالية. عينة بسيطة ورسالة واضحة تكفي لاختبار الطلب الأول.",
+        },
+      ];
+
+      const buildFaq = (guide) => guide.faq || [
+        {
+          q: "هل أحتاج خبرة تقنية؟",
+          a: "لا. هذا المسار مصمم للمبتدئين وغير التقنيين. الأهم هو فهم حاجة العميل ومراجعة نتيجة الذكاء الاصطناعي بعين بشرية.",
+        },
+        {
+          q: "كم أحتاج من الوقت؟",
+          a: "يمكنك بناء عينة أولى خلال أسبوع إذا اخترتِ فكرة واحدة والتزمتِ بخطوة صغيرة كل يوم.",
+        },
+        {
+          q: "كيف أعرف أن الفكرة مناسبة؟",
+          a: "إذا كان يمكنك شرح النتيجة في جملة واحدة وصنع عينة بسيطة لها، فهي مناسبة للاختبار.",
+        },
+      ];
+
+      const splitLabel = (text) => {
+        const parts = text.split(":");
+        return {
+          label: parts.length > 1 ? parts[0] : "معلومة سريعة",
+          value: parts.length > 1 ? parts.slice(1).join(":").trim() : text,
+        };
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get("idea") || "ai-beginner-guide-no-experience";
+      const guide = guides[slug] || guides["ai-beginner-guide-no-experience"];
+      const tools = guide.tools || shared.tools;
+      const packages = buildPackages(guide);
+      const weekPlan = buildWeekPlan(guide);
+      const prompts = buildPrompts(guide);
+      const mistakes = buildMistakes(guide);
+      const faq = buildFaq(guide);
+
+      document.title = `${guide.title} | StartbusinessAI`;
+      document.querySelector('meta[name="description"]').setAttribute("content", `${guide.summary} دليل عربي للمبتدئين يشرح الخطوات، الأدوات، الأسعار، وخطة أول أسبوع.`);
+      document.querySelector('meta[property="og:title"]').setAttribute("content", `${guide.title} | StartbusinessAI`);
+      document.querySelector('meta[property="og:description"]').setAttribute("content", guide.summary);
+      document.querySelector('meta[property="og:image"]').setAttribute("content", guide.image || shared.image);
+      document.getElementById("hero-image").src = guide.image || shared.image;
+      document.getElementById("hero-image").alt = guide.title;
+      document.getElementById("guide-tag").textContent = guide.tag;
+      document.getElementById("guide-title").textContent = guide.title;
+      document.getElementById("guide-summary").textContent = guide.summary;
+      document.getElementById("guide-lead").textContent = guide.lead;
+      document.getElementById("how-it-works").textContent = guide.how;
+      document.getElementById("positioning").textContent = guide.positioning;
+      document.getElementById("next-step").textContent = guide.next;
+      document.getElementById("quick-grid").innerHTML = guide.quick
+        .map((item) => {
+          const quick = splitLabel(item);
+          return `<div class="quick-card"><strong>${quick.label}</strong><span>${quick.value}</span></div>`;
+        })
+        .join("");
+      document.getElementById("steps-list").innerHTML = guide.steps
+        .map((step) => `<li>${step}</li>`)
+        .join("");
+      document.getElementById("tool-grid").innerHTML = tools
+        .map((tool) => `<div class="tool-card"><strong>${tool}</strong><span>استخدميه في خطوة محددة من العمل بدل محاولة الاعتماد عليه في كل شيء.</span></div>`)
+        .join("");
+      document.getElementById("package-grid").innerHTML = packages
+        .map((item) => `<div class="package-card"><strong>${item.name}</strong><p>${item.detail}</p><span>${item.price}</span></div>`)
+        .join("");
+      document.getElementById("week-plan").innerHTML = weekPlan
+        .map((item, index) => `<li><strong>اليوم ${index + 1}</strong><span>${item.replace(/^اليوم\s*\d+\s*:\s*/, "")}</span></li>`)
+        .join("");
+      document.getElementById("prompt-grid").innerHTML = prompts
+        .map((item) => `<div class="prompt-card"><strong>${item.title}</strong><code>${item.text}</code></div>`)
+        .join("");
+      document.getElementById("mistake-grid").innerHTML = mistakes
+        .map((item) => `<div class="mistake-card"><strong>${item.title}</strong><p>${item.text}</p></div>`)
+        .join("");
+      document.getElementById("faq-grid").innerHTML = faq
+        .map((item) => `<div class="faq-card"><strong>${item.q}</strong><p>${item.a}</p></div>`)
+        .join("");
+    </script>
+  </body>
+</html>
