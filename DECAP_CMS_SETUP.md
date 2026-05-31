@@ -33,7 +33,7 @@ For production login, you still need to enable these in the Netlify dashboard:
 After that, the published CMS should be available at:
 
 ```text
-https://www.startbusinessai.online/admin/
+https://startbusinessai.online/admin/
 ```
 
 ## Local editing option

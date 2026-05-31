@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /guides/filename.html
 
-Sitemap: https://www.startbusinessai.online/sitemap.xml
+Sitemap: https://startbusinessai.online/sitemap.xml
