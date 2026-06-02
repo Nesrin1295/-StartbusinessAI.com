@@ -9,6 +9,8 @@
     ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/logo.svg" />
     <meta
       name="google-site-verification"
       content="QCJsVIwJuVhFYKkgBHg53a2wJ0uDF-5Xa1bnC4snyMo"
@@ -257,22 +259,62 @@
         position: relative;
       }
       .side-ad {
-        position: absolute;
-        right: max(24px, calc((100vw - 1440px) / 3));
-        top: 12rem;
-        width: 160px;
-        z-index: 20;
+        position: static;
+        width: min(100%, 720px);
+        margin: 0 auto 4rem;
+        padding: 0 1.5rem;
       }
       .side-ad a {
-        display: block;
-        border-radius: 18px;
-        overflow: hidden;
-        box-shadow: 0 18px 40px rgba(10, 25, 18, 0.2);
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 1rem;
+        align-items: center;
+        border: 1px solid var(--faint);
+        border-radius: 10px;
+        padding: 0.85rem;
+        background: var(--white);
       }
       .side-ad img {
         width: 100%;
+        max-height: 92px;
         height: auto;
+        object-fit: cover;
+        object-position: top;
         display: block;
+      }
+      .side-ad-copy {
+        color: var(--muted);
+        font-size: 0.86rem;
+        line-height: 1.65;
+      }
+      .side-ad-copy strong {
+        display: block;
+        color: var(--ink);
+        margin-bottom: 0.2rem;
+      }
+
+      .language-band,
+      .disclosure-note {
+        background: var(--white);
+        border: 1px solid var(--faint);
+        border-radius: 10px;
+        padding: 1rem 1.2rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+      .language-band {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 1.2rem;
+      }
+      .language-band strong,
+      .disclosure-note strong {
+        color: var(--accent);
+      }
+      .language-band a {
+        flex: 0 0 auto;
       }
 
       .signal-strip {
@@ -769,6 +811,7 @@
         <ul class="nav-links">
           <li><a href="/">Home</a></li>
           <li><a href="guides/online-course-creation-with-ai.html">Courses</a></li>
+          <li><a href="guides.html">Guides</a></li>
           <li><a href="ideas.html">Ideas</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="/ar/">Arabic</a></li>
@@ -910,6 +953,16 @@
         </div>
       </section>
 
+      <section class="container" style="padding-top: 1.5rem; padding-bottom: 0">
+        <div class="language-band">
+          <div>
+            <strong>Prefer Arabic?</strong>
+            Start from the Arabic homepage for the same beginner-friendly path.
+          </div>
+          <a href="/ar/" class="btn-primary btn-green">Open Arabic</a>
+        </div>
+      </section>
+
       <section
         class="container"
         style="padding-top: 2.5rem; padding-bottom: 2rem"
@@ -954,7 +1007,34 @@
           Friendly, easy step-by-step guides for women who want to choose one
           idea and turn it into a real offer.
         </div>
-        <div id="home-ideas-grid" class="home-preview-grid"></div>
+        <div class="disclosure-note" style="margin-bottom: 1.2rem">
+          <strong>Affiliate disclosure:</strong> Some guide links and tool
+          mentions may be affiliate links. They never change your price, and we
+          only include tools that fit the step being explained.
+        </div>
+        <div id="home-ideas-grid" class="home-preview-grid">
+          <a class="preview-card" href="guides/ai-beginner-guide-no-experience.html">
+            <div class="preview-body">
+              <h3>AI Beginner Guide</h3>
+              <p>Learn the basics, tools, and prompts before choosing an AI business idea.</p>
+              <div class="preview-meta"><span>$0 to start</span><span class="preview-cta">Open guide</span></div>
+            </div>
+          </a>
+          <a class="preview-card" href="guides/ai-content-writing-business.html">
+            <div class="preview-body">
+              <h3>AI Content Writing Service</h3>
+              <p>Write blogs, emails, and ads for businesses using AI.</p>
+              <div class="preview-meta"><span>$0 to start</span><span class="preview-cta">Open guide</span></div>
+            </div>
+          </a>
+          <a class="preview-card" href="guides/ai-art-business.html">
+            <div class="preview-body">
+              <h3>AI Graphic Design Business</h3>
+              <p>Create logos, product visuals, and design collections with AI tools.</p>
+              <div class="preview-meta"><span>$0 to start</span><span class="preview-cta">Open guide</span></div>
+            </div>
+          </a>
+        </div>
         <div class="preview-actions">
           <a href="ideas.html" class="btn-primary btn-green"
           >Browse All Ideas</a
@@ -977,7 +1057,16 @@
                 step.
               </p>
             </div>
-            <div id="faq-list"></div>
+            <div id="faq-list">
+              <div class="faq-item open">
+                <button class="faq-q" type="button"><span>How do I start a business with AI?</span><span class="faq-icon">+</span></button>
+                <div class="faq-a">Choose one simple idea, use AI to build a basic offer, and focus on getting your first client or first sale.</div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q" type="button"><span>Can I start an online business with AI for free?</span><span class="faq-icon">+</span></button>
+                <div class="faq-a">Yes. Many women start with free or low-cost tools from home, then improve after getting their first result.</div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -994,6 +1083,11 @@
             width="160"
             height="600"
           />
+          <span class="side-ad-copy">
+            <strong>Sponsored tool note</strong>
+            Optional privacy tool for founders working online. This sponsored
+            link is kept outside the editorial guide sections.
+          </span>
         </a>
       </aside>
     </main>
@@ -1026,7 +1120,7 @@
             </a>
           </div>
         </div>
-                        <div class="footer-col"><h4>Business Ideas</h4><a href="guides/ai-content-writing-business.html">AI Content Writing</a><a href="guides/ai-art-business.html">AI Graphic Design</a><a href="guides/ai-dropshipping-store.html">Dropshipping with AI</a><a href="guides/ai-business-consulting.html">AI Consulting</a><a href="guides/online-course-creation-with-ai.html">Online Courses</a></div>
+                        <div class="footer-col"><h4>Business Ideas</h4><a href="guides.html">All Guides</a><a href="guides/ai-content-writing-business.html">AI Content Writing</a><a href="guides/ai-art-business.html">AI Graphic Design</a><a href="guides/ai-dropshipping-store.html">Dropshipping with AI</a><a href="guides/ai-business-consulting.html">AI Consulting</a><a href="guides/online-course-creation-with-ai.html">Online Courses</a></div>
         <div class="footer-col"><h4>Guide</h4><a href="guides/ai-beginner-guide-no-experience.html">AI Beginner Guide</a><a href="guides/how-to-start-a-business-with-ai.html">Start with AI</a><a href="guides/ai-website-building-business.html">Website Building</a><a href="ideas.html#faq">FAQ</a></div>
         <div class="footer-col"><h4>Resources</h4><a href="/#faq">Common Questions</a><a href="ideas.html#ideas">All Business Ideas</a><a href="about.html">About</a><a href="/">Home</a></div>
       </div><div class="footer-bottom"><p>Some guides mention tools we use or recommend. Some links may be affiliate links, but we only include tools that fit the step.</p><p>© 2026 StartbusinessAI · All rights reserved</p></div></footer>
