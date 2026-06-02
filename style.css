@@ -358,8 +358,11 @@ section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.course-panel-head h2 {
+.course-panel-head h2,
+.course-panel-heading {
+  display: block;
   font-size: 1rem;
+  font-weight: 700;
   line-height: 1.35;
   margin-bottom: 0.35rem;
 }
