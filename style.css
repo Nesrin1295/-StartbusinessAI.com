@@ -233,6 +233,15 @@ section {
   margin-bottom: 0.85rem;
 }
 
+.course-detail-title {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  font-weight: 700;
+  line-height: 1.08;
+  margin-bottom: 0.85rem;
+}
+
 .course-detail-top p {
   color: rgba(255, 255, 255, 0.74);
   line-height: 1.8;
