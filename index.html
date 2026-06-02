@@ -638,9 +638,12 @@
         padding: 0.3rem 0.65rem;
         margin-bottom: 0.85rem;
       }
-      .email-popup h2 {
+      .email-popup h2,
+      .email-popup-title {
+        display: block;
         font-family: "Playfair Display", serif;
         font-size: 1.35rem;
+        font-weight: 700;
         line-height: 1.25;
         padding-right: 2rem;
         margin-bottom: 0.45rem;
@@ -735,9 +738,12 @@
         padding: 0.3rem 0.65rem;
         margin-bottom: 0.85rem;
       }
-      .prompt-popup h2 {
+      .prompt-popup h2,
+      .prompt-popup-title {
+        display: block;
         font-family: "Playfair Display", serif;
         font-size: 1.35rem;
+        font-weight: 700;
         line-height: 1.25;
         padding-right: 2rem;
         margin-bottom: 0.45rem;
@@ -833,7 +839,7 @@
         ×
       </button>
       <span class="email-popup-label">New ideas</span>
-      <h2 id="email-popup-title">Subscribe to our email</h2>
+      <div class="email-popup-title" id="email-popup-title">Subscribe to our email</div>
       <p>
         Get new AI business ideas, practical guides, and simple next steps sent
         to your inbox.
@@ -874,7 +880,7 @@
         ×
       </button>
       <span class="prompt-popup-label">Free download</span>
-      <h2 id="prompt-popup-title">Get a free AI prompt pack</h2>
+      <div class="prompt-popup-title" id="prompt-popup-title">Get a free AI prompt pack</div>
       <p>
         Download the AI Content Writing prompt pack as a Word file and use it
         to create your first sample, offer, or client workflow.
