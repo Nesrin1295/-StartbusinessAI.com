@@ -418,6 +418,63 @@
         line-height: 1.6;
       }
 
+      .articles-intro {
+        padding: 2.5rem 0 3.5rem;
+      }
+
+      .articles-intro-panel {
+        background: linear-gradient(
+          180deg,
+          var(--white) 0%,
+          rgba(253, 244, 239, 0.7) 100%
+        );
+        border: 1px solid var(--faint);
+        border-radius: var(--radius);
+        padding: clamp(1.5rem, 4vw, 2.75rem);
+        display: grid;
+        grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.75fr);
+        gap: clamp(1.5rem, 4vw, 2.5rem);
+        align-items: start;
+      }
+
+      .articles-intro .section-title {
+        max-width: 720px;
+        margin-bottom: 1rem;
+      }
+
+      .articles-intro-text {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.75;
+        max-width: 680px;
+        margin: 0;
+      }
+
+      .articles-intro-notes {
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .articles-intro-note {
+        background: var(--white);
+        border: 1px solid var(--faint);
+        border-radius: 8px;
+        padding: 1rem;
+      }
+
+      .articles-intro-note strong {
+        display: block;
+        color: var(--ink);
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .articles-intro-note span {
+        color: var(--muted);
+        font-size: 0.85rem;
+        line-height: 1.5;
+      }
+
       .ideas-section {
         background: var(--white);
         border-radius: var(--radius);
@@ -731,6 +788,14 @@
       }
 
       @media (max-width: 700px) {
+        .articles-intro {
+          padding: 1.5rem 0 2.5rem;
+        }
+
+        .articles-intro-panel {
+          grid-template-columns: 1fr;
+        }
+
         .featured,
         .about-strip {
           grid-template-columns: 1fr;
@@ -786,32 +851,43 @@
 
     <main>
       <div class="container" id="ideas">
-        <section style="padding-top: 2rem; padding-bottom: 4rem">
-          <div class="section-label">The Solution</div>
-          <div class="section-title">
-            Choose one simple business model and start there
+        <section class="articles-intro" aria-labelledby="articles-intro-title">
+          <div class="articles-intro-panel">
+            <div>
+              <div class="section-label">The Solution</div>
+              <h2 class="section-title" id="articles-intro-title">
+                Choose one simple business model and start there
+              </h2>
+              <p class="articles-intro-text">
+                Use this page as a practical comparison board. Pick one AI
+                business idea that is easy to understand, easy to offer, and
+                possible to test this week with one clear sample.
+              </p>
+            </div>
+            <div
+              class="articles-intro-notes"
+              aria-label="How to choose an article"
+            >
+              <div class="articles-intro-note">
+                <strong>Start with demand</strong>
+                <span>Choose a problem people already pay someone to solve.</span>
+              </div>
+              <div class="articles-intro-note">
+                <strong>Keep the first offer simple</strong>
+                <span
+                  >Writing, design, research, websites, and social support are
+                  easier to test.</span
+                >
+              </div>
+              <div class="articles-intro-note">
+                <strong>Follow one guide</strong>
+                <span
+                  >Open the article that fits best and work through the
+                  first-week steps.</span
+                >
+              </div>
+            </div>
           </div>
-          <div class="section-sub">
-            You do not need to invent something new. You only need one idea that
-            is easy to understand, easy to offer, and possible to start from
-            where you are.
-          </div>
-          <p class="section-sub">
-            Use this page as a practical comparison board, not a list to rush
-            through. Each AI business idea points to a simple customer, a clear
-            first service, and a realistic way to create a sample before you
-            spend money on tools or branding. If you are new, start with an
-            easy service where the result is visible: writing, simple design,
-            social media support, research, or website setup.
-          </p>
-          <p class="section-sub">
-            The best idea is usually the one you can test this week with one
-            offer and one example. Look for a problem people already pay to
-            solve, then use AI to make the work faster, cleaner, or more
-            affordable. After you choose a path, open the guide for that idea
-            and follow the first-week steps instead of trying to build every
-            business model at once.
-          </p>
           <div class="ideas-section">
             <div class="ideas-header">
               <h2>Browse AI business ideas for women</h2>
