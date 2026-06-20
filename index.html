@@ -838,11 +838,11 @@
       >
         ×
       </button>
-      <span class="email-popup-label">New ideas</span>
-      <div class="email-popup-title" id="email-popup-title">Subscribe to our email</div>
+      <span class="email-popup-label">First $500 path</span>
+      <div class="email-popup-title" id="email-popup-title">Get the 5 AI business ideas with the fastest path to your first $500.</div>
       <p>
-        Get new AI business ideas, practical guides, and simple next steps sent
-        to your inbox.
+        A focused shortlist of practical ideas, simple offers, and first steps
+        you can test without guessing.
       </p>
       <form class="email-popup-form" id="email-popup-form">
         <label class="sr-only" for="email-popup-input">Email address</label>
@@ -857,11 +857,11 @@
         <button class="btn-primary" type="submit">Subscribe</button>
       </form>
       <small class="email-popup-note">
-        No spam. Just useful AI business ideas when there is something worth
-        sharing.
+        No spam. Just the highest-leverage starting points when there is
+        something worth sharing.
       </small>
       <div class="email-popup-success" id="email-popup-success">
-        Thank you. You are on the list for new ideas.
+        Thank you. You are on the list for the fastest first-$500 ideas.
       </div>
     </aside>
 
@@ -1012,11 +1012,6 @@
           Friendly, easy step-by-step guides for women who want to choose one
           idea and turn it into a real offer.
         </div>
-        <div class="disclosure-note" style="margin-bottom: 1.2rem">
-          <strong>Affiliate disclosure:</strong> Some guide links and tool
-          mentions may be affiliate links. They never change your price, and we
-          only include tools that fit the step being explained.
-        </div>
         <div id="home-ideas-grid" class="home-preview-grid">
           <a class="preview-card" href="guides/ai-beginner-guide-no-experience.html">
             <div class="preview-body">
@@ -1075,26 +1070,6 @@
           </div>
         </section>
       </div>
-      <aside class="side-ad" aria-label="Advertisement">
-        <a
-          href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=145880&url_id=902"
-          target="_blank"
-          rel="nofollow sponsored noopener"
-          aria-label="Open NordVPN offer"
-        >
-          <img
-            src="assets/nordvpn-banner.png"
-            alt="NordVPN special offer"
-            width="160"
-            height="600"
-          />
-          <span class="side-ad-copy">
-            <strong>Sponsored tool note</strong>
-            Optional privacy tool for founders working online. This sponsored
-            link is kept outside the editorial guide sections.
-          </span>
-        </a>
-      </aside>
     </main>
 
     <footer>
@@ -1126,9 +1101,9 @@
           </div>
         </div>
                         <div class="footer-col"><h4>Business Ideas</h4><a href="guides/ai-content-writing-business.html">AI Content Writing</a><a href="guides/ai-art-business.html">AI Graphic Design</a><a href="guides/ai-dropshipping-store.html">Dropshipping with AI</a><a href="guides/ai-business-consulting.html">AI Consulting</a><a href="guides/online-course-creation-with-ai.html">Online Courses</a></div>
-        <div class="footer-col"><h4>Guide</h4><a href="guides/ai-beginner-guide-no-experience.html">AI Beginner Guide</a><a href="guides/how-to-start-a-business-with-ai.html">Start with AI</a><a href="guides/ai-website-building-business.html">Website Building</a><a href="ideas.html#faq">FAQ</a></div>
+        <div class="footer-col"><h4>Guide</h4><a href="guides/ai-beginner-guide-no-experience.html">AI Beginner Guide</a><a href="guides/how-to-start-a-business-with-ai.html">Start with AI</a><a href="guides/ai-website-building-business.html">Website Building</a><a href="/#faq">FAQ</a></div>
         <div class="footer-col"><h4>Resources</h4><a href="/#faq">Common Questions</a><a href="ideas.html#ideas">All Business Ideas</a><a href="about.html">About</a><a href="/">Home</a></div>
-      </div><div class="footer-bottom"><p>Some guides mention tools we use or recommend. Some links may be affiliate links, but we only include tools that fit the step.</p><p>© 2026 StartbusinessAI · All rights reserved</p></div></footer>
+      </div><div class="footer-bottom"><p>© 2026 StartbusinessAI · All rights reserved</p></div></footer>
 
     <script>
       const ideas = [
@@ -1253,6 +1228,18 @@
           diff: "easy",
           tag: "easy",
           url: "guides/ai-digital-products-guides-ebooks.html",
+        },
+        {
+          icon: "🖼️",
+          name: "Create Digital Art Products With AI",
+          desc: "Make printable art, templates, mockups, stickers, and wallpapers with AI",
+          image:
+            "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=720&q=65",
+          startup: "$0-$50",
+          income: "$300-$5k/mo",
+          diff: "easy",
+          tag: "easy",
+          url: "guides/create-digital-art-products-with-ai.html",
         },
         {
           icon: "🤖",
@@ -1404,7 +1391,17 @@
       ];
 
       function renderHomeIdeas() {
-        const featuredIdeas = ideas.filter((i) => i.tag === "easy").slice(0, 6);
+        const featuredNames = [
+          "AI Beginner Guide",
+          "AI Content Writing Service",
+          "AI Graphic Design Business",
+          "Social Media Management with AI",
+          "AI Digital Products and Ebooks",
+          "Create Digital Art Products With AI",
+        ];
+        const featuredIdeas = featuredNames
+          .map((name) => ideas.find((idea) => idea.name === name))
+          .filter(Boolean);
         const cardPoints = {
           "AI Content Writing Service": [
             "Choose one content niche",
@@ -1435,6 +1432,11 @@
             "Pick one buyer problem",
             "Build a guide or template",
             "Launch a simple product page",
+          ],
+          "Create Digital Art Products With AI": [
+            "Choose one visual niche",
+            "Create a coordinated art collection",
+            "Package files and product mockups",
           ],
           "AI Print-on-Demand Business": [
             "Create a design collection",
@@ -1549,7 +1551,9 @@
       renderHomeIdeas();
       renderFAQ();
       initPromptPopup();
-      initEmailPopup();
+      // Keep the email popup disabled until the form is connected to a real
+      // subscription endpoint. The previous handler displayed success without
+      // sending or storing the submitted address.
     </script>
   </body>
 </html>
