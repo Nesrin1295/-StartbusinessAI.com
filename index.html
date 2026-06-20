@@ -15,10 +15,10 @@
       name="google-site-verification"
       content="QCJsVIwJuVhFYKkgBHg53a2wJ0uDF-5Xa1bnC4snyMo"
     />
-    <title>StartbusinessAI | AI Business Ideas for Women in 2026</title>
+    <title>StartbusinessAI | Practical Business Guidance for Women</title>
     <meta
       name="description"
-      content="Find beginner-friendly AI business ideas for women, young women, and female founders who want simple steps to start an online business with AI in 2026."
+      content="Find a realistic business idea, learn practical skills, and grow with clear guides and community support designed for women."
     />
     <meta
       name="keywords"
@@ -30,11 +30,11 @@
     <meta property="og:url" content="https://startbusinessai.online/" />
     <meta
       property="og:title"
-      content="StartbusinessAI — Start a Business with AI in 2026"
+      content="StartbusinessAI — Start and Grow a Business with Support"
     />
     <meta
       property="og:description"
-      content="Beginner-friendly AI business ideas for women and female founders, with practical guides and a simple path to choose one idea and start."
+      content="Practical business discovery, step-by-step guides, and a supportive path for women building sustainable income."
     />
     <meta
       property="og:image"
@@ -43,11 +43,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="StartbusinessAI — AI Business Ideas for Women in 2026"
+      content="StartbusinessAI — Practical Business Guidance for Women"
     />
     <meta
       name="twitter:description"
-      content="Explore beginner-friendly AI business ideas for women and practical steps for starting online with AI."
+      content="Choose a realistic idea, build practical skills, and grow a business with clear guidance and community support."
     />
     <meta
       name="twitter:image"
@@ -82,26 +82,26 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "How do I start a business with AI?",
+            "name": "How do I choose the right business idea?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "To start a business with AI, first choose a profitable niche such as AI content writing, social media management, or AI consulting. Then use tools like ChatGPT to create your service, validate demand using platforms like Google and Reddit, and acquire your first client through Fiverr or LinkedIn. Many AI businesses can be started with zero investment and scaled into full-time income streams."
+              "text": "Start with your current interests, strongest skill, available time, and budget. Choose one idea you can test with a small sample before making a larger commitment."
             }
           },
           {
             "@type": "Question",
-            "name": "What are the best AI business ideas for women?",
+            "name": "What support will the community provide?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The best AI business ideas for women include AI content writing, resume optimization, print-on-demand, email marketing, freelance AI services, and digital products. These ideas are beginner-friendly because they can be started with free or low-cost tools, sold online, and improved quickly as you gain experience."
+              "text": "The planned membership is designed around practical workshops, accountability, peer feedback, guided learning paths, and ongoing support as members start and grow their businesses."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I start an online business with AI for free?",
+            "name": "Can I start without paying for a membership?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Many AI businesses can be started for free using tools like ChatGPT, Canva, Google Docs, and free automation trials. You can launch an AI content writing service, social media management offer, or simple consulting package from home without upfront costs and reinvest after you land clients."
+              "text": "Yes. The business finder, core guides, checklists, and essential learning resources will remain free. Paid support is intended to add community and ongoing guidance, not remove the free starting path."
             }
           }
         ]
@@ -117,7 +117,7 @@
     <style>
       .hero {
         position: relative;
-        min-height: 520px;
+        min-height: 480px;
         display: flex;
         align-items: center;
         overflow: hidden;
@@ -542,6 +542,146 @@
         justify-content: flex-end;
         margin-top: 1.5rem;
       }
+      .finder-section {
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+      }
+      .finder-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+        gap: 2rem;
+        padding: clamp(1.35rem, 4vw, 2.4rem);
+        border: 1px solid var(--faint);
+        border-radius: 18px;
+        background: linear-gradient(135deg, #fff 0%, var(--rose-wash) 100%);
+        box-shadow: 0 16px 40px rgba(15, 37, 25, .07);
+      }
+      .finder-copy h2,
+      .community-model h2 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.75rem, 3vw, 2.3rem);
+        line-height: 1.18;
+        margin-bottom: .7rem;
+      }
+      .finder-copy > p,
+      .community-model > p {
+        color: var(--muted);
+        line-height: 1.75;
+        max-width: 62ch;
+      }
+      .finder-form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: .9rem;
+        margin-top: 1.35rem;
+      }
+      .finder-field {
+        display: grid;
+        gap: .35rem;
+      }
+      .finder-field label {
+        color: var(--accent);
+        font-size: .78rem;
+        font-weight: 800;
+      }
+      .finder-field select {
+        width: 100%;
+        min-height: 44px;
+        padding: .7rem .75rem;
+        border: 1px solid var(--faint);
+        border-radius: 8px;
+        background: #fff;
+        color: var(--ink);
+        font: inherit;
+        font-size: .88rem;
+      }
+      .finder-submit {
+        grid-column: 1 / -1;
+        border: 0;
+        min-height: 46px;
+      }
+      .finder-result {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.35rem;
+        border-radius: 14px;
+        background: var(--accent);
+        color: #fff;
+      }
+      .finder-result-kicker {
+        color: var(--gold);
+        font-size: .72rem;
+        font-weight: 800;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+      }
+      .finder-result h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.45rem;
+        margin: .55rem 0;
+      }
+      .finder-result p {
+        color: rgba(255,255,255,.76);
+        line-height: 1.65;
+        font-size: .9rem;
+      }
+      .finder-result a {
+        display: inline-flex;
+        align-self: flex-start;
+        margin-top: 1rem;
+        padding: .7rem .9rem;
+        border-radius: 8px;
+        background: var(--gold);
+        color: var(--accent);
+        font-weight: 800;
+        font-size: .84rem;
+      }
+      .community-model {
+        margin: 1rem auto 4rem;
+        padding: clamp(1.5rem, 4vw, 2.5rem);
+        border-radius: 18px;
+        background: #f5faf6;
+        border: 1px solid rgba(26,61,43,.12);
+      }
+      .community-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .community-card {
+        padding: 1.15rem;
+        border: 1px solid var(--faint);
+        border-radius: 12px;
+        background: #fff;
+      }
+      .community-card span {
+        color: var(--rose);
+        font-size: .7rem;
+        font-weight: 800;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+      }
+      .community-card h3 {
+        margin: .45rem 0;
+        font-size: 1rem;
+      }
+      .community-card p {
+        color: var(--muted);
+        font-size: .86rem;
+        line-height: 1.65;
+      }
+      .model-note {
+        margin-top: 1rem;
+        padding: 1rem 1.1rem;
+        border-left: 3px solid var(--accent);
+        background: rgba(255,255,255,.72);
+        color: var(--muted);
+        font-size: .86rem;
+        line-height: 1.7;
+      }
       .btn-green {
         background: var(--accent);
         color: white;
@@ -772,9 +912,13 @@
       @media (max-width: 700px) {
         .choice-rules,
         .home-preview-grid,
-        .footer-grid {
+        .footer-grid,
+        .community-grid,
+        .finder-panel,
+        .finder-form {
           grid-template-columns: 1fr;
         }
+        .finder-submit { grid-column: auto; }
         .signal-grid {
           grid-template-columns: 1fr;
         }
@@ -902,24 +1046,22 @@
         <div class="hero-grid">
           <div class="hero-copy">
             <div class="hero-tag">
-              AI business guides for women in 2026
+              Practical business guidance for women
             </div>
             <h1>
-              Build your first <span class="hero-accent">AI business</span> with confidence
+              Start a business that fits your life—and <span class="hero-accent">grow it with support</span>
             </h1>
             <p>
-              Practical AI business ideas for women, young women, and female
-              founders who want to start online without feeling overwhelmed.
+              Discover realistic income ideas based on your interests, skills,
+              available time, and budget.
             </p>
             <p>
-              Follow a simple system: choose one idea, validate the buyer, build
-              your first sample, and ask for your first sale.
+              Learn practical skills, build a first offer, and keep moving with
+              clear guidance, accountability, and a community of women beside you.
             </p>
             <div class="hero-btns">
-              <a href="ideas.html" class="btn-primary"
-                >Browse Ideas for Women</a
-              >
-              <a href="guides/ai-beginner-guide-no-experience.html" class="btn-ghost">Start with the Guide</a>
+              <a href="#business-finder" class="btn-primary">Find My Business Path</a>
+              <a href="ideas.html" class="btn-ghost">Browse Practical Ideas</a>
             </div>
           </div>
         </div>
@@ -927,111 +1069,87 @@
     </header>
 
     <main>
-      <section class="container signal-strip">
-        <div class="signal-grid">
-          <div class="signal-item">
-            <span class="signal-title">Beginner-first</span>
-            <span class="signal-copy"
-              >Simple ideas women can explain, offer, and test from home.</span
-            >
+      <section class="container finder-section" id="business-finder" aria-labelledby="finder-title">
+        <div class="finder-panel">
+          <div class="finder-copy">
+            <div class="section-label">Business Discovery</div>
+            <h2 id="finder-title">Find a business path that fits you</h2>
+            <p>Answer four quick questions. We will recommend a practical starting point and explain why it matches your situation.</p>
+            <form class="finder-form" id="finder-form">
+              <div class="finder-field">
+                <label for="finder-interest">What interests you?</label>
+                <select id="finder-interest" name="interest">
+                  <option value="writing">Writing and communication</option>
+                  <option value="creative">Design and creative work</option>
+                  <option value="organization">Planning and organization</option>
+                  <option value="marketing">Marketing and sales</option>
+                  <option value="teaching">Teaching and sharing knowledge</option>
+                  <option value="technology">Websites and technology</option>
+                </select>
+              </div>
+              <div class="finder-field">
+                <label for="finder-skill">Your strongest starting skill</label>
+                <select id="finder-skill" name="skill">
+                  <option value="beginner">I am still exploring</option>
+                  <option value="communication">Communication</option>
+                  <option value="creative">Creative judgment</option>
+                  <option value="planning">Planning and reliability</option>
+                  <option value="technical">Comfort with technology</option>
+                </select>
+              </div>
+              <div class="finder-field">
+                <label for="finder-time">Time available each week</label>
+                <select id="finder-time" name="time">
+                  <option value="small">Up to 5 hours</option>
+                  <option value="medium">5–10 hours</option>
+                  <option value="large">More than 10 hours</option>
+                </select>
+              </div>
+              <div class="finder-field">
+                <label for="finder-budget">Available starting budget</label>
+                <select id="finder-budget" name="budget">
+                  <option value="none">No upfront budget</option>
+                  <option value="low">Up to $50</option>
+                  <option value="flexible">More than $50</option>
+                </select>
+              </div>
+              <button class="btn-primary finder-submit" type="submit">Show My Recommended Path</button>
+            </form>
           </div>
-          <div class="signal-item">
-            <span class="signal-title">Action-focused</span>
-            <span class="signal-copy"
-              >Clear next steps instead of broad motivation and vague
-              theory.</span
-            >
-          </div>
-          <div class="signal-item">
-            <span class="signal-title">AI-assisted</span>
-            <span class="signal-copy"
-              >Use AI to speed up research, writing, content, and delivery.</span
-            >
-          </div>
-          <div class="signal-item">
-            <span class="signal-title">Built for proof</span>
-            <span class="signal-copy"
-              >The goal is your first client, first sale, or first real
-              result.</span
-            >
-          </div>
-        </div>
-      </section>
-
-      <section class="container" style="padding-top: 1.5rem; padding-bottom: 0">
-        <div class="language-band">
-          <div>
-            <strong>Prefer Arabic?</strong>
-            Start from the Arabic homepage for the same beginner-friendly path.
-          </div>
-          <a href="/ar/" class="btn-primary btn-green">Open Arabic</a>
-        </div>
-      </section>
-
-      <section
-        class="container"
-        style="padding-top: 2.5rem; padding-bottom: 2rem"
-      >
-        <div class="choice-band">
-          <h2>Choose your idea faster</h2>
-          <p>
-            The best idea is not always the most exciting one. It is the one you
-            can explain clearly, test quickly, and deliver with the tools you
-            already know or can learn fast.
-          </p>
-          <div class="choice-rules">
-            <div class="choice-rule">
-              <strong>Pick one buyer</strong>
-              <span
-                >Choose a person or business with a specific problem, not a
-                broad audience.</span
-              >
-            </div>
-            <div class="choice-rule">
-              <strong>Build one proof</strong>
-              <span
-                >Create a sample, mini result, before-and-after, checklist, or
-                short demo.</span
-              >
-            </div>
-            <div class="choice-rule">
-              <strong>Sell one offer</strong>
-              <span
-                >Start with a simple fixed package so people understand what
-                they get.</span
-              >
-            </div>
+          <div class="finder-result" id="finder-result" aria-live="polite">
+            <span class="finder-result-kicker">Your recommendation</span>
+            <h3>Start with what already fits your life</h3>
+            <p>Choose your answers and we will match you with a realistic guide, including the likely effort and resources required.</p>
           </div>
         </div>
       </section>
 
-      <section class="container" style="padding-top: 2rem">
-        <div class="section-label">Popular Picks</div>
-        <div class="section-title">A few strong ideas to start with</div>
+      <section class="container" style="padding-top: 1.5rem">
+        <div class="section-label">Recommended Starting Points</div>
+        <div class="section-title">Practical ideas you can test without overcommitting</div>
         <div class="section-sub">
-          Friendly, easy step-by-step guides for women who want to choose one
-          idea and turn it into a real offer.
+          Each guide explains the skills, effort, tools, and first proof you need before trying to earn from the idea.
         </div>
         <div id="home-ideas-grid" class="home-preview-grid">
           <a class="preview-card" href="guides/ai-beginner-guide-no-experience.html">
             <div class="preview-body">
               <h3>AI Beginner Guide</h3>
-              <p>Learn the basics, tools, and prompts before choosing an AI business idea.</p>
-              <div class="preview-meta"><span>$0 to start</span><span class="preview-cta">Open guide</span></div>
+              <p>Learn the essential tools and practical skills before choosing a business path.</p>
+              <div class="preview-meta"><span>No upfront investment</span><span class="preview-cta">Open guide</span></div>
             </div>
           </a>
           <a class="preview-card" href="guides/ai-content-writing-business.html">
             <div class="preview-body">
               <h3>AI Content Writing Service</h3>
               <p>Write blogs, emails, and ads for businesses using AI.</p>
-              <div class="preview-meta"><span>$0 to start</span><span class="preview-cta">Open guide</span></div>
+              <div class="preview-meta"><span>No upfront investment</span><span class="preview-cta">Open guide</span></div>
             </div>
           </a>
           <a class="preview-card" href="guides/ai-art-business.html">
             <div class="preview-body">
               <h3>AI Graphic Design Business</h3>
               <p>Create logos, product visuals, and design collections with AI tools.</p>
-              <div class="preview-meta"><span>$0 to start</span><span class="preview-cta">Open guide</span></div>
+              <div class="preview-meta"><span>No upfront investment</span><span class="preview-cta">Open guide</span></div>
             </div>
           </a>
         </div>
@@ -1040,6 +1158,30 @@
           >Browse All Ideas</a
           >
         </div>
+      </section>
+
+      <section class="container community-model" aria-labelledby="community-title">
+        <div class="section-label">A Community for Long-Term Growth</div>
+        <h2 id="community-title">Free guidance first. Deeper support when you are ready.</h2>
+        <p>StartbusinessAI is evolving from a library of ideas into a community where women can learn practical skills, take action together, and build businesses that last.</p>
+        <div class="community-grid">
+          <article class="community-card">
+            <span>Always available</span>
+            <h3>Free learning library</h3>
+            <p>Business discovery, practical guides, checklists, and starter resources remain available without a membership.</p>
+          </article>
+          <article class="community-card">
+            <span>Planned low-cost membership</span>
+            <h3>Community and ongoing support</h3>
+            <p>A member space can add workshops, accountability circles, peer feedback, office hours, and guided learning paths.</p>
+          </article>
+          <article class="community-card">
+            <span>Access for more women</span>
+            <h3>Sponsored and scholarship seats</h3>
+            <p>Partners and supporting members can fund access for women who cannot afford a paid membership.</p>
+          </article>
+        </div>
+        <div class="model-note"><strong>How the platform stays sustainable:</strong> future low-cost memberships and carefully labeled sponsorships can fund community facilitation, new workshops, site maintenance, and continued free access to essential resources. Recommendations will remain editorially independent.</div>
       </section>
 
       <div class="container" id="faq">
@@ -1059,12 +1201,12 @@
             </div>
             <div id="faq-list">
               <div class="faq-item open">
-                <button class="faq-q" type="button"><span>How do I start a business with AI?</span><span class="faq-icon">+</span></button>
-                <div class="faq-a">Choose one simple idea, use AI to build a basic offer, and focus on getting your first client or first sale.</div>
+                <button class="faq-q" type="button"><span>How do I choose the right business idea?</span><span class="faq-icon">+</span></button>
+                <div class="faq-a">Start with your interests, strongest skill, available time, and budget. Test one idea with a small sample before making a larger commitment.</div>
               </div>
               <div class="faq-item">
-                <button class="faq-q" type="button"><span>Can I start an online business with AI for free?</span><span class="faq-icon">+</span></button>
-                <div class="faq-a">Yes. Many women start with free or low-cost tools from home, then improve after getting their first result.</div>
+                <button class="faq-q" type="button"><span>Can I start without paying for a membership?</span><span class="faq-icon">+</span></button>
+                <div class="faq-a">Yes. The finder, core guides, checklists, and essential learning resources will remain free.</div>
               </div>
             </div>
           </div>
@@ -1076,7 +1218,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo"><img src="assets/header-logo.svg" alt="StartBusinessAI" width="220" height="55" /></div>
-          <p>Start with one idea, follow one guide, and build your first AI-powered online business with confidence.</p>
+          <p>Choose a realistic idea, learn practical skills, and grow with clear guidance and community support.</p>
           <div class="footer-social" aria-label="Social links">
             <a
               href="https://www.linkedin.com/company/startbusinessai/"
@@ -1377,18 +1519,69 @@
 
       const faqs = [
         {
-          q: "How do I start a business with AI?",
-          a: "Choose one simple idea, use AI to build a basic offer, and focus on getting your first client or first sale.",
+          q: "How do I choose the right business idea?",
+          a: "Start with your current interests, strongest skill, available time, and budget. Choose one idea you can test with a small sample before making a larger commitment.",
         },
         {
-          q: "What are the best AI business ideas for women in 2026?",
-          a: "Simple service ideas usually work best, like content writing, resume optimization, email marketing, print-on-demand, digital products, and freelance AI services.",
+          q: "What support will the community provide?",
+          a: "The planned membership is designed around practical workshops, accountability, peer feedback, guided learning paths, and ongoing support as members start and grow their businesses.",
         },
         {
-          q: "Can I start an online business with AI for free?",
-          a: "Yes. Many women start with free or low-cost tools from home, then improve after getting their first result.",
+          q: "Can I start without paying for a membership?",
+          a: "Yes. The business finder, core guides, checklists, and essential learning resources will remain free. Paid support is intended to add community and ongoing guidance, not remove the free starting path.",
         },
       ];
+
+      const discoveryProfiles = [
+        { name: "AI Content Writing Service", interests: ["writing", "marketing"], skills: ["beginner", "communication"], times: ["small", "medium", "large"], budgets: ["none", "low", "flexible"], effort: "Beginner-friendly · 5–10 hours a week", why: "A strong fit if you enjoy explaining ideas and want a service you can prove with a few writing samples." },
+        { name: "Create Digital Art Products With AI", interests: ["creative"], skills: ["beginner", "creative"], times: ["small", "medium"], budgets: ["none", "low"], effort: "Beginner-friendly · Low-cost creative setup", why: "A good match for visual work that can be created in small collections and sold repeatedly as downloads." },
+        { name: "Social Media Management with AI", interests: ["marketing", "creative"], skills: ["communication", "planning", "creative"], times: ["medium", "large"], budgets: ["none", "low"], effort: "Regular weekly commitment · Client communication required", why: "Best when you like content planning, reliable routines, and helping a business stay visible every week." },
+        { name: "AI Digital Products and Ebooks", interests: ["writing", "teaching", "organization"], skills: ["beginner", "communication", "planning"], times: ["small", "medium"], budgets: ["none", "low"], effort: "Flexible schedule · Requires audience research", why: "Useful if you want to package knowledge into a guide, workbook, or template without ongoing client delivery." },
+        { name: "Website Building with AI", interests: ["technology", "creative"], skills: ["technical", "creative"], times: ["medium", "large"], budgets: ["low", "flexible"], effort: "Some experience helpful · Project-based work", why: "A practical path if you enjoy learning tools, solving client problems, and building visible before-and-after results." },
+        { name: "AI Business Consulting", interests: ["organization", "technology", "teaching"], skills: ["communication", "planning", "technical"], times: ["medium", "large"], budgets: ["low", "flexible"], effort: "Experience helpful · Trust and business judgment required", why: "A stronger fit for someone who can diagnose problems, teach clearly, and guide business owners through change." },
+      ];
+
+      function startupLabel(value) {
+        if (value === "$0") return "Can be started without upfront investment";
+        if (value.includes("$0-")) return "Low-cost start: " + value.replace("-", "–");
+        return "Typical starting cost: " + value;
+      }
+
+      function difficultyLabel(value) {
+        return value === "easy"
+          ? "Beginner-Friendly"
+          : value === "medium"
+            ? "Some Experience Helpful"
+            : "Advanced Setup";
+      }
+
+      function initBusinessFinder() {
+        const form = document.getElementById("finder-form");
+        const result = document.getElementById("finder-result");
+        if (!form || !result) return;
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const answers = Object.fromEntries(new FormData(form));
+          const ranked = discoveryProfiles.map((profile) => ({
+            profile,
+            score:
+              (profile.interests.includes(answers.interest) ? 4 : 0) +
+              (profile.skills.includes(answers.skill) ? 3 : 0) +
+              (profile.times.includes(answers.time) ? 2 : 0) +
+              (profile.budgets.includes(answers.budget) ? 2 : 0),
+          })).sort((a, b) => b.score - a.score);
+          const match = ranked[0].profile;
+          const idea = ideas.find((item) => item.name === match.name);
+          result.innerHTML = `
+            <span class="finder-result-kicker">Recommended starting path</span>
+            <h3>${match.name}</h3>
+            <p>${match.why}</p>
+            <p><strong>${match.effort}</strong></p>
+            <a href="${idea.url}">Open the step-by-step guide</a>`;
+          document.dispatchEvent(new CustomEvent("business-engaged"));
+          result.focus?.();
+        });
+      }
 
       function renderHomeIdeas() {
         const featuredNames = [
@@ -1450,7 +1643,7 @@
     <a class="preview-card" href="${i.url}" target="_blank" rel="noopener" aria-label="Open guide: ${i.name}">
       <div class="preview-media">
         <img src="${i.image}" alt="${i.name}" width="420" height="180" loading="lazy" />
-        <span class="preview-kicker">${i.diff}</span>
+        <span class="preview-kicker">${difficultyLabel(i.diff)}</span>
       </div>
       <div class="preview-body">
         <div class="preview-top">
@@ -1463,7 +1656,7 @@
             .join("")}
         </ul>
         <div class="preview-meta">
-          <span>${i.startup} to start</span>
+          <span>${startupLabel(i.startup)}</span>
           <span class="preview-cta">Open guide</span>
         </div>
       </div>
@@ -1531,9 +1724,19 @@
           return;
         }
 
-        window.setTimeout(() => {
+        const showPrompt = () => {
           popup.classList.add("show");
-        }, 1000);
+        };
+
+        document.addEventListener("business-engaged", showPrompt, { once: true });
+        const watchScroll = () => {
+          const progress = window.scrollY / Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+          if (progress >= 0.65) {
+            showPrompt();
+            window.removeEventListener("scroll", watchScroll);
+          }
+        };
+        window.addEventListener("scroll", watchScroll, { passive: true });
 
         closeBtn.addEventListener("click", () => {
           popup.classList.remove("show");
@@ -1550,6 +1753,7 @@
 
       renderHomeIdeas();
       renderFAQ();
+      initBusinessFinder();
       initPromptPopup();
       // Keep the email popup disabled until the form is connected to a real
       // subscription endpoint. The previous handler displayed success without
