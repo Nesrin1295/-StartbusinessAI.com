@@ -1,0 +1,118 @@
+.guide-resource-popup[hidden] {
+  display: none;
+}
+
+.guide-resource-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.guide-resource-popup__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 31, 20, 0.62);
+  backdrop-filter: blur(3px);
+}
+
+.guide-resource-popup__dialog {
+  position: relative;
+  width: min(100%, 520px);
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  border: 1px solid rgba(26, 61, 43, 0.14);
+  border-radius: 22px;
+  background: #fffaf7;
+  color: #173126;
+  box-shadow: 0 24px 70px rgba(9, 31, 20, 0.25);
+  text-align: left;
+}
+
+.guide-resource-popup__close {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(26, 61, 43, 0.08);
+  color: #173126;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.guide-resource-popup__eyebrow {
+  margin: 0 2.5rem 0.6rem 0;
+  color: #a15d42;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.guide-resource-popup__dialog h2 {
+  margin: 0 2rem 0.75rem 0;
+  color: #173126;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.65rem, 5vw, 2.2rem);
+  line-height: 1.12;
+}
+
+.guide-resource-popup__dialog p {
+  margin: 0 0 1.4rem;
+  color: #52645c;
+  line-height: 1.65;
+}
+
+.guide-resource-popup__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.guide-resource-popup__primary,
+.guide-resource-popup__secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.guide-resource-popup__primary {
+  background: #1a3d2b;
+  color: #fff;
+}
+
+.guide-resource-popup__secondary {
+  color: #1a3d2b;
+  border: 1px solid rgba(26, 61, 43, 0.22);
+}
+
+body.guide-popup-open {
+  overflow: hidden;
+}
+
+@media (max-width: 520px) {
+  .guide-resource-popup {
+    align-items: end;
+    padding: 0;
+  }
+
+  .guide-resource-popup__dialog {
+    width: 100%;
+    border-radius: 22px 22px 0 0;
+  }
+
+  .guide-resource-popup__actions {
+    display: grid;
+  }
+}
