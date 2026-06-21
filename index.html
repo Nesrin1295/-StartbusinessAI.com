@@ -15,10 +15,10 @@
       name="google-site-verification"
       content="QCJsVIwJuVhFYKkgBHg53a2wJ0uDF-5Xa1bnC4snyMo"
     />
-    <title>StartbusinessAI | Business Guidance and Community for Women</title>
+    <title>AI Business Ideas for Women | Flexible Income and Support</title>
     <meta
       name="description"
-      content="A business discovery and support platform for women ready to build practical skills, create income, and grow alongside a community of women."
+      content="Explore AI business ideas, side hustles, freelancing, and flexible online businesses for women, mothers, career changers, and beginners."
     />
     <meta
       name="keywords"
@@ -30,7 +30,7 @@
     <meta property="og:url" content="https://startbusinessai.online/" />
     <meta
       property="og:title"
-      content="StartbusinessAI — Women Starting and Growing Businesses Together"
+      content="AI Business Ideas for Women — Start and Grow With Support"
     />
     <meta
       property="og:description"
@@ -102,6 +102,22 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Yes. The business finder, core guides, checklists, and essential learning resources will remain free. Paid support is intended to add community and ongoing guidance, not remove the free starting path."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What online businesses are flexible for mothers and caregivers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Flexible starting options include content writing, virtual assistance, digital products, printable art, and project-based services that can be delivered in focused weekly blocks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can women start an AI business without coding or previous experience?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Many service and digital-product businesses begin with communication, organization, creative judgment, or industry knowledge. Coding is not required for most beginner paths."
             }
           }
         ]
@@ -682,6 +698,80 @@
         font-size: .86rem;
         line-height: 1.7;
       }
+      .hero-proof {
+        margin-top: 1rem;
+        color: rgba(255,255,255,.72);
+        font-size: .78rem;
+        line-height: 1.5;
+      }
+      .women-paths,
+      .category-section,
+      .stories-section {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+      .life-grid,
+      .category-grid,
+      .program-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+      }
+      .life-card,
+      .category-card,
+      .program-card {
+        padding: 1.15rem;
+        border: 1px solid var(--faint);
+        border-radius: 14px;
+        background: #fff;
+      }
+      .life-card { background: linear-gradient(145deg, #fff 0%, #fff5f7 100%); }
+      .life-card span,
+      .program-card span {
+        color: var(--rose);
+        font-size: .7rem;
+        font-weight: 800;
+        letter-spacing: .07em;
+        text-transform: uppercase;
+      }
+      .life-card h3,
+      .category-card h3,
+      .program-card h3 {
+        margin: .45rem 0;
+        font-size: 1rem;
+        line-height: 1.35;
+      }
+      .life-card p,
+      .category-card p,
+      .program-card p {
+        color: var(--muted);
+        font-size: .84rem;
+        line-height: 1.65;
+      }
+      .category-card { transition: transform .2s ease, border-color .2s ease; }
+      .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .category-card:hover { transform: translateY(-3px); border-color: rgba(26,61,43,.28); }
+      .category-card strong { color: var(--accent); font-size: .76rem; }
+      .community-invite {
+        padding: clamp(1.5rem, 4vw, 2.5rem);
+        border: 1px solid var(--faint);
+        border-radius: 18px;
+        background: linear-gradient(135deg, #fff 0%, #fff4f7 100%);
+      }
+      .community-invite > p { color: var(--muted); line-height: 1.75; max-width: 72ch; }
+      .share-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 1.35rem;
+      }
+      .share-item { padding: 1rem; border-radius: 12px; background: #fff; border: 1px solid var(--faint); }
+      .share-item strong { display: block; color: var(--accent); margin-bottom: .35rem; font-size: .9rem; }
+      .share-item span { color: var(--muted); font-size: .82rem; line-height: 1.6; }
+      .community-actions { display: flex; align-items: center; gap: 1rem; margin-top: 1.35rem; flex-wrap: wrap; }
+      .community-actions span { color: var(--muted); font-size: .76rem; }
+      .community-programs { margin-top: 1.5rem; }
+      .program-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
       .btn-green {
         background: var(--accent);
         color: white;
@@ -725,197 +815,31 @@
         line-height: 1.7;
       }
 
-      .email-popup {
-        position: fixed;
-        right: 1.25rem;
-        bottom: 1.25rem;
-        z-index: 200;
-        width: min(360px, calc(100vw - 2rem));
-        background: var(--white);
-        border: 1px solid var(--faint);
-        border-radius: 18px;
-        box-shadow: 0 24px 60px rgba(8, 21, 15, 0.18);
-        padding: 1.25rem;
-        display: none;
-      }
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-      }
-      .email-popup.show {
-        display: block;
-      }
-      .email-popup-close {
-        position: absolute;
-        top: 0.75rem;
-        right: 0.75rem;
-        width: 32px;
-        height: 32px;
-        border: 1px solid var(--faint);
-        border-radius: 50%;
-        background: var(--rose-wash);
-        color: var(--accent);
-        font-size: 1.1rem;
-        line-height: 1;
-        cursor: pointer;
-      }
-      .email-popup-label {
-        display: inline-block;
-        background: var(--rose-soft);
-        color: var(--accent);
-        font-size: 0.72rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        border-radius: 999px;
-        padding: 0.3rem 0.65rem;
-        margin-bottom: 0.85rem;
-      }
-      .email-popup h2,
-      .email-popup-title {
-        display: block;
-        font-family: "Playfair Display", serif;
-        font-size: 1.35rem;
-        font-weight: 700;
-        line-height: 1.25;
-        padding-right: 2rem;
-        margin-bottom: 0.45rem;
-      }
-      .email-popup p {
-        color: var(--muted);
-        font-size: 0.92rem;
-        line-height: 1.7;
-        margin-bottom: 1rem;
-      }
-      .email-popup-form {
-        display: grid;
-        gap: 0.65rem;
-      }
-      .email-popup-form input {
-        width: 100%;
-        border: 1px solid var(--faint);
-        border-radius: 8px;
-        padding: 0.85rem 0.95rem;
-        font-family: "DM Sans", sans-serif;
-        font-size: 0.92rem;
-        color: var(--ink);
-        background: #fff;
-      }
-      .email-popup-form input:focus {
-        outline: 2px solid rgba(201, 120, 143, 0.25);
-        border-color: var(--rose);
-      }
-      .email-popup-form button {
-        width: 100%;
-      }
-      .email-popup-note {
-        display: block;
-        color: var(--muted);
-        font-size: 0.76rem;
-        line-height: 1.55;
-        margin-top: 0.75rem;
-      }
-      .email-popup-success {
-        display: none;
-        background: var(--rose-soft);
-        color: var(--accent);
-        border-radius: 8px;
-        padding: 0.8rem;
-        font-size: 0.88rem;
-        line-height: 1.55;
-        margin-top: 0.85rem;
-      }
-      .email-popup.subscribed .email-popup-success {
-        display: block;
-      }
-
-      .prompt-popup {
-        position: fixed;
-        left: 1.25rem;
-        bottom: 1.25rem;
-        z-index: 190;
-        width: min(360px, calc(100vw - 2rem));
-        background: linear-gradient(180deg, var(--white) 0%, var(--rose-wash) 100%);
-        border: 1px solid var(--faint);
-        border-radius: 18px;
-        box-shadow: 0 24px 60px rgba(8, 21, 15, 0.18);
-        padding: 1.25rem;
-        display: none;
-      }
-      .prompt-popup.show {
-        display: block;
-      }
-      .prompt-popup-close {
-        position: absolute;
-        top: 0.75rem;
-        right: 0.75rem;
-        width: 32px;
-        height: 32px;
-        border: 1px solid var(--faint);
-        border-radius: 50%;
-        background: var(--rose-wash);
-        color: var(--accent);
-        font-size: 1.1rem;
-        line-height: 1;
-        cursor: pointer;
-      }
-      .prompt-popup-label {
-        display: inline-block;
-        background: var(--rose-soft);
-        color: var(--accent);
-        font-size: 0.72rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        border-radius: 999px;
-        padding: 0.3rem 0.65rem;
-        margin-bottom: 0.85rem;
-      }
-      .prompt-popup h2,
-      .prompt-popup-title {
-        display: block;
-        font-family: "Playfair Display", serif;
-        font-size: 1.35rem;
-        font-weight: 700;
-        line-height: 1.25;
-        padding-right: 2rem;
-        margin-bottom: 0.45rem;
-      }
-      .prompt-popup p {
-        color: var(--muted);
-        font-size: 0.92rem;
-        line-height: 1.7;
-        margin-bottom: 1rem;
-      }
-      .prompt-popup-actions {
-        display: grid;
-        gap: 0.65rem;
-      }
-      .prompt-popup .btn-primary {
-        width: 100%;
-        text-align: center;
-      }
-      .prompt-popup-secondary {
-        color: var(--accent);
-        text-align: center;
-        font-size: 0.85rem;
-        font-weight: 700;
-      }
-
       @media (max-width: 700px) {
+        nav {
+          flex-direction: row;
+          align-items: center;
+          padding: .65rem .9rem;
+          gap: .6rem;
+        }
+        .logo { width: 145px; }
+        .logo img { height: 38px; }
+        .nav-links { gap: .55rem; justify-content: flex-end; }
+        .nav-links a { font-size: .68rem !important; }
+        .hero { min-height: 610px; }
+        .hero-content { padding: 3rem 1.25rem; }
+        .hero h1 { font-size: clamp(2rem, 10vw, 2.45rem) !important; }
+        .hero-copy p { font-size: .92rem; }
         .choice-rules,
         .home-preview-grid,
         .footer-grid,
         .community-grid,
         .finder-panel,
-        .finder-form {
+        .finder-form,
+        .life-grid,
+        .category-grid,
+        .program-grid,
+        .share-grid {
           grid-template-columns: 1fr;
         }
         .finder-submit { grid-column: auto; }
@@ -937,14 +861,6 @@
         }
         .choice-band {
           padding: 1.5rem;
-        }
-        .email-popup {
-          right: 1rem;
-          bottom: 1rem;
-        }
-        .prompt-popup {
-          left: 1rem;
-          bottom: 12.5rem;
         }
       }
       @media (max-width: 1399px) {
@@ -968,77 +884,6 @@
       </div>
     </nav>
 
-    <aside
-      class="email-popup"
-      id="email-popup"
-      aria-labelledby="email-popup-title"
-      aria-live="polite"
-    >
-      <button
-        class="email-popup-close"
-        type="button"
-        id="email-popup-close"
-        aria-label="Close email popup"
-      >
-        ×
-      </button>
-      <span class="email-popup-label">First $500 path</span>
-      <div class="email-popup-title" id="email-popup-title">Get the 5 AI business ideas with the fastest path to your first $500.</div>
-      <p>
-        A focused shortlist of practical ideas, simple offers, and first steps
-        you can test without guessing.
-      </p>
-      <form class="email-popup-form" id="email-popup-form">
-        <label class="sr-only" for="email-popup-input">Email address</label>
-        <input
-          id="email-popup-input"
-          name="email"
-          type="email"
-          placeholder="Enter your email"
-          autocomplete="email"
-          required
-        />
-        <button class="btn-primary" type="submit">Subscribe</button>
-      </form>
-      <small class="email-popup-note">
-        No spam. Just the highest-leverage starting points when there is
-        something worth sharing.
-      </small>
-      <div class="email-popup-success" id="email-popup-success">
-        Thank you. You are on the list for the fastest first-$500 ideas.
-      </div>
-    </aside>
-
-    <aside
-      class="prompt-popup"
-      id="prompt-popup"
-      aria-labelledby="prompt-popup-title"
-      aria-live="polite"
-    >
-      <button
-        class="prompt-popup-close"
-        type="button"
-        id="prompt-popup-close"
-        aria-label="Close prompt download popup"
-      >
-        ×
-      </button>
-      <span class="prompt-popup-label">Free download</span>
-      <div class="prompt-popup-title" id="prompt-popup-title">Get a free AI prompt pack</div>
-      <p>
-        Download the AI Content Writing prompt pack as a Word file and use it
-        to create your first sample, offer, or client workflow.
-      </p>
-      <div class="prompt-popup-actions">
-        <a
-          class="btn-primary"
-          href="assets/prompt-packs/ai-content-writing-prompts.doc"
-          download
-          >Download Prompt Pack</a
-        >
-      </div>
-    </aside>
-
     <header class="hero">
       <div class="hero-bg"></div>
       <div class="hero-overlay"></div>
@@ -1049,7 +894,7 @@
               Business guidance and community for women
             </div>
             <h1>
-              Build income on your terms—and <span class="hero-accent">grow with women beside you</span>
+              Helping women turn practical AI skills into <span class="hero-accent">flexible income</span>
             </h1>
             <p>
               Whether you are changing careers, returning to work, studying,
@@ -1065,12 +910,41 @@
               <a href="#business-finder" class="btn-primary">Find My Business Path</a>
               <a href="ideas.html" class="btn-ghost">Browse Practical Ideas</a>
             </div>
+            <div class="hero-proof">Built by a woman in data and growth · No coding required · Free starting path</div>
           </div>
         </div>
       </div>
     </header>
 
     <main>
+      <section class="container women-paths" aria-labelledby="women-paths-title">
+        <div class="section-label">Built Around Women's Real Lives</div>
+        <div class="section-title" id="women-paths-title">A starting point for the season you are in</div>
+        <div class="section-sub">Your path should respect your responsibilities, experience, and reason for wanting more financial freedom.</div>
+        <div class="life-grid">
+          <article class="life-card">
+            <span>Career breaks</span>
+            <h3>Starting after time away from work</h3>
+            <p>Rebuild confidence with a small service, current digital skills, and proof you can create in your own time.</p>
+          </article>
+          <article class="life-card">
+            <span>Mothers and caregivers</span>
+            <h3>Flexible work around family life</h3>
+            <p>Compare low-cost businesses that can begin in focused weekly blocks without pretending your schedule is unlimited.</p>
+          </article>
+          <article class="life-card">
+            <span>Career change</span>
+            <h3>Turning experience into a new direction</h3>
+            <p>Use skills from teaching, administration, service, marketing, or operations as the foundation for a modern offer.</p>
+          </article>
+          <article class="life-card">
+            <span>Financial freedom</span>
+            <h3>Working toward your first $500 online</h3>
+            <p>Focus on one buyer, one useful result, and one starter offer before adding more tools, products, or complexity.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="container finder-section" id="business-finder" aria-labelledby="finder-title">
         <div class="finder-panel">
           <div class="finder-copy">
@@ -1162,6 +1036,37 @@
         </div>
       </section>
 
+      <section class="container category-section" aria-labelledby="category-title">
+        <div class="section-label">Explore by Goal</div>
+        <div class="section-title" id="category-title">Choose the help you need right now</div>
+        <div class="section-sub">The platform is organized around your next decision—not an endless stream of articles.</div>
+        <div class="category-grid">
+          <a class="category-card" href="guides/ai-beginner-guide-no-experience.html"><strong>Start Here</strong><h3>Beginner Roadmap</h3><p>Understand the essential tools, choose a direction, and avoid information overload.</p></a>
+          <a class="category-card" href="guides/how-to-start-a-business-with-ai.html"><strong>First 30 Days</strong><h3>Launch Foundations</h3><p>Move from idea to research, proof, offer, outreach, and your first real feedback.</p></a>
+          <a class="category-card" href="guides/ai-freelance-services.html"><strong>Make Money</strong><h3>Freelancing and Services</h3><p>Turn writing, organization, research, design, or support skills into client work.</p></a>
+          <a class="category-card" href="guides/ai-digital-products-guides-ebooks.html"><strong>Digital Products</strong><h3>Create Once, Sell Repeatedly</h3><p>Explore guides, templates, printables, art products, and other downloadable offers.</p></a>
+          <a class="category-card" href="guides/ai-content-writing-business.html"><strong>Practical Skills</strong><h3>Content, Design, and Tools</h3><p>Build useful skills through samples and workflows instead of passive tutorials.</p></a>
+          <a class="category-card" href="about.html"><strong>Women Entrepreneurs</strong><h3>Confidence and Sustainable Growth</h3><p>Learn with support while protecting your energy, time, and long-term goals.</p></a>
+        </div>
+      </section>
+
+      <section class="container stories-section" aria-labelledby="stories-title">
+        <div class="community-invite">
+          <div class="section-label">Join Our Community</div>
+          <div class="section-title" id="stories-title">Your experience could help another woman begin</div>
+          <p>We want this community to be shaped by women who are learning, experimenting, starting over, building quietly, and celebrating real progress. You do not need a perfect success story to belong here.</p>
+          <div class="share-grid">
+            <div class="share-item"><strong>Share what you are building</strong><span>Tell us about the idea, service, product, or skill you are exploring.</span></div>
+            <div class="share-item"><strong>Ask an honest question</strong><span>Share the decision, fear, or practical problem that is slowing you down.</span></div>
+            <div class="share-item"><strong>Celebrate a small win</strong><span>Your first sample, message, client conversation, or sale can encourage someone else.</span></div>
+          </div>
+          <div class="community-actions">
+            <a class="btn-primary" href="https://www.linkedin.com/company/startbusinessai/" target="_blank" rel="noopener noreferrer">Join Us on LinkedIn</a>
+            <span>Selected stories may be featured only with the woman's permission.</span>
+          </div>
+        </div>
+      </section>
+
       <section class="container community-model" aria-labelledby="community-title">
         <div class="section-label">A Community for Long-Term Growth</div>
         <h2 id="community-title">A place for women to learn, start, and keep going.</h2>
@@ -1182,6 +1087,13 @@
             <h3>Sponsored and scholarship seats</h3>
             <p>Partners and supporting members can fund access so cost does not prevent a woman from receiving deeper support.</p>
           </article>
+        </div>
+        <div class="community-programs">
+          <div class="program-grid">
+            <article class="program-card"><span>Planned community spotlight</span><h3>Women Building in Public</h3><p>Share honest progress, lessons, and small wins—not only polished success stories.</p></article>
+            <article class="program-card"><span>Planned monthly challenge</span><h3>One Offer in 30 Days</h3><p>Choose a buyer, build one sample, publish one offer, and complete consistent outreach together.</p></article>
+            <article class="program-card"><span>Planned workshops</span><h3>Skills and Confidence</h3><p>Practice pricing, outreach, delivery, boundaries, productivity, and sustainable growth.</p></article>
+          </div>
         </div>
         <div class="model-note"><strong>How the platform stays sustainable:</strong> future low-cost memberships and carefully labeled sponsorships can fund community facilitation, new workshops, site maintenance, and continued free access to essential resources. Recommendations will remain editorially independent.</div>
       </section>
@@ -1532,6 +1444,14 @@
           q: "Can I start without paying for a membership?",
           a: "Yes. The business finder, core guides, checklists, and essential learning resources will remain free. Paid support is intended to add community and ongoing guidance, not remove the free starting path.",
         },
+        {
+          q: "What online businesses are flexible for mothers and caregivers?",
+          a: "Flexible starting options include content writing, virtual assistance, digital products, printable art, and project-based services that can be delivered in focused weekly blocks.",
+        },
+        {
+          q: "Can women start an AI business without coding or previous experience?",
+          a: "Yes. Many service and digital-product businesses begin with communication, organization, creative judgment, or industry knowledge. Coding is not required for most beginner paths.",
+        },
       ];
 
       const discoveryProfiles = [
@@ -1580,7 +1500,6 @@
             <p>${match.why}</p>
             <p><strong>${match.effort}</strong></p>
             <a href="${idea.url}">Open the step-by-step guide</a>`;
-          document.dispatchEvent(new CustomEvent("business-engaged"));
           result.focus?.();
         });
       }
@@ -1688,78 +1607,9 @@
         if (!isOpen) item.classList.add("open");
       }
 
-      function initEmailPopup() {
-        const popup = document.getElementById("email-popup");
-        const closeBtn = document.getElementById("email-popup-close");
-        const form = document.getElementById("email-popup-form");
-
-        if (!popup || localStorage.getItem("emailPopupClosed") === "true") {
-          return;
-        }
-
-        window.setTimeout(() => {
-          popup.classList.add("show");
-        }, 1200);
-
-        closeBtn.addEventListener("click", () => {
-          popup.classList.remove("show");
-          localStorage.setItem("emailPopupClosed", "true");
-        });
-
-        form.addEventListener("submit", (event) => {
-          event.preventDefault();
-          popup.classList.add("subscribed");
-          form.reset();
-          localStorage.setItem("emailPopupClosed", "true");
-          window.setTimeout(() => {
-            popup.classList.remove("show");
-          }, 1800);
-        });
-      }
-
-      function initPromptPopup() {
-        const popup = document.getElementById("prompt-popup");
-        const closeBtn = document.getElementById("prompt-popup-close");
-        const downloadBtn = popup?.querySelector(".btn-primary");
-
-        if (!popup || localStorage.getItem("promptPopupClosed") === "true") {
-          return;
-        }
-
-        const showPrompt = () => {
-          popup.classList.add("show");
-        };
-
-        document.addEventListener("business-engaged", showPrompt, { once: true });
-        const watchScroll = () => {
-          const progress = window.scrollY / Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-          if (progress >= 0.65) {
-            showPrompt();
-            window.removeEventListener("scroll", watchScroll);
-          }
-        };
-        window.addEventListener("scroll", watchScroll, { passive: true });
-
-        closeBtn.addEventListener("click", () => {
-          popup.classList.remove("show");
-          localStorage.setItem("promptPopupClosed", "true");
-        });
-
-        downloadBtn?.addEventListener("click", () => {
-          localStorage.setItem("promptPopupClosed", "true");
-          window.setTimeout(() => {
-            popup.classList.remove("show");
-          }, 350);
-        });
-      }
-
       renderHomeIdeas();
       renderFAQ();
       initBusinessFinder();
-      initPromptPopup();
-      // Keep the email popup disabled until the form is connected to a real
-      // subscription endpoint. The previous handler displayed success without
-      // sending or storing the submitted address.
     </script>
   </body>
 </html>
