@@ -772,6 +772,29 @@
       .community-actions span { color: var(--muted); font-size: .76rem; }
       .community-programs { margin-top: 1.5rem; }
       .program-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+      .mailerlite-section {
+        padding: 0 1.5rem 4rem;
+      }
+      .mailerlite-panel {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: clamp(1.5rem, 5vw, 2.5rem);
+        border: 1px solid var(--faint);
+        border-radius: 18px;
+        background: linear-gradient(135deg, #fff 0%, var(--rose-wash) 100%);
+        text-align: center;
+      }
+      .mailerlite-panel h2 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.6rem, 4vw, 2.2rem);
+        margin-bottom: .6rem;
+      }
+      .mailerlite-panel > p {
+        max-width: 620px;
+        margin: 0 auto 1.25rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
       .btn-green {
         background: var(--accent);
         color: white;
@@ -869,6 +892,15 @@
         }
       }
     </style>
+      <!-- MailerLite Universal -->
+    <script>
+      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+      .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+      ml('account', '2453388');
+    </script>
+    <!-- End MailerLite Universal -->
   </head>
   <body>
     <nav>
@@ -1126,6 +1158,14 @@
           </div>
         </section>
       </div>
+      <section class="mailerlite-section" aria-labelledby="newsletter-title">
+        <div class="mailerlite-panel">
+          <div class="section-label">Weekly Resources</div>
+          <h2 id="newsletter-title">Get practical business ideas in your inbox</h2>
+          <p>Receive new guides, useful tools, and realistic next steps after you have had time to explore the platform.</p>
+          <div class="ml-embedded" data-form="DSL5ar"></div>
+        </div>
+      </section>
     </main>
 
     <footer>
