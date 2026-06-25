@@ -161,68 +161,6 @@
         padding: 3rem;
         box-shadow: 0 18px 50px rgba(9, 24, 17, 0.06);
       }
-      .founder-note {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 1.4rem;
-        align-items: start;
-        padding-bottom: 2rem;
-        margin-bottom: 2rem;
-        border-bottom: 1px solid var(--faint);
-      }
-      .founder-photo {
-        width: 148px;
-        height: 148px;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: 78% 28%;
-        border: 4px solid var(--rose-soft);
-        box-shadow: 0 10px 24px rgba(10, 25, 18, 0.12);
-      }
-      .founder-media {
-        display: grid;
-        justify-items: center;
-        gap: 0.65rem;
-      }
-      .founder-social {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 22px;
-        height: 22px;
-        color: var(--accent);
-        transition: color 0.2s ease;
-      }
-      .founder-social:hover {
-        color: var(--gold);
-      }
-      .founder-social svg {
-        width: 16px;
-        height: 16px;
-        fill: currentColor;
-      }
-      .founder-copy h2 {
-        font-family: "Playfair Display", serif;
-        font-size: clamp(1.6rem, 3vw, 2.1rem);
-        line-height: 1.2;
-        margin-bottom: 0.9rem;
-        color: var(--ink);
-      }
-      .founder-copy p {
-        color: var(--muted);
-        font-size: 0.98rem;
-        line-height: 1.85;
-        margin-bottom: 0.95rem;
-      }
-      .founder-copy p:last-child {
-        margin-bottom: 0;
-      }
-      .founder-cta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        margin-top: 1.2rem;
-      }
       .about-intro {
         display: grid;
         grid-template-columns: 1.15fr 0.85fr;
@@ -322,13 +260,6 @@
         .about-intro {
           grid-template-columns: 1fr;
         }
-        .founder-note {
-          grid-template-columns: 1fr;
-        }
-        .founder-photo {
-          width: 120px;
-          height: 120px;
-        }
       }
     </style>
       <!-- MailerLite Universal -->
@@ -375,58 +306,6 @@
     <main>
       <section class="container">
         <div class="about-shell">
-          <div class="founder-note">
-            <div class="founder-media">
-              <img
-                class="founder-photo"
-                src="assets/nesrin-profile.jpeg"
-                alt="Nesrin, data researcher and marketing growth analyst"
-                width="88"
-                height="88"
-              />
-              <a
-                class="founder-social"
-                href="https://www.linkedin.com/in/nesrinalisayed/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Nesrin on LinkedIn"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.02H3.54V9H7.1v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z" />
-                </svg>
-              </a>
-            </div>
-            <div class="founder-copy">
-              <h2>Founder Note</h2>
-              <p>
-                My name is Nesrin, and as a data researcher and marketing
-                growth analyst, I’ve wanted to create practical business
-                guidance for women for a long time. I care deeply about making
-                useful tools and skills easier to understand, and about helping
-                women move from an idea to income, confidence, and a real
-                result with support from other women.
-              </p>
-              <p>
-                This project has been a year in the making, but over the last
-                month, things really moved into high gear. I spent weeks
-                obsessing over the details, building it out idea by idea and
-                guide by guide to make sure the content was exactly where it
-                needed to be.
-              </p>
-              <p>
-                Seeing it finally come to life is incredible, especially
-                because it’s something I’m so deeply passionate about. Of
-                course, none of this would be possible without the team working
-                with me. Thanks to their hard work, we have already reached 7
-                countries in our very first week of launch!
-              </p>
-              <div class="founder-cta">
-                <a href="ideas.html" class="btn-primary btn-green">Browse the Ideas</a>
-                <a href="guides/ai-beginner-guide-no-experience.html" class="btn-primary">Start with the Beginner Guide</a>
-              </div>
-            </div>
-          </div>
-
           <div class="about-intro">
             <div class="about-copy">
               <div class="section-label">About</div>
