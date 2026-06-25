@@ -814,6 +814,9 @@
         color: var(--muted);
         line-height: 1.7;
       }
+      .ml-embedded {
+        min-height: 190px;
+      }
       .btn-green {
         background: var(--accent);
         color: white;
@@ -901,6 +904,9 @@
         }
         .preview-media {
           height: 200px;
+        }
+        .ml-embedded {
+          min-height: 240px;
         }
         .choice-band {
           padding: 1.5rem;
@@ -1065,6 +1071,10 @@
         </div>
         <div id="home-ideas-grid" class="home-preview-grid">
           <a class="preview-card" href="guides/ai-beginner-guide-no-experience.html">
+            <div class="preview-media">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=720&q=65" alt="AI Beginner Guide" width="420" height="180" loading="lazy" />
+              <span class="preview-kicker">Easy</span>
+            </div>
             <div class="preview-body">
               <h3>AI Beginner Guide</h3>
               <p>Learn the essential tools and practical skills before choosing a business path.</p>
@@ -1072,6 +1082,10 @@
             </div>
           </a>
           <a class="preview-card" href="guides/ai-content-writing-business.html">
+            <div class="preview-media">
+              <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=720&q=65" alt="AI Content Writing Service" width="420" height="180" loading="lazy" />
+              <span class="preview-kicker">Easy</span>
+            </div>
             <div class="preview-body">
               <h3>AI Content Writing Service</h3>
               <p>Write blogs, emails, and ads for businesses using AI.</p>
@@ -1079,6 +1093,10 @@
             </div>
           </a>
           <a class="preview-card" href="guides/ai-art-business.html">
+            <div class="preview-media">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=720&q=65" alt="AI Graphic Design Business" width="420" height="180" loading="lazy" />
+              <span class="preview-kicker">Easy</span>
+            </div>
             <div class="preview-body">
               <h3>AI Graphic Design Business</h3>
               <p>Create logos, product visuals, and design collections with AI tools.</p>
@@ -1186,8 +1204,8 @@
       <section class="mailerlite-section" aria-labelledby="newsletter-title">
         <div class="mailerlite-panel">
           <div class="section-label">Weekly Resources</div>
-          <h2 id="newsletter-title">Get practical business ideas in your inbox</h2>
-          <p>Receive new guides, useful tools, and realistic next steps after you have had time to explore the platform.</p>
+          <h2 id="newsletter-title">Get the 5 AI business ideas with the fastest path to your first $500</h2>
+          <p>Receive the shortlist, the tools to start with, and the first action to test each idea.</p>
           <div class="ml-embedded" data-form="DSL5ar"></div>
         </div>
       </section>
@@ -1636,9 +1654,11 @@
             "Test one niche store idea",
           ],
         };
-        document.getElementById("home-ideas-grid").innerHTML = featuredIdeas
-          .map(
-            (i) => `
+        const homeGrid = document.getElementById("home-ideas-grid");
+        if (homeGrid && homeGrid.children.length === 0) {
+          homeGrid.innerHTML = featuredIdeas
+            .map(
+              (i) => `
     <a class="preview-card" href="${i.url}" target="_blank" rel="noopener" aria-label="Open guide: ${i.name}">
       <div class="preview-media">
         <img src="${i.image}" alt="${i.name}" width="420" height="180" loading="lazy" />
@@ -1660,8 +1680,9 @@
         </div>
       </div>
     </a>`,
-          )
-          .join("");
+            )
+            .join("");
+        }
       }
 
       function renderFAQ() {
