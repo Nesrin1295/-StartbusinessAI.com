@@ -53,6 +53,14 @@
       name="twitter:image"
       content="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=55&fm=webp&fit=crop"
     />
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=55&fm=webp&fit=crop"
+      imagesrcset="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=720&q=50&fm=webp&fit=crop 720w, https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=55&fm=webp&fit=crop 900w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -128,7 +136,15 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <link rel="stylesheet" href="style.css" />
     <style>
       .hero {
@@ -141,10 +157,12 @@
       .hero-bg {
         position: absolute;
         inset: 0;
-        background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=55&fm=webp&fit=crop");
-        background-size: cover;
-        background-position: center;
         filter: brightness(0.28);
+      }
+      .hero-bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
       .hero-overlay {
         position: absolute;
@@ -190,7 +208,7 @@
       }
       .hero p {
         font-size: 1.05rem;
-        color: rgba(255, 255, 255, 0.75);
+        color: rgba(255, 255, 255, 0.92);
         max-width: 520px;
         margin-bottom: 2rem;
         line-height: 1.7;
@@ -211,7 +229,8 @@
         padding: 2rem 2rem 1.5rem;
         border-bottom: 1px solid var(--faint);
       }
-      .faq-header h2 {
+      .faq-header h2,
+      .faq-header h3 {
         font-family: "Playfair Display", serif;
         font-size: 1.5rem;
       }
@@ -820,11 +839,12 @@
         max-width: 320px;
       }
       .footer-brand p {
-        color: rgba(255, 255, 255, 0.52);
+        color: rgba(255, 255, 255, 0.82);
         line-height: 1.8;
       }
+      .footer-col h3,
       .footer-col h4 {
-        color: rgba(255, 255, 255, 0.78);
+        color: rgba(255, 255, 255, 0.94);
         margin-bottom: 1.1rem;
       }
       .footer-col a {
@@ -892,15 +912,6 @@
         }
       }
     </style>
-      <!-- MailerLite Universal -->
-    <script>
-      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-      .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-      ml('account', '2453388');
-    </script>
-    <!-- End MailerLite Universal -->
       <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-src https:; object-src 'none'; base-uri 'self'; upgrade-insecure-requests" />
   </head>
@@ -919,7 +930,19 @@
     </nav>
 
     <header class="hero">
-      <div class="hero-bg"></div>
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=55&fm=webp&fit=crop"
+          srcset="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=720&q=50&fm=webp&fit=crop 720w, https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=55&fm=webp&fit=crop 900w"
+          sizes="100vw"
+          alt=""
+          width="900"
+          height="600"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div class="hero-grid">
@@ -1141,7 +1164,7 @@
           </div>
           <div class="faq-section">
             <div class="faq-header">
-              <h2>What women ask before starting</h2>
+              <h3>What women ask before starting</h3>
               <p>
                 Simple answers to help you choose an idea and take the first
                 step.
@@ -1198,12 +1221,25 @@
             </a>
           </div>
         </div>
-                        <div class="footer-col"><h4>Business Ideas</h4><a href="guides/ai-content-writing-business.html">AI Content Writing</a><a href="guides/ai-art-business.html">AI Graphic Design</a><a href="guides/ai-dropshipping-store.html">Dropshipping with AI</a><a href="guides/ai-business-consulting.html">AI Consulting</a><a href="guides/online-course-creation-with-ai.html">Online Courses</a></div>
-        <div class="footer-col"><h4>Guide</h4><a href="guides/ai-beginner-guide-no-experience.html">AI Beginner Guide</a><a href="guides/how-to-start-a-business-with-ai.html">Start with AI</a><a href="guides/ai-website-building-business.html">Website Building</a><a href="/#faq">FAQ</a></div>
-        <div class="footer-col"><h4>Resources</h4><a href="/#faq">Common Questions</a><a href="ideas.html#ideas">All Business Ideas</a><a href="about.html">About</a><a href="/">Home</a></div>
+                        <div class="footer-col"><h3>Business Ideas</h3><a href="guides/ai-content-writing-business.html">AI Content Writing</a><a href="guides/ai-art-business.html">AI Graphic Design</a><a href="guides/ai-dropshipping-store.html">Dropshipping with AI</a><a href="guides/ai-business-consulting.html">AI Consulting</a><a href="guides/online-course-creation-with-ai.html">Online Courses</a></div>
+        <div class="footer-col"><h3>Guide</h3><a href="guides/ai-beginner-guide-no-experience.html">AI Beginner Guide</a><a href="guides/how-to-start-a-business-with-ai.html">Start with AI</a><a href="guides/ai-website-building-business.html">Website Building</a><a href="/#faq">FAQ</a></div>
+        <div class="footer-col"><h3>Resources</h3><a href="/#faq">Common Questions</a><a href="ideas.html#ideas">All Business Ideas</a><a href="about.html">About</a><a href="/">Home</a></div>
       </div><div class="footer-bottom"><p>© 2026 StartbusinessAI · All rights reserved</p></div></footer>
 
     <script>
+      window.addEventListener("load", function () {
+        window.ml = window.ml || function () {
+          (window.ml.q = window.ml.q || []).push(arguments);
+        };
+        var mailerLiteScript = document.createElement("script");
+        mailerLiteScript.src = "https://assets.mailerlite.com/js/universal.js";
+        mailerLiteScript.async = true;
+        mailerLiteScript.onload = function () {
+          window.ml("account", "2453388");
+        };
+        document.head.appendChild(mailerLiteScript);
+      });
+
       const ideas = [
         {
           icon: "🧭",

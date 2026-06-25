@@ -6,7 +6,7 @@
 
 :root {
   --ink: #111;
-  --muted: #555;
+  --muted: #454545;
   --faint: #eadfde;
   --accent: #1a3d2b;
   --gold: #a8f0c8;
@@ -81,7 +81,7 @@ nav {
 }
 
 .nav-links a {
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(255, 255, 255, 0.94);
   font-size: 0.875rem;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -709,7 +709,7 @@ footer::after {
 }
 
 .footer-brand p {
-  color: rgba(255, 255, 255, 0.48);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 0.85rem;
   line-height: 1.7;
   max-width: 260px;
@@ -742,8 +742,9 @@ footer::after {
   fill: currentColor;
 }
 
+.footer-col h3,
 .footer-col h4 {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.94);
   font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -753,7 +754,7 @@ footer::after {
 
 .footer-col a {
   display: block;
-  color: rgba(255, 255, 255, 0.44);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 0.85rem;
   margin-bottom: 0.5rem;
   transition: color 0.2s ease;
@@ -778,7 +779,7 @@ footer::after {
 }
 
 .footer-bottom p {
-  color: rgba(255, 255, 255, 0.34);
+  color: rgba(255, 255, 255, 0.72);
   font-size: 0.8rem;
 }
 
@@ -786,6 +787,7 @@ footer::after {
   text-align: right;
 }
 
+[dir="rtl"] .footer-col h3,
 [dir="rtl"] .footer-col h4 {
   letter-spacing: 0;
   text-transform: none;
@@ -986,6 +988,7 @@ body {
   font-size: var(--type-sm) !important;
 }
 
+.footer-col h3,
 .footer-col h4,
 .footer-bottom p,
 .prompt-count,
