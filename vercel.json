@@ -1,6 +1,28 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/guides/online-course-creation-with-ai",
+      "destination": "/ideas",
+      "permanent": true
+    },
+    {
+      "source": "/guides/online-course-creation-with-ai.html",
+      "destination": "/ideas",
+      "permanent": true
+    },
+    {
+      "source": "/ar/guides/online-course-creation-with-ai",
+      "destination": "/ar/ideas",
+      "permanent": true
+    },
+    {
+      "source": "/ar/guides/online-course-creation-with-ai.html",
+      "destination": "/ar/ideas",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
