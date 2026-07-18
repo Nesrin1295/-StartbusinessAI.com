@@ -91,6 +91,24 @@ nav {
   color: var(--gold);
 }
 
+.ideas-seo-copy {
+  max-width: 900px;
+  padding-top: 1rem;
+  padding-bottom: 4.5rem;
+}
+
+.ideas-seo-copy h2 {
+  margin: 2rem 0 0.75rem;
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--ink);
+}
+
+.ideas-seo-copy p {
+  margin-bottom: 1rem;
+  color: var(--muted);
+  line-height: 1.85;
+}
+
 .nav-group {
   display: flex;
   align-items: center;

@@ -3,6 +3,26 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/ideas.html",
+      "destination": "/ideas",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/ar/ideas.html",
+      "destination": "/ar/ideas",
+      "permanent": true
+    },
+    {
+      "source": "/ar/about.html",
+      "destination": "/ar/about",
+      "permanent": true
+    },
+    {
       "source": "/guides/online-course-creation-with-ai",
       "destination": "/ideas",
       "permanent": true
@@ -24,6 +44,32 @@
     }
   ],
   "headers": [
+    {
+      "source": "/guides/filename.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "index, follow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/guides/filename",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "index, follow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [

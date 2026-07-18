@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://startbusinessai.online/</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://startbusinessai.online/assets/women-planning-ai-business.webp</image:loc>
+      <image:title>Women planning an online AI business together</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://startbusinessai.online/ideas.html</loc>
+    <loc>https://startbusinessai.online/ideas</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
-    <loc>https://startbusinessai.online/about.html</loc>
+    <loc>https://startbusinessai.online/about</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
@@ -25,20 +29,20 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://startbusinessai.online/ar/ideas.html</loc>
+    <loc>https://startbusinessai.online/ar/ideas</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.76</priority>
   </url>
   <url>
-    <loc>https://startbusinessai.online/ar/about.html</loc>
+    <loc>https://startbusinessai.online/ar/about</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
   <url>
     <loc>https://startbusinessai.online/ar/guides/guide.html</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.68</priority>
   </url>
@@ -218,11 +222,26 @@
   </url>
   <url>
     <loc>https://startbusinessai.online/guides/filename.html</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <!-- SEO article guides -->
+  <url>
+    <loc>https://startbusinessai.online/guides/low-cost-business-to-start-from-home</loc>
+    <lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/guides/online-business-for-stay-at-home-moms</loc>
+    <lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/guides/cheapest-business-to-start-from-home</loc>
+    <lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.88</priority>
+  </url>
+  <url><loc>https://startbusinessai.online/ar/guides/low-cost-business-to-start-from-home</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.86</priority></url>
+  <url><loc>https://startbusinessai.online/ar/guides/online-business-for-stay-at-home-moms</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.86</priority></url>
+  <url><loc>https://startbusinessai.online/ar/guides/cheapest-business-to-start-from-home</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.86</priority></url>
   <url>
     <loc>https://startbusinessai.online/guides/100-small-business-ideas-for-beginners.html</loc>
     <lastmod>2026-06-25</lastmod>
