@@ -311,6 +311,31 @@
         font-family: "Cairo", sans-serif;
       }
 
+      #ideas > section {
+        display: flex;
+        flex-direction: column;
+      }
+      #ideas .ideas-section {
+        order: 1;
+      }
+      .arabic-ideas-copy {
+        order: 2;
+        max-width: 900px;
+        margin: 3rem auto 0;
+        padding: 2.5rem;
+        background: linear-gradient(180deg, var(--white) 0%, var(--rose-wash) 100%);
+        border: 1px solid var(--faint);
+        border-radius: var(--radius);
+      }
+      .arabic-ideas-copy .section-title {
+        margin-bottom: 1rem;
+      }
+      .arabic-ideas-copy .section-sub {
+        max-width: none;
+        margin-bottom: 1rem;
+        line-height: 1.9;
+      }
+
       @media (max-width: 700px) {
         .hero {
           min-height: 430px;
@@ -328,6 +353,10 @@
         }
         .idea-stats {
           display: none;
+        }
+        .arabic-ideas-copy {
+          margin-top: 2rem;
+          padding: 1.5rem;
         }
       }
     </style>
@@ -376,6 +405,7 @@
     <main>
       <div class="container" id="ideas">
         <section style="padding-top: 2rem; padding-bottom: 4rem">
+          <div class="arabic-ideas-copy">
           <div class="section-label">الحل</div>
           <div class="section-title">
             اختاري نموذج عمل بسيطًا وابدئي منه
@@ -414,6 +444,7 @@
             وصف أوضح، وباقة أسهل للشراء، وخطوات تسليم ثابتة. بهذه الطريقة تصبح
             الفكرة مشروعًا قابلًا للتطوير بدل أن تبقى مجرد تجربة عشوائية.
           </p>
+          </div>
           <div class="ideas-section">
             <div class="ideas-header">
               <h2>تصفحي أفكار مشاريع بالذكاء الاصطناعي للنساء</h2>

@@ -295,6 +295,36 @@
         line-height: 1.9;
         margin-bottom: 1rem;
       }
+      .about-match-panel {
+        grid-template-columns: 0.85fr 1.15fr;
+        gap: 2rem;
+        padding: 3rem;
+        box-shadow: 0 18px 50px rgba(9, 24, 17, 0.06);
+      }
+      .about-match-panel .founder-media {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, var(--rose-soft) 0%, #fff 100%);
+        border: 1px solid var(--faint);
+        border-radius: 18px;
+        padding: 1.5rem;
+      }
+      .about-match-panel .founder-photo {
+        width: 148px;
+        height: 148px;
+      }
+      .about-match-panel h2 {
+        font-size: 2rem;
+        line-height: 1.25;
+      }
+      .hero-actions {
+        display: none;
+      }
+
       @media (max-width: 700px) {
         .about-card,
         .founder-note {
@@ -302,6 +332,9 @@
         }
         .founder-note {
           grid-template-columns: 1fr;
+        }
+        .about-match-panel {
+          padding: 2rem 1.5rem;
         }
         .about-grid {
           grid-template-columns: 1fr;
@@ -372,7 +405,7 @@
 
     <main>
       <section class="container">
-        <div class="founder-note">
+        <div class="founder-note about-match-panel">
           <div class="founder-media">
             <img decoding="async"
               class="founder-photo"
