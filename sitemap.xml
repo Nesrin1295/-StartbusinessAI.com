@@ -37,16 +37,16 @@
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://startbusinessai.online/ar/guides/guide.html</loc>
+    <loc>https://startbusinessai.online/ar/guides/online-course-creation-with-ai.html</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.74</priority>
   </url>
   <url>
-    <loc>https://startbusinessai.online/ar/guides/online-course-creation-with-ai.html</loc>
-    <lastmod>2026-06-25</lastmod>
+    <loc>https://startbusinessai.online/ar/guides/guide.html</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.74</priority>
+    <priority>0.68</priority>
   </url>
   <url>
     <loc>https://startbusinessai.online/guides/ai-art-business.html</loc>
@@ -227,6 +227,12 @@
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/guides/filename.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
   <!-- SEO article guides -->
   <url>
