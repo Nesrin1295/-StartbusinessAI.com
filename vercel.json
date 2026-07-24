@@ -41,35 +41,19 @@
       "source": "/ar/guides/online-course-creation-with-ai.html",
       "destination": "/ar/ideas",
       "permanent": true
-    }
-  ],
-  "headers": [
+    },
     {
       "source": "/guides/filename.html",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "index, follow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
+      "destination": "/ideas",
+      "permanent": true
     },
     {
       "source": "/guides/filename",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "index, follow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
+      "destination": "/ideas",
+      "permanent": true
+    }
+  ],
+  "headers": [
     {
       "source": "/(.*)",
       "headers": [

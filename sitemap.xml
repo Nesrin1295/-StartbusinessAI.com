@@ -18,9 +18,39 @@
   </url>
   <url>
     <loc>https://startbusinessai.online/about</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/privacy</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.35</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/terms</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/contact</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.45</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/editorial-policy</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/advertising-disclosure</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.35</priority>
   </url>
   <url>
     <loc>https://startbusinessai.online/ar/</loc>
@@ -219,12 +249,6 @@
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://startbusinessai.online/guides/filename.html</loc>
-    <lastmod>2026-07-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
   </url>
   <!-- SEO article guides -->
   <url>

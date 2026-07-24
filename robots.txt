@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /guides/filename.html
 
 Sitemap: https://startbusinessai.online/sitemap.xml

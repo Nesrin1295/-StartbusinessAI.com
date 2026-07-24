@@ -2,10 +2,16 @@
 <html lang="en">
   <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JP0VNMDETE"></script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-JP0VNMDETE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    analytics_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied'
+  });
   gtag('js', new Date());
 
   gtag('config', 'G-JP0VNMDETE');
@@ -13,7 +19,7 @@
 <meta name="google-adsense-account" content="ca-pub-8157298524106158" />
     <script
       async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8157298524106158"
+      src="/assets/privacy-consent.js"
       crossorigin="anonymous"
     ></script>
     <meta charset="UTF-8" />

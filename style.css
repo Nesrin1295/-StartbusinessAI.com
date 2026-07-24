@@ -870,6 +870,75 @@ footer::after {
   }
 }
 
+/* Publisher identity and editorial accountability */
+.founder-note {
+  align-items: center;
+  background: linear-gradient(135deg, #f8fbf8 0%, #fffaf0 100%);
+  border: 1px solid var(--faint);
+  border-radius: var(--radius);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 160px minmax(0, 1fr);
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+}
+
+.founder-media {
+  text-align: center;
+}
+
+.founder-photo {
+  border: 4px solid var(--white);
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(23, 61, 42, 0.14);
+  display: block;
+  height: 148px;
+  margin: 0 auto 0.7rem;
+  object-fit: cover;
+  width: 148px;
+}
+
+.founder-social {
+  align-items: center;
+  background: var(--accent);
+  border-radius: 50%;
+  display: inline-flex;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+.founder-social svg {
+  fill: var(--white);
+  height: 17px;
+  width: 17px;
+}
+
+.founder-note h2 {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin: 0.35rem 0 0.65rem;
+}
+
+.founder-note p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0 0 0.7rem;
+}
+
+.founder-note a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  .founder-note {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
 /* Final mobile guardrails: page-level styles must not create horizontal overflow. */
 @media (max-width: 700px) {
   html,

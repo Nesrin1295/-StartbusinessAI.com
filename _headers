@@ -16,7 +16,3 @@
 
 /guides/*
   Cache-Control: public, max-age=3600, s-maxage=86400
-
-/guides/filename.html
-  X-Robots-Tag: index, follow
-  Cache-Control: public, max-age=0, must-revalidate
