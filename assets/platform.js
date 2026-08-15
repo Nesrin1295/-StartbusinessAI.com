@@ -1,0 +1,9 @@
+document.addEventListener('DOMContentLoaded',()=>{
+ const menu=document.querySelector('.menu-toggle'),links=document.querySelector('.platform-links');
+ if(menu&&links)menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});
+ const search=document.querySelector('[data-library-search]'),cards=[...document.querySelectorAll('[data-search-card]')],empty=document.querySelector('.empty-state');
+ const runFilter=()=>{const q=(search?.value||'').toLowerCase().trim(),active=document.querySelector('.filter-btn.active')?.dataset.filter||'all';let shown=0;cards.forEach(card=>{const matchText=!q||card.textContent.toLowerCase().includes(q),matchFilter=active==='all'||(card.dataset.tags||'').split(' ').includes(active);card.hidden=!(matchText&&matchFilter);if(!card.hidden)shown++});if(empty)empty.style.display=shown?'none':'block'};
+ search?.addEventListener('input',runFilter);document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');runFilter()}));
+ document.querySelectorAll('.copy-btn').forEach(btn=>btn.addEventListener('click',async()=>{const text=btn.closest('.prompt-card')?.querySelector('.prompt-text')?.textContent||btn.dataset.copy||'';try{await navigator.clipboard.writeText(text);btn.textContent='Copied ✓';setTimeout(()=>btn.textContent='Copy prompt',1800)}catch{btn.textContent='Select & copy'}}));
+ document.querySelectorAll('.details-btn').forEach(btn=>btn.addEventListener('click',()=>{const details=btn.closest('.prompt-card')?.querySelector('.prompt-details');details?.classList.toggle('open');btn.setAttribute('aria-expanded',String(details?.classList.contains('open')))}));
+});
