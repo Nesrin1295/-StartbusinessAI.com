@@ -11,6 +11,22 @@
     </image:image>
   </url>
   <url>
+    <loc>https://startbusinessai.online/career-finder</loc>
+    <lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/careers</loc>
+    <lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/jobs</loc>
+    <lastmod>2026-08-21</lastmod><changefreq>weekly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/job-match</loc>
+    <lastmod>2026-08-21</lastmod><changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://startbusinessai.online/freetools</loc>
     <lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.95</priority>
   </url>
@@ -85,6 +101,22 @@
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/ar/freetools</loc>
+    <lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/ar/freetools/ai-visibility-checker</loc>
+    <lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.84</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/ar/prompts</loc>
+    <lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://startbusinessai.online/ar/toolshub</loc>
+    <lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.88</priority>
   </url>
   <url>
     <loc>https://startbusinessai.online/guides/ai-art-business.html</loc>
