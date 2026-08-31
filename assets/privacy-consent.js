@@ -79,7 +79,7 @@
       "aria-label",
       isArabic ? "معلومات المراجعة التحريرية" : "Editorial review information"
     );
-    review.innerHTML = 'Editorially reviewed by <a href="/about">Nesrin Ali Sayed</a> · <a href="/editorial-policy">Editorial standards</a>';
+    review.innerHTML = 'Editorially reviewed by Nesrin Ali Sayed · <a href="/editorial-policy">Editorial standards</a>';
     article.insertBefore(review, article.firstChild);
   }
 
