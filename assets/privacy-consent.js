@@ -79,9 +79,7 @@
       "aria-label",
       isArabic ? "معلومات المراجعة التحريرية" : "Editorial review information"
     );
-    review.innerHTML = isArabic
-      ? 'تمت المراجعة التحريرية بواسطة <a href="/ar/about">نسرين علي سيد</a> · <a href="/editorial-policy">معايير التحرير</a>'
-      : 'Editorially reviewed by <a href="/about">Nesrin Ali Sayed</a> · <a href="/editorial-policy">Editorial standards</a>';
+    review.innerHTML = 'Editorially reviewed by <a href="/about">Nesrin Ali Sayed</a> · <a href="/editorial-policy">Editorial standards</a>';
     article.insertBefore(review, article.firstChild);
   }
 

@@ -85,40 +85,6 @@
     <priority>0.35</priority>
   </url>
   <url>
-    <loc>https://startbusinessai.online/ar/</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://startbusinessai.online/ar/ideas</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.76</priority>
-  </url>
-  <url>
-    <loc>https://startbusinessai.online/ar/about</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://startbusinessai.online/ar/freetools</loc>
-    <lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://startbusinessai.online/ar/freetools/ai-visibility-checker</loc>
-    <lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.84</priority>
-  </url>
-  <url>
-    <loc>https://startbusinessai.online/ar/prompts</loc>
-    <lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://startbusinessai.online/ar/toolshub</loc>
-    <lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.88</priority>
-  </url>
-  <url>
     <loc>https://startbusinessai.online/guides/ai-art-business.html</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -323,9 +289,6 @@
     <loc>https://startbusinessai.online/guides/cheapest-business-to-start-from-home</loc>
     <lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.88</priority>
   </url>
-  <url><loc>https://startbusinessai.online/ar/guides/low-cost-business-to-start-from-home</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.86</priority></url>
-  <url><loc>https://startbusinessai.online/ar/guides/online-business-for-stay-at-home-moms</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.86</priority></url>
-  <url><loc>https://startbusinessai.online/ar/guides/cheapest-business-to-start-from-home</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.86</priority></url>
   <url>
     <loc>https://startbusinessai.online/guides/100-small-business-ideas-for-beginners.html</loc>
     <lastmod>2026-06-25</lastmod>
