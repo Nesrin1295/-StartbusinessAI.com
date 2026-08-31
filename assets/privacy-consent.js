@@ -67,6 +67,7 @@
   }
 
   function addEditorialReview() {
+    if (document.body.classList.contains("career-site")) return;
     var article = document.querySelector("main article, article.guide-body");
     if (!article || article.querySelector("[data-editorial-review]")) return;
 
