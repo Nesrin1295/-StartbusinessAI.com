@@ -1,0 +1,56 @@
+/* Direction-aware alignment shared by the Arabic and English experiences. */
+html body{text-align:start}
+html .shell,html .container,html main,html section,html article,html aside{text-align:start}
+html .center,html .section-head.center,html .finder-header,html .tool-head,html .results-head,html .empty-state{text-align:center}
+
+html .career-nav{direction:ltr}
+html .career-links{margin-left:auto;margin-right:0;direction:ltr}
+html .career-logo img{object-position:left center}
+html[dir="rtl"] .career-nav{direction:rtl}
+html[dir="rtl"] .career-links{margin-left:0;margin-right:auto;direction:rtl}
+html[dir="rtl"] .career-logo img{object-position:right center}
+html[dir="rtl"] .career-menu{margin-left:0;margin-right:auto}
+
+html[dir="rtl"] body>nav:not(.career-nav),html[dir="rtl"] body>header nav,html[dir="rtl"] .nav-group,html[dir="rtl"] .nav-links{direction:rtl}
+html[dir="rtl"] body>nav:not(.career-nav) .logo,html[dir="rtl"] body>header nav .logo{margin-left:auto;margin-right:0}
+html[dir="rtl"] .nav-group{margin-left:0;margin-right:auto}
+
+html[dir="rtl"] .product-hero .shell:not(.hero-layout),html[dir="rtl"] .detail-hero .shell,html[dir="rtl"] .product-card,html[dir="rtl"] .career-card,html[dir="rtl"] .feature-card,html[dir="rtl"] .step,html[dir="rtl"] .tool-card,html[dir="rtl"] .question,html[dir="rtl"] .report section,html[dir="rtl"] .match-preview{text-align:right}
+html[dir="rtl"] .hero-layout>div,html[dir="rtl"] .cta-panel>div,html[dir="rtl"] .footer-row>div{text-align:right}
+html[dir="rtl"] .section-head:not(.center),html[dir="rtl"] .tool-form,html[dir="rtl"] .detail-main,html[dir="rtl"] .detail-side{text-align:right}
+
+html .hero-actions,html .result-actions,html .tool-actions,html .skill-row,html .career-meta,html .catalog-tools,html .footer-links{justify-content:flex-start}
+html[dir="rtl"] .hero-actions,html[dir="rtl"] .result-actions,html[dir="rtl"] .tool-actions,html[dir="rtl"] .skill-row,html[dir="rtl"] .career-meta,html[dir="rtl"] .catalog-tools,html[dir="rtl"] .footer-links{direction:rtl;justify-content:flex-start}
+html[dir="rtl"] .finder-actions{direction:rtl}
+html[dir="rtl"] .progress-copy{direction:rtl}
+html[dir="rtl"] .preview-top{direction:rtl}
+html[dir="rtl"] .result-card,html[dir="rtl"] .roadmap-step,html[dir="rtl"] .roadmap-item{direction:rtl;text-align:right}
+
+html[dir="rtl"] .check-list{padding-left:0;padding-right:0}
+html[dir="rtl"] .check-list li{padding-left:0;padding-right:1.35rem;position:relative}
+html[dir="rtl"] .check-list li:before{position:absolute;right:0;margin:0}
+html[dir="ltr"] .check-list li{padding-left:1.35rem;position:relative}
+html[dir="ltr"] .check-list li:before{position:absolute;left:0;margin:0}
+html[dir="rtl"] .honest-note{border-left:0;border-right:4px solid var(--blue)}
+
+html[dir="rtl"] label,html[dir="rtl"] .field-label{text-align:right}
+html[dir="rtl"] input:not([type="email"]):not([type="url"]):not([type="number"]),html[dir="rtl"] textarea,html[dir="rtl"] select{direction:rtl;text-align:right}
+html[dir="rtl"] input[type="email"],html[dir="rtl"] input[type="url"],html[dir="rtl"] input[type="number"]{direction:ltr;text-align:left}
+html[dir="rtl"] select{background-position:left .8rem center;padding-left:2.25rem;padding-right:1rem}
+
+html[dir="rtl"] .career-link,html[dir="rtl"] a[href] .arrow-icon{direction:rtl}
+html[dir="rtl"] [data-directional-icon],html[dir="rtl"] .arrow-icon{transform:scaleX(-1)}
+html[dir="rtl"] .privacy-banner,html[dir="rtl"] [role="dialog"],html[dir="rtl"] .guide-popup{direction:rtl;text-align:right}
+html[dir="rtl"] .privacy-banner__actions{justify-content:flex-start}
+
+@media(max-width:900px){
+  html .career-links{margin:0;direction:inherit;text-align:start}
+  html[dir="rtl"] .career-links{left:0;right:0;align-items:stretch;text-align:right}
+  html[dir="rtl"] .career-links .language-switcher{align-self:flex-start;margin-left:0;margin-right:0}
+}
+@media(max-width:620px){
+  html .cta-panel,html .footer-row{width:100%}
+  html[dir="rtl"] .cta-panel,html[dir="rtl"] .footer-row{align-items:stretch;text-align:right}
+  html[dir="rtl"] .result-card{grid-template-columns:1fr}
+  html[dir="rtl"] .button{text-align:center}
+}
