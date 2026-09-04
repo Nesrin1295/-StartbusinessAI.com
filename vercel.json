@@ -3,6 +3,11 @@
     "trailingSlash":  false,
     "redirects":  [
                       {
+                          "source":  "/career-finder",
+                          "destination":  "/#career-questionnaire",
+                          "permanent":  true
+                      },
+                      {
                           "source":  "/deploy-:id/:path*",
                           "destination":  "/:path*",
                           "permanent":  true
