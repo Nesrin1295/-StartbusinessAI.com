@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /files/
+Disallow: /startsmartai/
+Disallow: /source-*/
+Disallow: /deploy-*/
 Disallow: /guides/filename.html
 Disallow: /ar/guides/guide.html
 

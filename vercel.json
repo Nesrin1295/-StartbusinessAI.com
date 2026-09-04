@@ -1,93 +1,126 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/ideas.html",
-      "destination": "/ideas",
-      "permanent": true
-    },
-    {
-      "source": "/guides/online-course-creation-with-ai",
-      "destination": "/ideas",
-      "permanent": true
-    },
-    {
-      "source": "/guides/online-course-creation-with-ai.html",
-      "destination": "/ideas",
-      "permanent": true
-    },
-    {
-      "source": "/guides/filename.html",
-      "destination": "/ideas",
-      "permanent": true
-    },
-    {
-      "source": "/guides/filename",
-      "destination": "/ideas",
-      "permanent": true
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600, s-maxage=86400"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "Strict-Transport-Security",
-          "value": "max-age=31536000; includeSubDomains; preload"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "key": "Content-Security-Policy",
-          "value": "default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-src https:; object-src 'none'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
-        }
-      ]
-    },
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        },
-        {
-          "key": "Vary",
-          "value": "Accept-Encoding"
-        }
-      ]
-    },
-    {
-      "source": "/style.css",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        },
-        {
-          "key": "Vary",
-          "value": "Accept-Encoding"
-        }
-      ]
-    }
-  ]
+    "cleanUrls":  true,
+    "trailingSlash":  false,
+    "redirects":  [
+                      {
+                          "source":  "/deploy-:id/:path*",
+                          "destination":  "/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/source-:id/:path*",
+                          "destination":  "/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/startsmartai/:path*",
+                          "destination":  "/:path*",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/index.html",
+                          "destination":  "/",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/ideas.html",
+                          "destination":  "/ideas",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/guides/online-course-creation-with-ai",
+                          "destination":  "/ideas",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/guides/online-course-creation-with-ai.html",
+                          "destination":  "/ideas",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/guides/filename.html",
+                          "destination":  "/ideas",
+                          "permanent":  true
+                      },
+                      {
+                          "source":  "/guides/filename",
+                          "destination":  "/ideas",
+                          "permanent":  true
+                      }
+                  ],
+    "headers":  [
+                    {
+                        "source":  "/admin/:path*",
+                        "headers":  [
+                                        {
+                                            "key":  "X-Robots-Tag",
+                                            "value":  "noindex, nofollow, noarchive"
+                                        }
+                                    ]
+                    },
+                    {
+                        "source":  "/files/:path*",
+                        "headers":  [
+                                        {
+                                            "key":  "X-Robots-Tag",
+                                            "value":  "noindex, nofollow, noarchive"
+                                        }
+                                    ]
+                    },
+                    {
+                        "source":  "/(.*)",
+                        "headers":  [
+                                        {
+                                            "key":  "Cache-Control",
+                                            "value":  "public, max-age=3600, s-maxage=86400"
+                                        },
+                                        {
+                                            "key":  "X-Frame-Options",
+                                            "value":  "SAMEORIGIN"
+                                        },
+                                        {
+                                            "key":  "X-Content-Type-Options",
+                                            "value":  "nosniff"
+                                        },
+                                        {
+                                            "key":  "Strict-Transport-Security",
+                                            "value":  "max-age=31536000; includeSubDomains; preload"
+                                        },
+                                        {
+                                            "key":  "Referrer-Policy",
+                                            "value":  "strict-origin-when-cross-origin"
+                                        },
+                                        {
+                                            "key":  "Content-Security-Policy",
+                                            "value":  "default-src \u0027self\u0027 https: data: blob:; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 \u0027unsafe-eval\u0027 https:; style-src \u0027self\u0027 \u0027unsafe-inline\u0027 https:; img-src \u0027self\u0027 data: https:; font-src \u0027self\u0027 data: https:; connect-src \u0027self\u0027 https:; frame-src https:; object-src \u0027none\u0027; base-uri \u0027self\u0027; frame-ancestors \u0027self\u0027; upgrade-insecure-requests"
+                                        }
+                                    ]
+                    },
+                    {
+                        "source":  "/assets/(.*)",
+                        "headers":  [
+                                        {
+                                            "key":  "Cache-Control",
+                                            "value":  "public, max-age=31536000, immutable"
+                                        },
+                                        {
+                                            "key":  "Vary",
+                                            "value":  "Accept-Encoding"
+                                        }
+                                    ]
+                    },
+                    {
+                        "source":  "/style.css",
+                        "headers":  [
+                                        {
+                                            "key":  "Cache-Control",
+                                            "value":  "public, max-age=31536000, immutable"
+                                        },
+                                        {
+                                            "key":  "Vary",
+                                            "value":  "Accept-Encoding"
+                                        }
+                                    ]
+                    }
+                ]
 }

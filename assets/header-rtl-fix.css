@@ -1,0 +1,14 @@
+/* Compact shared branding and keep Arabic navigation grouped on the right. */
+html .career-logo{width:160px}
+html .career-logo img{height:38px}
+html .platform-logo{width:160px}
+html .platform-logo img{height:38px}
+html[dir="rtl"] .career-links{margin-left:auto;margin-right:1rem}
+html[dir="rtl"] .platform-links{margin-left:auto;margin-right:1rem}
+@media(max-width:900px){
+  html[dir="rtl"] .career-links,html[dir="rtl"] .platform-links{margin:0;text-align:right}
+}
+@media(max-width:620px){
+  html .career-logo,html .platform-logo{width:140px}
+  html .career-logo img,html .platform-logo img{height:34px}
+}
