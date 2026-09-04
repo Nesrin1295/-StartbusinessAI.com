@@ -1,6 +1,7 @@
 (function(){
 'use strict';
 var t={
+'AI Tools':'أدوات الذكاء الاصطناعي',
 'Social Media Manager':'مدير وسائل التواصل الاجتماعي',
 'Plan content, grow communities, and turn audience insights into campaigns.':'خطّط للمحتوى، ونمِّ المجتمعات، وحوّل رؤى الجمهور إلى حملات.',
 'Build Your Career Portfolio Project':'أنشئ مشروع ملف أعمالك المهني',
