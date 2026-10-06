@@ -11,7 +11,7 @@ foreach ($file in $files) {
   if ($updated -ne $html) { [IO.File]::WriteAllText($file.FullName, $updated, [Text.UTF8Encoding]::new($false)) }
 }
 $urls = foreach ($file in $files) {
-  $relative = $file.FullName.Substring($root.Length + 1).Replace('\\', '/')
+  $relative = $file.FullName.Substring($root.Length + 1).Replace('\', '/')
   if ($relative -eq 'index.html') { '/' } else { '/' + $relative.Substring(0, $relative.Length - 5) }
 }
 $urls = $urls | Sort-Object { if ($_ -eq '/') { '0' } else { '1' + $_ } }
