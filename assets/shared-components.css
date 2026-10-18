@@ -518,6 +518,185 @@ html:root[dir="rtl"] body :is(.hero-actions, .result-actions, .catalog-tools) {
   justify-content: flex-start;
 }
 
+html:root body .article-page-hero {
+  padding-block: clamp(48px, 8vw, 96px) var(--space-7);
+  background: var(--color-bg);
+}
+
+html:root body .article-page-hero .shell {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-3);
+}
+
+html:root body .article-page-hero h1 {
+  max-width: 18ch;
+  margin: 0;
+  font-size: clamp(40px, 5vw, 56px);
+}
+
+html:root body .article-page-hero p,
+html:root body .article-section .section-head p {
+  max-width: 66ch;
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+html:root body .article-section {
+  background: var(--color-surface);
+}
+
+html:root body .article-section .section-head {
+  margin-block-end: var(--space-6);
+}
+
+html:root body .article-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-block-end: var(--space-5);
+}
+
+html:root body .article-filter-chip {
+  min-height: 44px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  border: 1px solid var(--color-primary-tint-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-primary-tint);
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: background-color var(--transition-fast) ease, border-color var(--transition-fast) ease, color var(--transition-fast) ease;
+}
+
+html:root body .article-filter-chip[aria-pressed="true"] {
+  border-color: var(--color-primary);
+  background: var(--color-bg);
+  color: var(--color-primary-hover);
+}
+
+html:root body .article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+html:root body .article-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+}
+
+html:root body .article-card-media {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--color-primary-tint);
+}
+
+html:root body .article-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+html:root body .article-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--space-5);
+}
+
+html:root body .article-category {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  margin-block-end: var(--space-3);
+  padding-inline: 12px;
+  border: 1px solid var(--color-primary-tint-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-primary-tint);
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+html:root body .article-card h3 {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0 0 var(--space-3);
+  color: var(--color-ink);
+  font-size: 20px;
+  line-height: 1.35;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+html:root body .article-card time {
+  margin-block-end: var(--space-3);
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+html:root body .article-card p {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0 0 var(--space-4);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+html:root body .article-read-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: var(--space-2);
+  margin-block-start: auto;
+  font-weight: 600;
+}
+
+html:root body .article-empty {
+  margin-block: var(--space-5);
+  color: var(--color-text-muted);
+  text-align: start;
+}
+
+html:root body .article-section-actions {
+  display: flex;
+  justify-content: center;
+  margin-block-start: var(--space-6);
+}
+
+html:root body .article-section-actions [hidden],
+html:root body .article-empty[hidden] {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  html:root body .article-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  html:root body .article-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  html:root body .article-page-hero {
+    padding-block: 48px var(--space-5);
+  }
+
+  html:root body .article-card-content {
+    padding: var(--space-4);
+  }
+}
+
 html:root[dir="rtl"] body :is(.arrow-icon, [data-directional-icon]) {
   transform: scaleX(-1);
 }
