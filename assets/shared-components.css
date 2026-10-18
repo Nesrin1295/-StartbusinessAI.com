@@ -1,0 +1,547 @@
+html:root {
+  --ink: var(--color-ink);
+  --muted: var(--color-text-muted);
+  --faint: var(--color-border);
+  --accent: var(--color-primary);
+  --gold: var(--color-accent);
+  --rose: var(--color-accent);
+  --rose-soft: var(--color-primary-tint);
+  --rose-wash: var(--color-surface);
+  --bg: var(--color-bg);
+  --white: var(--color-bg);
+  --navy: var(--color-ink);
+  --blue: var(--color-primary);
+  --blue-dark: var(--color-primary-hover);
+  --sky: var(--color-primary-tint);
+  --mint: var(--color-primary-tint);
+  --coral: var(--color-accent);
+  --line: var(--color-border);
+  --paper: var(--color-bg);
+}
+
+html:root body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-latin);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+html:root body.career-site :is(h1, h2, h3, h4),
+html:root body:not(.career-site) :is(h1, h2, h3, h4) {
+  color: var(--color-ink);
+  font-family: var(--font-latin);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+html:root body.career-site h1,
+html:root body:not(.career-site) h1 {
+  font-size: clamp(40px, 5vw, 56px);
+}
+
+html:root body.career-site h2,
+html:root body:not(.career-site) h2 {
+  font-size: clamp(28px, 3.5vw, 36px);
+}
+
+html:root body.career-site h3,
+html:root body:not(.career-site) h3 {
+  font-size: clamp(20px, 2.5vw, 24px);
+}
+
+html:root body :is(button, input, select, textarea) {
+  font: inherit;
+}
+
+html:root body :focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+html:root body :is(.shell, .container, .course-detail-inner, .career-detail-inner) {
+  width: min(var(--container-width), calc(100% - 32px));
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
+html:root body :is(.section, main > section) {
+  padding-block: var(--section-space-block);
+  padding-inline: 0;
+}
+
+html:root body main > .section:nth-of-type(even) {
+  background: var(--color-surface);
+}
+
+html:root body :is(.product-hero, .career-hero, .detail-hero, .guide-hero) {
+  background: var(--color-bg);
+}
+
+html:root body :is(.section-head, .finder-header) {
+  margin-block-end: var(--space-6);
+}
+
+html:root body :is(.section-head, .section-heading) :is(.kicker, .section-label) {
+  display: inline-flex;
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+html:root body .section-head p,
+html:root body .section-sub,
+html:root body :is(.product-hero, .career-hero, .detail-hero) > .shell > p {
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+html:root body :is(.career-nav, body > nav) {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  min-height: 72px;
+  gap: var(--space-5);
+  padding-block: var(--space-3);
+  padding-inline: max(16px, calc((100% - var(--container-width)) / 2));
+  border: 0;
+  border-block-end: 1px solid var(--color-border);
+  background: var(--color-bg);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: none;
+}
+
+html:root body :is(.career-logo, .logo) {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  width: min(225px, 48vw);
+}
+
+html:root body :is(.career-logo, .logo) img {
+  display: block;
+  width: 100%;
+  max-height: 52px;
+  object-fit: contain;
+}
+
+html:root body :is(.career-links, .nav-links) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(8px, 1.4vw, 20px);
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+}
+
+html:root body :is(.career-links, .nav-links) a {
+  color: var(--color-ink);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+html:root body :is(.career-links, .nav-links) a:hover,
+html:root body :is(.career-links, .nav-links) a[aria-current="page"] {
+  color: var(--color-primary);
+}
+
+html:root body .career-links .nav-cta {
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: #fff;
+}
+
+html:root body .career-menu {
+  display: none;
+  min-height: 44px;
+  margin-inline-start: auto;
+  padding-inline: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+html:root body main a:not(.button):not(.btn-primary):not(.btn-ghost) {
+  color: var(--color-primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+html:root body main a:not(.button):not(.btn-primary):not(.btn-ghost):hover {
+  color: var(--color-primary-hover);
+}
+
+html:root body :is(.button, .btn-primary, .btn-ghost, .filter-button, button[type="submit"]) {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding-block: 12px;
+  padding-inline: 24px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-family: var(--font-latin);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--transition-fast) ease, color var(--transition-fast) ease, border-color var(--transition-fast) ease, box-shadow var(--transition-fast) ease, transform var(--transition-fast) ease;
+}
+
+html:root body :is(.button, .btn-primary, button[type="submit"]) {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+html:root body :is(.button, .btn-primary, button[type="submit"]):hover {
+  background: var(--color-primary-hover);
+  color: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+html:root body :is(.button.secondary, .btn-ghost, .filter-button) {
+  border-color: var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+html:root body :is(.button.secondary, .btn-ghost, .filter-button):hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-tint);
+  color: var(--color-primary-hover);
+}
+
+html:root body :is(.button, .btn-primary, .btn-ghost):disabled {
+  cursor: not-allowed;
+  opacity: .55;
+  transform: none;
+}
+
+html:root body :is(
+  .finder-card,
+  .product-card,
+  .tool-card,
+  .career-card,
+  .feature-card,
+  .feature-list article,
+  .step,
+  .result-card,
+  .detail-main,
+  .detail-side,
+  .career-tool-card,
+  .category-card,
+  .how-grid article,
+  .roadmap-item,
+  .guide-card,
+  .article-card
+) {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+  box-shadow: var(--shadow-soft);
+  transition: box-shadow var(--transition-fast) ease, transform var(--transition-fast) ease;
+}
+
+html:root body :is(
+  .finder-card,
+  .product-card,
+  .tool-card,
+  .career-card,
+  .feature-card,
+  .feature-list article,
+  .step,
+  .result-card,
+  .detail-main,
+  .detail-side,
+  .career-tool-card,
+  .category-card,
+  .how-grid article,
+  .roadmap-item,
+  .guide-card,
+  .article-card
+):hover {
+  box-shadow: var(--shadow-raised);
+}
+
+html:root body :is(.finder-card, .product-card, .tool-card, .career-card, .feature-card, .feature-list article, .step, .result-card, .career-tool-card, .category-card) {
+  padding: 24px;
+}
+
+html:root body :is(.career-tools-grid, .category-grid, .how-grid, .feature-list, .content-grid) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: var(--space-5);
+}
+
+html:root body .career-tool-card {
+  min-height: 220px;
+}
+
+html:root body .career-tool-icon {
+  background: var(--color-primary-tint);
+  color: var(--color-primary);
+}
+
+html:root body :is(.career-tool-card h3, .career-card h2, .career-card h3, .product-card h2, .product-card h3) {
+  color: var(--color-ink);
+}
+
+html:root body :is(.career-tool-card p, .career-card p, .product-card p, .result-card p) {
+  color: var(--color-text-muted);
+}
+
+html:root body :is(.kicker, .badge, .article-tag, .hero-proof) {
+  border: 1px solid var(--color-primary-tint-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-primary-tint);
+  color: var(--color-primary);
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+html:root body .hero-accent {
+  color: var(--color-accent);
+}
+
+html:root body :is(.text-field, input:not([type="checkbox"]):not([type="radio"]), select, textarea) {
+  min-height: 48px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-latin);
+  font-size: 16px;
+}
+
+html:root body textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+html:root body :is(.field-label, label) {
+  color: var(--color-ink);
+  font-weight: 500;
+}
+
+html:root body :is(.text-field, input, select, textarea):focus-visible {
+  border-color: var(--color-primary);
+  outline: 3px solid rgba(26, 122, 58, .22);
+  outline-offset: 2px;
+}
+
+html:root body :is(.option, .choice, .selectable-chip) {
+  min-height: 56px;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  cursor: pointer;
+}
+
+html:root body .option:has(input:checked),
+html:root body :is(.choice, .selectable-chip)[aria-pressed="true"],
+html:root body :is(.choice, .selectable-chip).selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-tint);
+  color: var(--color-primary);
+}
+
+html:root body .option input {
+  accent-color: var(--color-primary);
+}
+
+html:root body .progress-track {
+  height: 6px;
+  border-radius: var(--radius-pill);
+  background: var(--color-border);
+}
+
+html:root body .progress-bar {
+  border-radius: inherit;
+  background: var(--color-primary);
+  transition: width var(--transition-fast) ease;
+}
+
+html:root body .finder-stepper {
+  gap: var(--space-2);
+  margin-block: var(--space-5);
+}
+
+html:root body .finder-stepper li {
+  position: relative;
+  gap: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+html:root body .finder-stepper li::before {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline: 0;
+  height: 4px;
+  border-radius: var(--radius-pill);
+  background: var(--color-border);
+  content: "";
+}
+
+html:root body .finder-stepper li[aria-current="step"]::before,
+html:root body .finder-stepper li[data-complete="true"]::before {
+  background: var(--color-primary);
+}
+
+html:root body .finder-stepper .step-number {
+  width: 28px;
+  height: 28px;
+  margin-block-start: var(--space-2);
+  border-color: var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-weight: 500;
+}
+
+html:root body .finder-stepper li[aria-current="step"] .step-number,
+html:root body .finder-stepper li[data-complete="true"] .step-number {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: #fff;
+}
+
+html:root body :is(.field-error, .error-message, [role="alert"]) {
+  color: var(--color-ink);
+}
+
+html:root body :is(footer, .site-footer, .career-footer) {
+  padding-block: var(--space-7);
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+html:root body :is(footer, .site-footer, .career-footer) :is(h2, h3, h4, p, a, li, small) {
+  color: var(--color-text-muted);
+}
+
+html:root body :is(footer, .site-footer, .career-footer) :is(h2, h3, h4) {
+  color: var(--color-ink);
+}
+
+html:root body :is(footer, .site-footer, .career-footer) a:hover {
+  color: var(--color-primary);
+}
+
+html:root[dir="rtl"] body,
+html:root:lang(ar) body {
+  font-family: var(--font-arabic);
+  line-height: 1.8;
+  text-align: start;
+}
+
+html:root[dir="rtl"] body :is(h1, h2, h3, h4, p, label, a, button, input, select, textarea),
+html:root:lang(ar) body :is(h1, h2, h3, h4, p, label, a, button, input, select, textarea) {
+  font-family: var(--font-arabic);
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+html:root[dir="rtl"] body :is(input, select, textarea),
+html:root:lang(ar) body :is(input, select, textarea) {
+  text-align: start;
+}
+
+html:root[dir="rtl"] body :is(.career-links, .nav-links) {
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+}
+
+html:root[dir="rtl"] body :is(.hero-actions, .result-actions, .catalog-tools) {
+  justify-content: flex-start;
+}
+
+html:root[dir="rtl"] body :is(.arrow-icon, [data-directional-icon]) {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 860px) {
+  html:root body .career-menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  html:root body .career-links {
+    display: none;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: var(--space-2) var(--space-4);
+    margin-inline: 0;
+    padding-block: var(--space-3);
+  }
+
+  html:root body .career-links.open {
+    display: flex;
+  }
+
+  html:root body .career-nav {
+    flex-wrap: wrap;
+  }
+
+  html:root body .nav-links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: var(--space-2) var(--space-4);
+  }
+
+  html:root body .hero-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  html:root body .how-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  html:root body :is(.finder-card, .product-card, .tool-card, .career-card, .feature-card, .feature-list article, .step, .result-card, .career-tool-card, .category-card) {
+    padding: 16px;
+  }
+
+  html:root body :is(.button, .btn-primary, .btn-ghost) {
+    min-height: 48px;
+  }
+
+  html:root body .hero-actions {
+    align-items: stretch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:root body *,
+  html:root body *::before,
+  html:root body *::after {
+    scroll-behavior: auto;
+    transition-duration: 0.01ms;
+  }
+}
