@@ -545,3 +545,203 @@ html:root[dir="rtl"] body :is(.arrow-icon, [data-directional-icon]) {
     transition-duration: 0.01ms;
   }
 }
+
+html:root body main:has(> .product-hero + .finder-wrap) {
+  display: grid;
+  width: min(var(--container-width), calc(100% - 32px));
+  max-width: var(--container-width);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-7);
+  margin-inline: auto;
+}
+
+html:root body main:has(> .product-hero + .finder-wrap) > .product-hero {
+  grid-column: 1;
+  grid-row: 1;
+  padding-block: var(--space-9);
+  padding-inline: 0;
+}
+
+html:root body main:has(> .product-hero + .finder-wrap) > .product-hero .shell,
+html:root body main:has(> .product-hero + .finder-wrap) > .finder-wrap .shell {
+  width: 100%;
+  max-width: none;
+  padding-inline: 0;
+}
+
+html:root body main:has(> .product-hero + .finder-wrap) > .product-hero h1 {
+  max-width: 620px;
+  margin-block: var(--space-4);
+  font-size: clamp(40px, 4.5vw, 56px);
+  line-height: 1.1;
+}
+
+html:root body main:has(> .product-hero + .finder-wrap) > .product-hero .hero-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-block-start: var(--space-5);
+}
+
+html:root body main:has(> .product-hero + .finder-wrap) > .product-hero .hero-proof,
+html:root body main:has(> .product-hero + .finder-wrap) > .product-hero .hero-note {
+  display: inline-flex;
+  margin-block-start: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+html:root body main:has(> .product-hero + .finder-wrap) > .finder-wrap {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  padding-block: var(--space-8);
+}
+
+html:root body main:has(> .product-hero + .finder-wrap) > .section {
+  width: 100%;
+  grid-column: 1 / -1;
+  padding-inline: 0;
+}
+
+html:root body main:has(> .product-hero + .finder-wrap) .career-tools-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+html:root body main:has(> .product-hero + .finder-wrap) .how-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+html:root body main:has(> .product-hero + .finder-wrap) :is(.career-tool-card, .how-grid article, .category-card) {
+  height: 100%;
+}
+
+html:root body main:has(> .product-hero + .finder-wrap) .career-tool-link {
+  margin-block-start: auto;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  html:root body main:has(> .product-hero + .finder-wrap) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  html:root body main:has(> .product-hero + .finder-wrap) > .product-hero,
+  html:root body main:has(> .product-hero + .finder-wrap) > .finder-wrap {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  html:root body main:has(> .product-hero + .finder-wrap) > .product-hero {
+    padding-block: var(--space-8);
+  }
+
+  html:root body main:has(> .product-hero + .finder-wrap) > .finder-wrap {
+    padding-block: 0 var(--space-8);
+  }
+
+  html:root body main:has(> .product-hero + .finder-wrap) .career-tools-grid,
+  html:root body main:has(> .product-hero + .finder-wrap) .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  html:root body main:has(> .product-hero + .finder-wrap) .how-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  html:root body main:has(> .product-hero + .finder-wrap) > .product-hero {
+    padding-block: var(--space-7);
+  }
+
+  html:root body main:has(> .product-hero + .finder-wrap) > .product-hero h1 {
+    font-size: 40px;
+  }
+
+  html:root body main:has(> .product-hero + .finder-wrap) > .product-hero .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  html:root body main:has(> .product-hero + .finder-wrap) .career-tools-grid,
+  html:root body main:has(> .product-hero + .finder-wrap) .category-grid,
+  html:root body main:has(> .product-hero + .finder-wrap) .how-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+html:root body.arabic-home main {
+  display: grid;
+  width: min(var(--container-width), calc(100% - 32px));
+  max-width: var(--container-width);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-7);
+  margin-inline: auto;
+}
+
+html:root body.arabic-home main > .product-hero {
+  grid-column: 1;
+  grid-row: 1;
+  padding-block: var(--space-9);
+  padding-inline: 0;
+}
+
+html:root body.arabic-home main > .product-hero .shell {
+  width: 100%;
+  max-width: none;
+  padding-inline: 0;
+}
+
+html:root body.arabic-home main > .arabic-finder-preview {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+}
+
+html:root body.arabic-home main > section {
+  width: 100%;
+  grid-column: 1 / -1;
+}
+
+html:root body.arabic-home .arabic-finder-preview-body {
+  margin-block-start: var(--space-5);
+}
+
+html:root body.arabic-home .arabic-finder-preview-body h2 {
+  margin-block-end: var(--space-3);
+}
+
+html:root body.arabic-home .arabic-finder-preview-body p {
+  margin-block-end: var(--space-5);
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 991px) {
+  html:root body.arabic-home main {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  html:root body.arabic-home main > :is(.product-hero, .arabic-finder-preview) {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  html:root body.arabic-home main > .product-hero {
+    padding-block: var(--space-8);
+  }
+
+  html:root body.arabic-home main > .arabic-finder-preview {
+    margin-block-end: var(--space-8);
+  }
+}
+
+@media (max-width: 600px) {
+  html:root body.arabic-home main > .product-hero {
+    padding-block: var(--space-7);
+  }
+}
