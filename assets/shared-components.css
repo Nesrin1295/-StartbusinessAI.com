@@ -134,6 +134,20 @@ html:root body :is(.career-logo, .logo) img {
   object-fit: contain;
 }
 
+html:root body .platform-logo {
+  display: flex;
+  flex: 0 1 225px;
+  align-items: center;
+  min-width: 0;
+}
+
+html:root body .platform-logo img {
+  display: block;
+  width: 100%;
+  max-height: 52px;
+  object-fit: contain;
+}
+
 html:root body :is(.career-links, .nav-links) {
   display: flex;
   align-items: center;
@@ -173,6 +187,32 @@ html:root body .career-menu {
   background: var(--color-bg);
   color: var(--color-primary);
   cursor: pointer;
+}
+
+html:root body .menu-toggle {
+  display: none;
+  min-height: 44px;
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+  padding-inline: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+html:root body .platform-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  margin-inline-start: auto;
+}
+
+html:root body .platform-links a {
+  color: var(--color-ink);
+  font-size: 14px;
+  font-weight: 500;
 }
 
 html:root body main a:not(.button):not(.btn-primary):not(.btn-ghost) {
@@ -487,6 +527,32 @@ html:root[dir="rtl"] body :is(.arrow-icon, [data-directional-icon]) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+
+  html:root body .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  html:root body .platform-nav {
+    flex-wrap: wrap;
+  }
+
+  html:root body .platform-links {
+    position: static;
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-2);
+    margin-inline: 0;
+    padding-block: var(--space-3);
+    background: var(--color-bg);
+  }
+
+  html:root body .platform-links.open {
+    display: flex;
   }
 
   html:root body .career-links {
