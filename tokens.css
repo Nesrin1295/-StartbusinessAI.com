@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+
+html:root {
+  --color-bg: #FFFFFF;
+  --color-surface: #F5F5F2;
+  --color-primary: #1A7A3A;
+  --color-primary-hover: #14602D;
+  --color-primary-tint: #E8F8EF;
+  --color-primary-tint-border: #C9EFD9;
+  --color-accent: #2ECC71;
+  --color-mint: #A8F0C8;
+  --color-ink: #0D3320;
+  --color-text-muted: #5B6472;
+  --color-border: #E5E8EE;
+
+  --font-latin: "Inter", sans-serif;
+  --font-arabic: "IBM Plex Sans Arabic", sans-serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 1px 2px rgba(16, 24, 40, .06);
+  --shadow-raised: 0 8px 24px rgba(16, 24, 40, .08);
+  --container-width: 1120px;
+  --section-space-block: 64px;
+  --transition-fast: 180ms;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html:root body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-latin);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+html:lang(ar) body,
+html[dir="rtl"] body,
+body[dir="rtl"] {
+  font-family: var(--font-arabic);
+  line-height: 1.8;
+}
+
+html:root:lang(ar) body,
+html:root[dir="rtl"] body,
+html:root body[dir="rtl"],
+html:root:lang(ar) :where(*),
+html:root[dir="rtl"] body :where(*),
+html:root body[dir="rtl"] :where(*) {
+  font-family: var(--font-arabic);
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+:lang(ar),
+[dir="rtl"] {
+  font-family: var(--font-arabic);
+  letter-spacing: normal;
+  line-height: 1.8;
+  text-transform: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-ink);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(40px, 5vw, 56px);
+}
+
+h2 {
+  font-size: clamp(28px, 3.5vw, 36px);
+}
+
+h3 {
+  font-size: clamp(20px, 2.5vw, 24px);
+}
+
+p {
+  font-size: 16px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --section-space-block: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --section-space-block: 96px;
+  }
+}
