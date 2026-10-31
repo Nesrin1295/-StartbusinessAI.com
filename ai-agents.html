@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Agent Templates for Small Businesses | StartBusinessAI</title>
+  <meta name="description" content="Use practical, reviewable AI agent templates to research business ideas, shape an offer, plan content, and draft customer support replies.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://startbusinessai.online/ai-agents">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://startbusinessai.online/ai-agents">
+  <meta property="og:title" content="AI Agent Templates for Small Businesses | StartBusinessAI">
+  <meta property="og:description" content="Use practical, reviewable AI agent templates to research business ideas, shape an offer, plan content, and draft customer support replies.">
+  <link rel="icon" href="/assets/logo.svg">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .agent-hero { background: linear-gradient(145deg, #f8fbf8, #eef7f0); color: var(--ink); padding: 4rem 1.5rem; }
+    .agent-hero .container { max-width: 900px; }
+    .agent-hero .section-label { color: var(--accent); }
+    .agent-hero h1 { font-family: Inter, "DM Sans", Arial, sans-serif; font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 1rem; color: var(--navy); }
+    .agent-hero p { color: var(--muted); max-width: 680px; line-height: 1.75; }
+    .agent-note { margin: 1.5rem 0 0; padding: 1rem 1.2rem; background: white; border: 1px solid var(--faint); border-left: 3px solid var(--primary); border-radius: 0 8px 8px 0; color: var(--ink); font-size: .9rem; line-height: 1.65; }
+    .agent-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+    .agent-card { min-width: 0; background: var(--white); border: 1px solid var(--faint); border-radius: var(--radius); padding: 1.5rem; }
+    .agent-card h2 { font: 700 1.3rem Inter, "DM Sans", Arial, sans-serif; margin-bottom: .6rem; color: var(--navy); }
+    .agent-card > p { color: var(--muted); line-height: 1.65; font-size: .92rem; }
+    .agent-card details { margin-top: 1rem; }
+    .agent-card summary { color: var(--accent); font-weight: 600; cursor: pointer; }
+    .agent-card pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 340px; overflow: auto; margin: .9rem 0; padding: 1rem; border: 1px solid var(--faint); border-radius: 8px; background: var(--bg); color: var(--ink); font: .82rem/1.6 Inter, "DM Sans", Arial, sans-serif; }
+    .agent-card button { border: 0; border-radius: 10px; background: var(--primary); color: white; padding: .7rem 1rem; font: 600 .9rem Inter, "DM Sans", Arial, sans-serif; cursor: pointer; }
+    .agent-card button:hover { opacity: .88; }
+    .copy-status { min-height: 1.4rem; margin-top: .5rem; color: var(--accent); font-size: .82rem; }
+    .agent-footer-logo img { display: block; width: 190px; max-width: 100%; height: auto; }
+    .agent-footer { padding-top: 0; }
+  </style>
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="logo" aria-label="StartBusinessAI home">
+      <img src="assets/career-logo.svg" alt="StartBusinessAI" width="336" height="120">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#ideas">Ideas</a></li>
+      <li><a href="index.html#guide">How to Start</a></li>
+      <li><a href="index.html#articles">Guides</a></li>
+      <li><a href="ai-agents.html" aria-current="page">AI Agents</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <header class="agent-hero">
+    <div class="container">
+      <div class="section-label">AI Agents</div>
+      <h1>Small-business workflows you can run with AI</h1>
+      <p>Start with a clear task, give an AI assistant the right context, and review its work. These reusable templates help you research an idea, shape an offer, plan content, and respond to customers.</p>
+      <div class="agent-note"><strong>Important:</strong> These are prompt-based agent templates, not autonomous software. Use them in an AI assistant of your choice, verify facts, and approve any customer-facing or business-critical output yourself. Do not include passwords, payment details, or private customer information.</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-label="AI agent templates">
+      <div class="agent-grid">
+        <article class="agent-card">
+          <div class="section-label">Research</div>
+          <h2>Business Idea Researcher</h2>
+          <p>Pressure-test a business idea by identifying customers, problems, alternatives, assumptions, and low-cost ways to gather evidence.</p>
+          <details>
+            <summary>View prompt template</summary>
+            <pre data-prompt>You are my business idea research assistant. Help me assess this idea: [describe the idea] for [target customer] in [location or market].
+
+Ask up to 5 clarifying questions first. Then organize your response into:
+1. Customer problem and evidence needed
+2. Existing alternatives and competitors to investigate
+3. Assumptions that could make the idea fail
+4. Five low-cost customer research steps
+5. A simple test I can run this week
+
+Separate known information from assumptions. Do not invent statistics, customer quotes, or sources. If current market facts are needed, tell me what to verify and where to look. Do not recommend spending money before the basic demand test.</pre>
+            <button type="button" data-copy-prompt>Copy prompt</button>
+            <p class="copy-status" role="status" aria-live="polite"></p>
+          </details>
+        </article>
+
+        <article class="agent-card">
+          <div class="section-label">Planning</div>
+          <h2>Offer &amp; Launch Planner</h2>
+          <p>Turn a service or product idea into a focused starter offer and an achievable first-month plan.</p>
+          <details>
+            <summary>View prompt template</summary>
+            <pre data-prompt>You are my practical small-business launch planner. My idea is [idea], for [customer], using [skills, time, and budget].
+
+First ask about anything essential that is missing. Then create:
+1. A one-sentence offer with a clear customer outcome
+2. Three deliverables and what is out of scope
+3. A starter pricing approach with assumptions clearly labeled
+4. A 4-week plan with no more than 3 priorities per week
+5. A short checklist for testing the offer with real customers
+
+Keep the plan realistic for my stated time and budget. Do not promise specific revenue or treat guesses as facts. Flag legal, financial, or regulatory questions for qualified local advice.</pre>
+            <button type="button" data-copy-prompt>Copy prompt</button>
+            <p class="copy-status" role="status" aria-live="polite"></p>
+          </details>
+        </article>
+
+        <article class="agent-card">
+          <div class="section-label">Marketing</div>
+          <h2>Content Plan Assistant</h2>
+          <p>Build a small, consistent content plan from your offer, audience, and available time—without unsupported claims.</p>
+          <details>
+            <summary>View prompt template</summary>
+            <pre data-prompt>You are my content planning assistant. My business is [business], my audience is [audience], my offer is [offer], and I can publish [frequency] on [channels].
+
+Create a 2-week content plan with:
+1. One useful audience question for each post
+2. A format and a concise outline
+3. A simple, honest call to action
+4. The facts or examples I need to provide before publishing
+
+Use a clear, helpful tone. Do not invent testimonials, statistics, customer results, or product features. Mark any claim that needs verification. Keep every suggestion appropriate for the channels I named.</pre>
+            <button type="button" data-copy-prompt>Copy prompt</button>
+            <p class="copy-status" role="status" aria-live="polite"></p>
+          </details>
+        </article>
+
+        <article class="agent-card">
+          <div class="section-label">Customer care</div>
+          <h2>Customer Reply Drafter</h2>
+          <p>Draft a considerate reply to a customer message while keeping private information out of your AI prompt.</p>
+          <details>
+            <summary>View prompt template</summary>
+            <pre data-prompt>You are my customer support drafting assistant. Help me respond to this anonymized message: [remove names, contact details, order numbers, and other personal data].
+
+My relevant policy or facts are: [paste only approved, non-sensitive information].
+
+Draft a concise, empathetic reply that:
+1. Acknowledges the customer's concern
+2. States only information supported by the policy or facts I supplied
+3. Offers a clear next step
+4. Does not promise a refund, timeline, or exception unless explicitly authorized
+
+If the facts are not enough to answer, list the questions I should resolve before replying. Do not request or expose sensitive customer data.</pre>
+            <button type="button" data-copy-prompt>Copy prompt</button>
+            <p class="copy-status" role="status" aria-live="polite"></p>
+          </details>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <p class="agent-footer-logo"><img src="assets/career-logo-dark.svg" alt="StartBusinessAI" width="336" height="120" loading="lazy"></p>
+      <a href="index.html">Back to business ideas</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-copy-prompt]').forEach((button) => {
+      button.addEventListener('click', async () => {
+        const card = button.closest('.agent-card');
+        const prompt = card.querySelector('[data-prompt]').textContent.trim();
+        const status = card.querySelector('.copy-status');
+        try {
+          await navigator.clipboard.writeText(prompt);
+          status.textContent = 'Prompt copied.';
+        } catch {
+          status.textContent = 'Could not copy automatically. Select and copy the prompt text above.';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

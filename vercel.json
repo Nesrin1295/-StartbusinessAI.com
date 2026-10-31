@@ -33,16 +33,6 @@
                           "permanent":  true
                       },
                       {
-                          "source":  "/guides/online-course-creation-with-ai",
-                          "destination":  "/ideas",
-                          "permanent":  true
-                      },
-                      {
-                          "source":  "/guides/online-course-creation-with-ai.html",
-                          "destination":  "/ideas",
-                          "permanent":  true
-                      },
-                      {
                           "source":  "/guides/filename.html",
                           "destination":  "/ideas",
                           "permanent":  true
