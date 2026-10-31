@@ -1,12 +1,10 @@
 (function(){
   'use strict';
   var KEY='startbusinessai-language';
-  var queryLang=new URLSearchParams(window.location.search).get('lang');
-  var requested;
-  try{requested=localStorage.getItem(KEY)}catch(e){}
-  var lang=queryLang==='en'||queryLang==='ar'?queryLang:(requested==='en'?'en':'ar');
+  var lang='en';
+  try{localStorage.removeItem(KEY)}catch(e){}
   var html=document.documentElement;
-  html.lang=lang; html.dir=lang==='ar'?'rtl':'ltr';
+  html.lang='en'; html.dir='ltr';
   html.dataset.language=lang;
 
   var ar={
@@ -41,13 +39,13 @@
     attrs.forEach(function(a){if(!node.hasAttribute(a))return;var k='i18nOriginal'+a.replace(/-([a-z])/g,function(_,c){return c.toUpperCase()});if(node.dataset[k]===undefined)node.dataset[k]=node.getAttribute(a);node.setAttribute(a,to==='ar'?translateString(node.dataset[k],'ar'):node.dataset[k])});
     Array.prototype.forEach.call(node.childNodes,function(n){translateNode(n,to)});
   }
-  function seo(to){var title=document.querySelector('title'),desc=document.querySelector('meta[name="description"]');if(title)translateNode(title,to);if(desc){if(!desc.dataset.i18nOriginalContent)desc.dataset.i18nOriginalContent=desc.content;desc.content=to==='ar'?translateString(desc.dataset.i18nOriginalContent,'ar'):desc.dataset.i18nOriginalContent}var canonical=document.querySelector('link[rel="canonical"]');if(canonical&&!document.querySelector('link[hreflang="ar"]')){['ar','en','x-default'].forEach(function(code){var l=document.createElement('link');l.rel='alternate';l.hreflang=code;l.href=canonical.href+(canonical.href.indexOf('?')>-1?'&':'?')+'lang='+(code==='x-default'?'ar':code);document.head.appendChild(l)})}}
+  function seo(to){var title=document.querySelector('title'),desc=document.querySelector('meta[name="description"]');if(title)translateNode(title,to);if(desc){if(!desc.dataset.i18nOriginalContent)desc.dataset.i18nOriginalContent=desc.content;desc.content=desc.dataset.i18nOriginalContent}}
   function switcher(){if(document.querySelector('.language-switcher'))return;var host=document.querySelector('.career-links,.nav-group,.nav-links,header nav,body > nav,nav');if(!host)return;var box=document.createElement('div');box.className='language-switcher';box.setAttribute('role','group');box.setAttribute('aria-label',lang==='ar'?'اختيار اللغة':'Choose language');box.dataset.noTranslate='';box.innerHTML='<button type="button" data-lang="ar">🇸🇦 العربية</button><button type="button" data-lang="en">🇬🇧 English</button>';host.appendChild(box);box.addEventListener('click',function(e){var b=e.target.closest('[data-lang]');if(b)setLanguage(b.dataset.lang)});updateSwitcher()}
   function updateSwitcher(){document.querySelectorAll('.language-switcher [data-lang]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.lang===lang))})}
-  function setLanguage(next){if(next!=='ar'&&next!=='en')return;lang=next;try{localStorage.setItem(KEY,lang)}catch(e){}html.lang=lang;html.dir=lang==='ar'?'rtl':'ltr';html.dataset.language=lang;translateNode(document.body,lang);seo(lang);updateSwitcher();document.dispatchEvent(new CustomEvent('languagechange',{detail:{language:lang}}))}
-  function articlesNav(){var hosts=document.querySelectorAll('.career-links,.nav-group,.nav-links,.platform-links');if(!hosts.length){var nav=document.querySelector('header nav,body > nav,nav');if(nav)hosts=[nav]}Array.prototype.forEach.call(hosts,function(host){var link=host.querySelector('[data-articles-link]');if(!link){link=document.createElement('a');link.dataset.articlesLink='';var switcher=host.querySelector('.language-switcher')||host.querySelector('a[hreflang="ar"],a[hreflang="en"]');if(switcher)host.insertBefore(link,switcher);else host.appendChild(link)}link.href=lang==='ar'?'/ar/articles/':'/articles/';if(!link.hasAttribute('aria-current'))link.textContent=lang==='ar'?'المقالات':'Articles'});var path=location.pathname.replace(/\/index\.html$/,'').replace(/\.html$/,'').replace(/\/+$/,'')||'/';if(path==='/'||path==='/ar'||path==='/careers'||path.indexOf('/careers/')===0||path==='/job-match'||path==='/roadmap'){if(!document.querySelector('[data-article-widget-script]')){var script=document.createElement('script');script.src='/assets/articles.js?v=20261014-7';script.dataset.articleWidgetScript='';document.head.appendChild(script)}}}
+  function setLanguage(next){if(next!=='en')return;lang='en';try{localStorage.removeItem(KEY)}catch(e){}html.lang='en';html.dir='ltr';html.dataset.language=lang;translateNode(document.body,lang);seo(lang);document.dispatchEvent(new CustomEvent('languagechange',{detail:{language:lang}}))}
+  function articlesNav(){}
   document.addEventListener('languagechange',articlesNav);
-  function init(){switcher();translateNode(document.body,lang);seo(lang);var observer=new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){translateNode(n,lang)})})});observer.observe(document.body,{childList:true,subtree:true});window.SiteI18n={getLanguage:function(){return lang},isArabic:function(){return lang==='ar'},setLanguage:setLanguage,t:function(s){return lang==='ar'?translateString(s,'ar'):s},translations:ar};document.dispatchEvent(new CustomEvent('i18nready',{detail:{language:lang}}))}
+  function init(){translateNode(document.body,lang);seo(lang);var observer=new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){translateNode(n,lang)})})});observer.observe(document.body,{childList:true,subtree:true});window.SiteI18n={getLanguage:function(){return lang},isArabic:function(){return false},setLanguage:setLanguage,t:function(s){return s},translations:ar};document.dispatchEvent(new CustomEvent('i18nready',{detail:{language:lang}}))}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',articlesNav);else articlesNav();
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();

@@ -1,0 +1,89 @@
+.site-global-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, .98);
+  border-bottom: 1px solid #e7eee8;
+  box-shadow: 0 2px 12px rgba(16, 35, 25, .05);
+}
+
+.site-global-nav {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 1180px;
+  min-height: 72px;
+  margin: 0 auto;
+  padding: .6rem 1.5rem;
+}
+
+.site-global-logo {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.site-global-logo img {
+  display: block;
+  width: 168px;
+  max-width: 42vw;
+  height: auto;
+}
+
+.site-global-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: .5rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-global-links a {
+  color: #46564a;
+  font-size: .875rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.site-global-links a:hover,
+.site-global-links a:focus-visible {
+  color: #1f9d62;
+}
+
+.career-footer .footer-row > div > img,
+.career-footer .footer-row > div > a > img {
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  .site-global-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .35rem .75rem;
+    padding: .65rem 1rem;
+  }
+
+  .site-global-logo img {
+    width: 145px;
+    max-width: 100%;
+  }
+
+  .site-global-links {
+    flex-basis: 100%;
+    justify-content: center;
+    gap: .45rem 1rem;
+  }
+
+  .site-global-links a {
+    font-size: .78rem;
+  }
+}

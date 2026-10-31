@@ -28,6 +28,36 @@
                           "permanent":  true
                       },
                       {
+                          "source": "/ar/articles",
+                          "destination": "/#articles",
+                          "permanent": true
+                      },
+                      {
+                          "source": "/ar/articles/",
+                          "destination": "/#articles",
+                          "permanent": true
+                      },
+                      {
+                          "source": "/ar/:path*",
+                          "destination": "/",
+                          "permanent": true
+                      },
+                      {
+                          "source": "/ar",
+                          "destination": "/",
+                          "permanent": true
+                      },
+                      {
+                          "source": "/articles",
+                          "destination": "/#articles",
+                          "permanent": true
+                      },
+                      {
+                          "source": "/articles/",
+                          "destination": "/#articles",
+                          "permanent": true
+                      },
+                      {
                           "source":  "/ideas.html",
                           "destination":  "/ideas",
                           "permanent":  true
