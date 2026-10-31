@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Agent Templates for Small Businesses | StartBusinessAI</title>
-  <meta name="description" content="Use practical, reviewable AI agent templates to research business ideas, shape an offer, plan content, and draft customer support replies.">
+  <title>AI Agents for Job Matching and Business Automation | StartBusinessAI</title>
+  <meta name="description" content="Explore AI agent templates to find and evaluate suitable jobs, plan safe business automations, research ideas, and organize everyday work.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://startbusinessai.online/ai-agents">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://startbusinessai.online/ai-agents">
-  <meta property="og:title" content="AI Agent Templates for Small Businesses | StartBusinessAI">
-  <meta property="og:description" content="Use practical, reviewable AI agent templates to research business ideas, shape an offer, plan content, and draft customer support replies.">
+  <meta property="og:title" content="AI Agents for Job Matching and Business Automation | StartBusinessAI">
+  <meta property="og:description" content="Explore AI agent templates to find and evaluate suitable jobs, plan safe business automations, research ideas, and organize everyday work.">
   <link rel="icon" href="/assets/logo.svg">
   <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="style.css">
@@ -30,6 +30,7 @@
     .agent-card pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 340px; overflow: auto; margin: .9rem 0; padding: 1rem; border: 1px solid var(--faint); border-radius: 8px; background: var(--bg); color: var(--ink); font: .82rem/1.6 Inter, "DM Sans", Arial, sans-serif; }
     .agent-card button { border: 0; border-radius: 10px; background: var(--primary); color: white; padding: .7rem 1rem; font: 600 .9rem Inter, "DM Sans", Arial, sans-serif; cursor: pointer; }
     .agent-card button:hover { opacity: .88; }
+    .agent-card .agent-link { display: inline-block; margin-top: .8rem; color: var(--accent); font-weight: 600; }
     .copy-status { min-height: 1.4rem; margin-top: .5rem; color: var(--accent); font-size: .82rem; }
     .agent-footer-logo img { display: block; width: 190px; max-width: 100%; height: auto; }
     .agent-footer { padding-top: 0; }
@@ -52,15 +53,70 @@
   <header class="agent-hero">
     <div class="container">
       <div class="section-label">AI Agents</div>
-      <h1>Small-business workflows you can run with AI</h1>
-      <p>Start with a clear task, give an AI assistant the right context, and review its work. These reusable templates help you research an idea, shape an offer, plan content, and respond to customers.</p>
-      <div class="agent-note"><strong>Important:</strong> These are prompt-based agent templates, not autonomous software. Use them in an AI assistant of your choice, verify facts, and approve any customer-facing or business-critical output yourself. Do not include passwords, payment details, or private customer information.</div>
+      <h1>AI agents for job search and business automation</h1>
+      <p>Use an AI assistant to discover relevant job opportunities, compare roles with your skills, and plan business automations alongside practical everyday workflows.</p>
+      <div class="agent-note"><strong>Important:</strong> These are prompt-based workflows, not autonomous software. Job discovery requires an AI assistant with web search or job listings you provide. Verify sources, approve any actions yourself, and never share passwords, payment details, or private customer information.</div>
     </div>
   </header>
 
   <main class="container">
     <section aria-label="AI agent templates">
       <div class="agent-grid">
+        <article class="agent-card">
+          <div class="section-label">Career search</div>
+          <h2>Job Search &amp; Fit Agent</h2>
+          <p>Find relevant job openings with a browsing-capable AI assistant, then compare the requirements with your skills, experience, and preferences.</p>
+          <details>
+            <summary>View prompt template</summary>
+            <pre data-prompt>You are my job-search and fit-analysis assistant. Help me find suitable roles using this profile:
+- Target roles or skills: [roles, skills, and experience]
+- Location or remote preference: [location]
+- Seniority and work type: [level, full-time/part-time/contract]
+- Must-haves and deal-breakers: [salary range, schedule, industries, other constraints]
+
+If you have web-search access, look for currently open roles and prioritize employer career pages or reputable job boards. If you do not have web access, ask me to provide job listings or links; do not pretend you searched.
+
+For each opportunity, provide:
+1. Job title, employer, location, and direct application/source link
+2. Posting date or the date you checked it; mark dates you cannot verify
+3. A fit score from 0 to 100 with a short explanation of the criteria and weighting
+4. Skills or qualifications that match, and gaps to investigate
+5. Any missing or unclear information I should verify before applying
+
+Only list opportunities supported by a source. Do not invent openings, application links, salary details, or qualifications. Do not apply, contact employers, or submit my personal information. Ask before broadening my constraints.</pre>
+            <button type="button" data-copy-prompt>Copy prompt</button>
+            <p class="copy-status" role="status" aria-live="polite"></p>
+          </details>
+          <a class="agent-link" href="/job-match">Analyze a job description against your saved profile →</a>
+        </article>
+
+        <article class="agent-card">
+          <div class="section-label">Automation</div>
+          <h2>Business Automation Planner</h2>
+          <p>Identify repetitive work worth automating and design a practical workflow with clear human approvals and safeguards.</p>
+          <details>
+            <summary>View prompt template</summary>
+            <pre data-prompt>You are my business automation planning assistant. Help me improve this workflow:
+- Current process and who does each step: [describe the process]
+- Tools I already use: [tool names only; never share credentials]
+- Frequency and approximate time spent: [how often and how long]
+- Errors, bottlenecks, or desired outcome: [what should improve]
+- Privacy, budget, or compliance constraints: [constraints]
+
+First ask clarifying questions about the workflow and its risks. Then provide:
+1. A simple current-state step-by-step process
+2. The best automation opportunities, ranked by benefit and effort
+3. A proposed workflow showing triggers, data used, tools, and outputs
+4. Which steps must stay under human review (especially payments, publishing, customer messages, account changes, or personal data)
+5. A small, reversible test plan with success measures and a rollback step
+6. Assumptions, tool costs to verify, and privacy or access risks
+
+Prefer the simplest reliable approach using tools I already have. Do not claim integrations are available without verification. Do not execute actions, send messages, change records, or request credentials. Flag decisions that need my explicit approval.</pre>
+            <button type="button" data-copy-prompt>Copy prompt</button>
+            <p class="copy-status" role="status" aria-live="polite"></p>
+          </details>
+        </article>
+
         <article class="agent-card">
           <div class="section-label">Research</div>
           <h2>Business Idea Researcher</h2>
